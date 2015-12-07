@@ -1,8 +1,6 @@
-var http = require('http');
+var express = require('express');
+var app = express();
 
-var server = http.createServer(function(req, res) {
-  res.write("Hello from JS Channel");
-  res.end();
-});
+app.use(express.static('public'));
 
-server.listen(process.env.PORT || 5000);
+app.listen(process.env.PORT || 5000);
