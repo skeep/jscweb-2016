@@ -2,6 +2,10 @@
   "name": "JSChannel16",
   "version": "1.0.0",
   "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "serve-me": "^0.8.2"
   }
