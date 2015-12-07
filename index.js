@@ -1,3 +1,8 @@
-var ServeMe = require('serve-me')();
+var http = require('http');
 
-ServeMe.start(3000);
+var server = http.createServer(function(req, res) {
+  res.write("Hello from JS Channel");
+  res.end();
+});
+
+server.listen(3000);
