@@ -62,7 +62,7 @@
     "//": "NOTE: folders NOT prefixed with underscore (_) will be copied to build target 1 to 1 (ex: src/fonts -> build/fonts)",
     "directories": {
       "source": "src",
-      "destination": "build",
+      "destination": "../public",
       "temporary": "tmp",
       "//": "Directories relative to `source` directory",
       "modules": "_modules",
