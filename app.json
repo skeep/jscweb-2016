@@ -1,0 +1,11 @@
+{
+  "name": "jscweb-2016",
+  "description": "For automatic deployments whenever a new PR is created",
+  "scripts": {
+  },
+  "env": {
+  },
+  "addons": [
+
+  ]
+}
