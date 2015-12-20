@@ -1,12 +1,14 @@
+
 extends _layouts/base
 
-include _modules/link/link
-
+//- include _modules/link/link
+//- 
 block content
-  .container
-    .yeogurt-info
-      h1 Welcome to JSChannel 2016
-      p.
-        Take a look at the
-        #[+link({text: 'JSChannel website '})(href='http://www.jschannel.com/#/')]
-  code.version v0.0.0
+  include _modules/teaserView/teaser.jade
+//-   .container
+//-     .yeogurt-info
+//-       h1 Welcome to JSChannel 2016
+//-       p.
+//-         Take a look at the
+//-         #[+link({text: 'JSChannel website '})(href='http://www.jschannel.com/#/')]
+//-   code.version v0.0.0
