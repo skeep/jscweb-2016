@@ -1,0 +1,13 @@
+.teaser-container {
+  background: rgb(88, 48, 114);
+  height: 100vh;
+  color: white;
+  padding: 30vh 0;
+  .left-wrapper {
+    border-right: 1px solid white;
+    line-height: 1;
+  }
+  .right-wrapper {
+    margin: 2px 0;
+  }
+}
