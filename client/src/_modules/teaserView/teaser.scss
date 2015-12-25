@@ -1,13 +1,29 @@
 .teaser-container {
-  background: rgb(88, 48, 114);
-  height: 100vh;
+  background: url('../images/teaser/background.jpg') center no-repeat fixed;
+  background-size:cover;
   color: white;
-  padding: 30vh 0;
+  height: 100vh;
+  padding: 30vh 0 5vh 0;
   .left-wrapper {
     border-right: 1px solid white;
     line-height: 1;
   }
   .right-wrapper {
     margin: 2px 0;
+  }
+  .icon-style {
+    font-size:3em;
+  }
+  .facebook:hover {
+    color:rgb(59,89,150);
+  }
+  .twitter:hover {
+    color:#08c;
+  }
+  .linkedin:hover {
+    color:rgb(11,123,182);
+  }
+  .youtube:hover,  {
+    color: rgb(203,50,44);
   }
 }

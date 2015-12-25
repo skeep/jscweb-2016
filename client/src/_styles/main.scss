@@ -5,6 +5,7 @@
 @import '../_modules/bootstrap/bootstrap.min.scss';
 @import '../_modules/bootstrap/bootstrap-theme.min.scss';
 @import '../_modules/teaserView/teaser';
+@import '../../bower_components/font-awesome/scss/font-awesome.scss';
 
 // Box sizing partial styles:
 // Apply a natural box layout model to all elements
@@ -41,10 +42,42 @@
   font-weight: 800;
 }
 
+.semibold {
+  font-weight: 500;
+}
+
 .f46 {
   font-size: 46px;
 }
 
 .f24 {
   font-size: 24px;
+}
+
+.f14 {
+  font-size:14px;
+}
+
+.nopadding {
+  padding:0px;
+}
+
+.voffset4 {
+  padding-top:4vh;
+}
+
+.voffset45 {
+  padding-top:45vh;
+}
+
+.white-border {
+  border:1px solid white
+}
+
+.ghost-button {
+  background-color:transparent;
+}
+
+.white {
+  color:white;
 }
