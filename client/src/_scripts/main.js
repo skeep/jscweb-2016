@@ -10,10 +10,10 @@ $(() => {
   new Link(); // Activate Link modules logic
   console.log('Welcome to Yeogurt!');
   $('.email-submit').click(function() {
-    if($'.email-input').value) {
+    if(document.querySelector('.email-input').value) {
       var firebaseRef = new Firebase("https://jscweb2016.firebaseio.com/");
       firebaseRef.push({
-        "email": $'.email-input').value
+        "email": document.querySelector('.email-input').value
       });
     }
   });
