@@ -5,6 +5,8 @@
 @import '../_modules/bootstrap/bootstrap.min.scss';
 @import '../_modules/bootstrap/bootstrap-theme.min.scss';
 @import '../_modules/teaserView/teaser';
+@import '../_modules/teaserView/teaser-media.scss';
+@import '../../bower_components/font-awesome/scss/font-awesome.scss';
 
 // Box sizing partial styles:
 // Apply a natural box layout model to all elements
@@ -25,6 +27,14 @@
   padding: 0.5em 0;
 }
 
+//reset input
+
+.input {
+  border: none;
+  outline: none;
+  background: white;
+  color: black;
+}
 .text-center {
   text-align: center;
 }
@@ -41,10 +51,50 @@
   font-weight: 800;
 }
 
-.f46 {
-  font-size: 46px;
+.semibold {
+  font-weight: 500;
 }
 
-.f24 {
-  font-size: 24px;
+.f65 {
+  font-size: 65px;
+}
+
+.f30 {
+  font-size: 30px;
+}
+
+.no-float {
+  float: none;
+}
+
+.f14 {
+  font-size:14px;
+}
+
+.display-inline {
+  display: inline-block;
+}
+
+.nopadding {
+  padding:0px;
+}
+
+.padding10 {
+  padding:10px;
+}
+
+.voffset4 {
+  padding-top:4vh;
+}
+
+.white-border {
+  border:1px solid white
+}
+
+.ghost-button {
+  background-color:transparent;
+}
+
+.white {
+  color:white;
 }
