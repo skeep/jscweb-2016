@@ -1,29 +1,65 @@
+.body-tag {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
 .teaser-container {
-  background: url('../images/teaser/background.jpg') center no-repeat fixed;
-  background-size:cover;
+  background: url(../images/teaser/background.jpg) center no-repeat fixed;
+  background-size: cover;
   color: white;
   height: 100vh;
-  padding: 30vh 0 5vh 0;
+  padding: 30vh 0 5vh;
   .left-wrapper {
-    border-right: 1px solid white;
-    line-height: 1;
+    position: relative;
+    line-height: 1.2;
+    padding-right: 20px;
+    text-align: right;
+     :after {
+      content: '';
+      height: 80%;
+      width: 1px;
+      position: absolute;
+      right: 0;
+      top: 10%;
+      background-color: white;
+    }
   }
   .right-wrapper {
-    margin: 2px 0;
+    text-align: left;
+    padding: 15px;
+    vertical-align: top;
   }
-  .icon-style {
-    font-size:3em;
+  .email-submit:active,
+  .email-submit:hover {
+    background-color: rgba(255, 255, 255, 0.68);
+    color: #562A72;
+    transition: background 0.5s;
   }
-  .facebook:hover {
-    color:rgb(59,89,150);
-  }
-  .twitter:hover {
-    color:#08c;
-  }
-  .linkedin:hover {
-    color:rgb(11,123,182);
-  }
-  .youtube:hover,  {
-    color: rgb(203,50,44);
+  .bottom-wrapper {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 15px;
+    .previous-wrapper {
+      text-align: left;
+    }
+    .social-wrapper {
+      text-align: right;
+      .icon-style {
+        font-size: 2em;
+      }
+      .facebook:hover {
+        color: rgb(59,89,150);
+      }
+      .twitter:hover {
+        color: #08c;
+      }
+      .linkedin:hover {
+        color: rgb(11,123,182);
+      }
+      .youtube:hover {
+        color: rgb(203,50,44);
+      }
+    }
   }
 }
