@@ -27,6 +27,7 @@ head
   //- link(rel='apple-touch-icon', href='assets/images/appIcon.png')
   block stylesheets
     link(rel='stylesheet', href= baseUrl + 'styles/main.css')
+    link(rel='stylesheet', href= '//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css')
 
 body.body-tag
   <!--[if lt IE 9]>
@@ -36,7 +37,7 @@ body.body-tag
   block content
 
   block scripts
-    script(src='https://cdn.firebase.com/js/client/2.3.2/firebase.js')
     script(src= baseUrl + 'scripts/main.js')
+    script(src='https:/cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js')
 
 </html>

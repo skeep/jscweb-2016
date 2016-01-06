@@ -63,7 +63,7 @@
     "directories": {
       "source": "src",
       "destination": "../public",
-      "temporary": "tmp",
+      "temporary": "../public",
       "//": "Directories relative to `source` directory",
       "modules": "_modules",
       "layouts": "_layouts",
