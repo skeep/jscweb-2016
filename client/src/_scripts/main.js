@@ -23,8 +23,7 @@ $(() => {
         document.querySelector('.notification-txt').style.display = "block";
         window.setTimeout(function () {
           document.querySelector('.notification-txt').style.display = "none";
-        },1000);
-        console.log('email saved');
+        },1500);
         $('.email-input, .email-submit').prop("disabled", false);
       });
     }
