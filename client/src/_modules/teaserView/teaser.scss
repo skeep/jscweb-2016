@@ -10,6 +10,15 @@
   color: white;
   height: 100vh;
   padding: 30vh 0 5vh;
+  position: relative;
+  .notification-txt {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    animation: showNav 300ms ease-in-out both;
+  }
   .left-wrapper {
     position: relative;
     line-height: 1.2;
@@ -63,3 +72,8 @@
     }
   }
 }
+
+@keyframes showNav {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
