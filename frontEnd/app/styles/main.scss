@@ -2,8 +2,6 @@ $icon-font-path: '../fonts/';
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-
-
 // endbower
 //@import "styles/teaserMedia.scss";
 //@import "styles/teaserView.scss";
@@ -192,7 +190,7 @@ $icon-font-path: '../fonts/';
   background-size: cover;
   color: white;
   height: 100vh;
-  padding: 30vh 0 5vh;
+  padding: 2vh 0 5vh;
   position: relative;
   .notification-txt {
     display: none;
@@ -263,3 +261,68 @@ $icon-font-path: '../fonts/';
     opacity: 1;
   }
 }
+.center{
+  text-align: center;
+}
+
+  .caption {
+        width:100%;
+        bottom: 0rem;
+        left:0rem;
+        position: absolute;
+        background:rgba(255, 71, 26, 0.7);
+        visibility: hidden;
+    }
+
+    .thumbnail {
+        border: 0 none;
+        box-shadow: none;
+        margin:0;
+        padding:0;
+    }
+
+    .caption h4 {
+        color: #fff;
+    }
+    .sponser-button{
+    background-color:rgb(255, 71, 26);
+    border-raduis:0px;
+    }
+    .gallery{
+      background: rgba(211,211,211,0.9);
+      height: 80vh;
+    }
+    .gallery-image:hover .caption{
+      visibility: visible;
+    }
+    .gallery-image
+    {
+    margin:2vh;
+    }
+    .gallery-image1{
+      background: url(/images/images.jpg);
+      height: 30vh;
+      width:110vh;
+      background-size: 60vw;
+    }
+    .gallery-image2{
+      background: url(/images/images.jpg);
+      height: 30vh;
+      width:50vh;
+      
+    }
+    .gallery-image3{
+      background: url(/images/images.jpg);
+      height: 30vh;
+      width:52vh;
+    }
+    .gallery-image4{
+      background: url(/images/images.jpg);
+     height: 30vh;
+      width:52vh;
+    }
+    .gallery-image5{
+      background: url(/images/images.jpg);
+      height: 30vh;
+     width:52vh;
+     }
