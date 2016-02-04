@@ -263,3 +263,25 @@ $icon-font-path: '../fonts/';
     opacity: 1;
   }
 }
+  .ticket-top {
+    background-color: lightgrey;
+        padding: 2%;
+  }
+  .ticket-bottom {
+    background-color: darkgray;
+        padding: 2%;
+  }
+  .ticket-border {
+    border: 1px solid coral;
+    padding: 0%;
+    margin: 0% 2% 2% 2%;
+  }
+  .text-red {
+    color: coral;
+  }
+  .container-ticket {
+    font-size: 20px;
+  }
+  .heading-padding {
+  padding: 2%;
+}
