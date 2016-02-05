@@ -1,14 +1,30 @@
 /* Custom, iPhone Retina */
+@mixin bottom-buttons {
+  border-radius: 0;
+  margin: 1em;
+  padding: 1em;
+  width: 15em;
+  background: transparentize(#000, 0.2);
+  color: #fff;
+  border: 1px solid #CA442C;
+  text-transform: uppercase;
+}
+
+@mixin font-nova($font-size) {
+  font-size: $font-size;
+  font-family: proxima-nova, sans-serif;
+  text-transform: uppercase;
+}
+
 @media only screen and (min-width : 320px) and (max-device-width: 480px) {
   .body-tag {
     .f65 {
-      font-size: 40px;
+      @include font-nova(40px);
     }
     .f30 {
-      font-size: 20px;
+      @include font-nova(20px);
     }
     .teaser-container {
-      padding-top: 25vh;
       .left-wrapper,
       .right-wrapper {
         text-align: center;
@@ -41,6 +57,29 @@
           text-align: center;
           padding: 0;
         }
+      }
+    }
+
+    .buy-tickets {
+      padding: 1em 1em 1em;
+      .buy-tickets__button {
+        border-radius: 0;
+        width: 20em;
+        padding: 1em;
+        color: #fff;
+        background-color: #CA442C;
+      }
+    }
+
+    .button-group {
+      .recap {
+        @include bottom-buttons;
+      }
+      .submit-talk {
+        @include bottom-buttons;
+      }
+      .sponsor {
+        @include bottom-buttons;
       }
     }
   }

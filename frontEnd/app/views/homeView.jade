@@ -1,28 +1,31 @@
 .container-fluid.teaser-container.section
 	// logo to be made
-	#navBar.nav-bar.col-sm-12
-		#jschannel-home.jschannel-home
-			.jschannel-logo
-			span.jschannel-name jsChannel
-		#navItems.nav-items
-			ul.navList
-				li.navItems__jsc #JSCchannelconf2016
-				li.navItems__tickets tickets
-				li.navItems__speakers speakers
-				li.navItems__sponsor sponsor
-				li.navItems__about about jschannel
-	.text-center
-		.left-wrapper.display-inline
-			.f65.bold JS CHANNEL
+	nav.navbar.navbar-default.col-sm-12.col-md-12.navigation-bar
+		#jschannel-home.navbar-header.left-nav
+			img.navbar-brand(href="#")
+		#navItems.nav-items.collapse.navbar-collapse
+			ul#navMenu.nav-list.list-unstyled.nav.navbar-nav
+				li.nav-items__jsc(data-menuanchor='jsc'): a(href="") #JSCchannelconf2016
+				li.nav-items__tickets(data-menuanchor='tickets'): a(href="") tickets
+				li.nav-items__speakers(data-menuanchor='speakers'): a(href="") speakers
+				li.nav-items__sponsor(data-menuanchor='sponsor'): a(href="") sponsor
+				li.nav-items__about(data-menuanchor='about'): a(href="") about jschannel
+				
+	.text-center.section-center
+		.left-wrapper.display-inline.col-sm-7
+			img.center-logo(src='../images/logo.png')
 			.f30 CONFERENCE 2016
-		.right-wrapper.display-inline.f30
-			.f12 JULY 15th, 16th
-			.bold BENGALURU
-	.col-sm-12.buy-tickets
-		button.buy-tickets__button buy tickets
-	.col-sm-12.col-xs-4
-		button.recap
+		.right-wrapper.display-inline.f30.col-sm-5 
+			|	JULY 15
+			sup th
+			|  & 16
+			sup th
+			.bold bengaluru, india
+	.col-sm-12.text-center.buy-tickets
+		button.btn.btn-default.buy-tickets__button buy tickets
+	.col-sm-12.text-center.button-group
+		button.btn.btn-default.recap
 			| watch 2015 recap
 			span.play-glyphicon
-		button.submit-talk submit talk
-		button.sponsor become a sponsor
+		button.btn.btn-default.submit-talk submit talk
+		button.btn.btn-default.sponsor become a sponsor
