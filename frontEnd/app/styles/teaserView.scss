@@ -5,11 +5,12 @@
   -webkit-tap-highlight-color: transparent;
 }
 .teaser-container {
-  background: url("../images/background.jpg") center no-repeat fixed;
+  background: rgba(0,0,0,0.6);
+  background: url(../images/background.jpg) center no-repeat fixed;
   background-size: cover;
   color: white;
   height: 100vh;
-  padding: 30vh 0 5vh;
+  padding: 2vh 0 5vh;
   position: relative;
   .notification-txt {
     display: none;
