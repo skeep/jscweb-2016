@@ -1,0 +1,32 @@
+.heading-padding {
+  padding: 20px;
+}
+.container-text {
+  font-size: 15pt;
+}
+.ticket-container {
+  border: 1px solid #ec471f;
+  margin: 15px;
+  color: #3a3a3a;
+  .price-size{
+    font-size: 25pt;
+    padding: 20px;
+  }
+  .ticket-top {
+    background-color: lightgrey;
+    padding: 10px 0px 10px 0px;
+    margin: 0%;
+  }
+  .ticket-no {
+    font-size: 15pt;
+    padding: 0px 0px 20px 0px;
+  }
+  .text-red {
+  color: #ec471f;
+}
+  .ticket-bottom {
+    background-color: darkgray;
+    padding: 10px;
+    margin: 0%;
+  }
+}
