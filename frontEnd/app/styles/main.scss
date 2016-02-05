@@ -2,6 +2,7 @@ $icon-font-path: '../fonts/';
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+<<<<<<< HEAD
 // endbower
 //@import "styles/teaserMedia.scss";
 //@import "styles/teaserView.scss";
@@ -326,3 +327,10 @@ $icon-font-path: '../fonts/';
       height: 30vh;
      width:52vh;
      }
+=======
+@import "bower_components/fullpage.js/jquery.fullPage.scss";
+// endbower
+@import "../styles/global.scss";
+@import "../styles/teaserMedia.scss";
+@import "../styles/teaserView.scss";
+>>>>>>> 67e05ffde1857d484086e85b857f61d2449deb6d
