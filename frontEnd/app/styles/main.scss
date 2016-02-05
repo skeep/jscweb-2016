@@ -1,0 +1,11 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/fullpage.js/jquery.fullPage.scss";
+// endbower
+@import "../styles/global.scss";
+@import "../styles/teaserMedia.scss";
+@import "../styles/teaserView.scss";
+@import "../styles/thirdView.scss";
+

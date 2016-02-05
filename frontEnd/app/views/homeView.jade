@@ -1,0 +1,31 @@
+.container-fluid.teaser-container.section
+	// logo to be made
+	nav.navbar.navbar-default.col-sm-12.col-md-12.navigation-bar
+		#jschannel-home.navbar-header.left-nav
+			img.navbar-brand.navbar-logo(href="#",src='../images/logo.png')
+		#navItems.nav-items.collapse.navbar-collapse
+			ul#navMenu.nav-list.list-unstyled.nav.navbar-nav
+				li.nav-items__jsc(data-menuanchor='jsc'): a(href="") #JSCchannelconf2016
+				li.nav-items__tickets(data-menuanchor='tickets'): a(href="") tickets
+				li.nav-items__speakers(data-menuanchor='speakers'): a(href="") speakers
+				li.nav-items__sponsor(data-menuanchor='sponsor'): a(href="") sponsor
+				li.nav-items__about(data-menuanchor='about'): a(href="") about jschannel
+				
+	.text-center.section-center.row
+		.left-wrapper.display-inline.col-sm-8
+			img.center-logo(src='../images/logo.png')
+			.f30 CONFERENCE 2016
+		.right-wrapper.display-inline.f30.col-sm-4 
+			|	JULY 15
+			sup th
+			|  & 16
+			sup th
+			.bold bengaluru, india
+	.col-sm-12.text-center.buy-tickets
+		button.btn.btn-default.buy-tickets__button buy tickets
+	.col-sm-12.text-center.button-group
+		button.btn.btn-default.recap
+			| watch 2015 recap
+			span.play-glyphicon
+		button.btn.btn-default.submit-talk submit talk
+		button.btn.btn-default.sponsor become a sponsor
