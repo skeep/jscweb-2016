@@ -2,66 +2,73 @@
   text-align: center;
 }
 
-//Sponser Section
-.sponser{
-  padding:5vh;
-}
-.sponser-button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    background-color:rgb(255, 71, 26);
-}
+
 .caption {
   width:100%;
   bottom: 0rem;
   left:0rem;
   position: absolute;
-  background:rgba(255, 71, 26, 0.7);
+  background:rgba(236, 71, 31, 0.7);
   visibility: hidden;
-}
-.caption h4 {
-  color: #fff;
+  padding:0vh 0vh 1vh 1vh;
+  h3{
+    color: #fff
+  }
 }
 
 
-//Gallery Section
+.sponser{
+  padding:5vh;
+  &-button{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color:rgb(236, 71, 31);
+  }
+  &-heading{
+    font-size:50pt;
+  }
+  &-subheading{
+    font-size:18pt;
+  }
+}
+    
+
 .gallery{
   background: rgba(211,211,211,0.9);
   padding:0vh 5vh 5vh 5vh;
+  &-image{
+    position:relative;
+    margin-bottom:4vh;
+    height:50vh;
+    //height:370px;
+    background-size:cover;
+  }
+  &-heading{
+    padding:1vh;
+    font-size:50pt;
+  }
+  &-image1{
+    background-image: url(../images/images.jpg);
+  }
+  &-image2{
+    background-image: url(../images/images1.jpg);
+  }
+  &-image3{
+    background-image: url(../images/images1.jpg);
+  }
+  &-image4{
+    background-image: url(../images/images1.jpg);
+  }
+  &-image5{
+    background-image: url(../images/images1.jpg);
+  }
+  &-image:hover .caption{
+    visibility: visible;
+  }
 }
-.gallery-image:hover .caption{
-  visibility: visible;
-}
-.gallery-heading{
-  padding:1vh;
-}
-.gallery-image{
-position:relative;
-margin-bottom:4vh;
-}
-.gallery-image1{
-  background: url(../images/images.jpg);
-  height: 30vh;
-}
-.gallery-image2{
-  background: url(../images/images.jpg);
-  height: 30vh;
-}
-.gallery-image3{
-  background: url(../images/images.jpg);
-  height: 30vh;
-}
-.gallery-image4{
-  background: url(../images/images.jpg);
-  height: 30vh;
-}
-.gallery-image5{
-  background: url(../images/images.jpg);
-  height: 30vh;
-}
+
+
