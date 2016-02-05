@@ -1,0 +1,69 @@
+.center{
+  text-align: center;
+}
+
+//Sponser Section
+.sponser{
+  padding:5vh;
+}
+.sponser-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color:rgb(255, 71, 26);
+}
+.caption {
+  width:100%;
+  bottom: 0rem;
+  left:0rem;
+  position: absolute;
+  background:rgba(255, 71, 26, 0.7);
+  visibility: hidden;
+}
+.caption h4 {
+  color: #fff;
+}
+
+
+//Gallery Section
+.gallery{
+  background: rgba(211,211,211,0.9);
+  padding:0vh 5vh 5vh 5vh;
+}
+.gallery-image:hover .caption{
+  visibility: visible;
+}
+.gallery-heading{
+  padding:1vh;
+}
+.space{
+  padding:2vh;
+}
+.gallery-image{
+position:relative;
+}
+.gallery-image1{
+  background: url(../images/images.jpg);
+  height: 30vh;
+}
+.gallery-image2{
+  background: url(../images/images.jpg);
+  height: 30vh;
+}
+.gallery-image3{
+  background: url(../images/images.jpg);
+  height: 30vh;
+}
+.gallery-image4{
+  background: url(../images/images.jpg);
+  height: 30vh;
+}
+.gallery-image5{
+  background: url(../images/images.jpg);
+  height: 30vh;
+}
