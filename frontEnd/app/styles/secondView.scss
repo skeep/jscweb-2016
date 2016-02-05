@@ -1,40 +1,32 @@
-.heading-section2{
-  font-size: 50pt;
-}
 .heading-padding {
-  padding: 3%;
+  padding: 20px;
 }
-.text-size-36 {
-  font-size: 36pt;
-}
-.text-size-18 {
-  font-size: 18pt;
+.container-text {
+  font-size: 15pt;
 }
 .ticket-container {
   border: 1px solid #ec471f;
-  margin: 2%;
+  margin: 15px;
   color: #3a3a3a;
-  height: 320px;
-  width: 270px;
-  font-size: 18pt;
   .price-size{
-    font-size: 30pt;
-    line-height: 200%;
+    font-size: 25pt;
+    padding: 20px;
   }
   .ticket-top {
     background-color: lightgrey;
-    padding: 2%;
-    font-size: 20pt;
+    padding: 10px 0px 10px 0px;
+    margin: 0%;
+  }
+  .ticket-no {
+    font-size: 15pt;
+    padding: 0px 0px 20px 0px;
   }
   .text-red {
-  color: coral;
+  color: #ec471f;
 }
-  .ticket-no {
-    padding: 4.2%;
-  }
   .ticket-bottom {
     background-color: darkgray;
-    padding: 2%;
-    font-size: 20pt;
+    padding: 10px;
+    margin: 0%;
   }
 }
