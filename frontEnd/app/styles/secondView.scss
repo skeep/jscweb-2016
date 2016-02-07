@@ -14,6 +14,9 @@
   font-size: 14pt;
 }
 .ticket-container {
+  p{
+    color:rgb(121,121,121)
+  }
   border: 1px solid #ec471f;
   margin: 15px;
   color: #3a3a3a;
@@ -25,6 +28,8 @@
     background-color: lightgrey;
     padding: 10px 0px 10px 0px;
     margin: 0%;
+    font-weight:400;
+    font-size:17pt;
   }
   .ticket-no {
     font-size: 15pt;
@@ -34,9 +39,11 @@
   color: #ec471f;
 }
   .ticket-bottom {
-    background-color: darkgray;
+    background-color: rgb(112,112,112);
     padding: 10px;
     margin: 0%;
+    color:white;
+    font-size:17pt;
   }
   .ticket-bottom:hover {
     background-color:$orange;
