@@ -12,6 +12,31 @@
   height: 100vh;
   padding: 2vh 0 5vh;
   position: relative;
+  .nav-custom {
+    background-color:transparent;
+    border-color:transparent;
+    text-transform: uppercase;
+    ul {
+      float:right;
+      li > a{
+      color:white;
+      }
+      li > a:hover {
+        color:$orange;
+      }
+    }
+  }
+  .buy-btn {
+      background-color:$orange;
+      padding:10px 0px;
+      border:1px solid white;
+      border-radius:0px;
+    }
+  .buy-btn:hover {
+    background-color:$light-orange;
+    color:white;
+  }
+
   .notification-txt {
     display: none;
     position: absolute;
@@ -33,6 +58,9 @@
       right: 0;
       top: 10%;
       background-color: white;
+    }
+    .orange {
+      color:$orange;
     }
   }
   .right-wrapper {
@@ -73,6 +101,7 @@
     }
   }
 }
+
 @keyframes showNav {
   from {
     opacity: 0;
@@ -80,4 +109,12 @@
   to {
     opacity: 1;
   }
+}
+@media (max-height: 750px) and (max-width: 950px) {
+    .voffset40 {
+      padding-top:20px;
+    }
+    .ghost-btn {
+      margin-bottom:15px;
+    }
 }
