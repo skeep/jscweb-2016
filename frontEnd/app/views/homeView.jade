@@ -38,18 +38,20 @@
 					span.icon-bar
 					span.icon-bar
 				a(href="#"): img.navbar-brand.navbar-logo(src='../images/logo.png')
-			#navbar.navbar-collapse.collapse(aria-expanded="false")
+			#navbar.navbar-collapse.collapse.navbar-menu(aria-expanded="false")
 				ul.nav.navbar-nav.navbar-right
 					li
-						a(href='#') #JSChannelConf2016
+						a.text-right(href='#',data-toggle="collapse",data-target="#navbar",aria-expanded="false", aria-controls="navbar") Menu
 					li
-						a(href='#tickets') Tickets
+						a(href='#', data-toggle="collapse", data-target="#navbar") #JSChannelConf2016
 					li
-						a(href='#speakers') Speakers
+						a(href='#tickets', data-toggle="collapse", data-target="#navbar") Tickets
 					li
-						a(href='#gallery') Gallery
+						a(href='#speakers', data-toggle="collapse", data-target="#navbar") Speakers
 					li
-						a(href='#about') About JSChannel
+						a(href='#gallery', data-toggle="collapse", data-target="#navbar") Gallery
+					li
+						a(href='#about', data-toggle="collapse", data-target="#navbar") About JSChannel
 	.text-center.voffset40
 		.left-wrapper.display-inline
 			.f65.bold.italics
