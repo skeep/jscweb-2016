@@ -1,28 +1,35 @@
-.container-fluid.teaser-container.section
+.container-fluid.teaser-container
 	// logo to be made
-	#navBar.nav-bar.col-sm-12
-		#jschannel-home.jschannel-home
-			.jschannel-logo
-			span.jschannel-name jsChannel
-		#navItems.nav-items
-			ul.navList
-				li.navItems__jsc #JSCchannelconf2016
-				li.navItems__tickets tickets
-				li.navItems__speakers speakers
-				li.navItems__sponsor sponsor
-				li.navItems__about about jschannel
-	.text-center
+	nav.navbar.navbar-default.nav-custom
+		.container-fluid
+			.collapse.navbar-collapse
+				ul.nav.navbar-nav
+					li
+						a(href='#') #JSChannelConf2016
+					li
+						a(href='#') Tickets
+					li
+						a(href='#') Speakers
+					li
+						a(href='#') Sponsor
+					li
+						a(href='#') About JSChannel
+	.text-center.voffset40
 		.left-wrapper.display-inline
-			.f65.bold JS CHANNEL
+			.f65.bold.italics 
+				span.orange JS
+				| Channel
 			.f30 CONFERENCE 2016
 		.right-wrapper.display-inline.f30
-			.f12 JULY 15th, 16th
-			.bold BENGALURU
-	.col-sm-12.buy-tickets
-		button.buy-tickets__button buy tickets
-	.col-sm-12.col-xs-4
-		button.recap
-			| watch 2015 recap
-			span.play-glyphicon
-		button.submit-talk submit talk
-		button.sponsor become a sponsor
+			.f12 JULY 15th &amp; 16th
+			.bold BENGALURU, INDIA
+	.row
+		.col-md-6.voffset40.col-md-offset-3
+			button.btn.buy-btn.col-md-8.col-md-offset-2.col-xs-10.col-xs-offset-1 BUY TICKETS
+	.row
+		.col-md-6.col-md-offset-3.voffset40
+			button.btn.ghost-btn.col-md-3.col-md-offset-1.col-xs-8.col-xs-offset-2 
+				| WATCH 2015 RECAP   
+				i.fa.fa-play-circle
+			button.btn.ghost-btn.col-md-3.col-md-offset-1.col-xs-8.col-xs-offset-2 SUBMIT TALK
+			button.btn.ghost-btn.col-md-3.col-md-offset-1.col-xs-8.col-xs-offset-2 BECOME A SPONSOR
