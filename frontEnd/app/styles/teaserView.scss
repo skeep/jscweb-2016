@@ -41,14 +41,14 @@
           font-weight: bold;
 
         }
-        :after {
-         content: '';
-         height: 40%;
-         width: 1px;
-         position: absolute;
-         right: 0;
-         background-color: white;
-        }
+        // :after {
+        //  content: '';
+        //  height: 40%;
+        //  width: 1px;
+        //  position: absolute;
+        //  right: 0;
+        //  background-color: white;
+        // }
       }
     }
   }
@@ -61,7 +61,6 @@
 .teaser-container {
   background: rgba(0,0,0,0.6);
   background: url(../images/background.jpg) center no-repeat fixed;
-  background-size: cover;
   color: white;
   height: 100vh;
   padding: 2vh 0 5vh;
@@ -75,7 +74,7 @@
     font-family: proxima-nova-regular, sans-serif;
     text-transform: uppercase;
     .center-logo {
-      width: 70%;
+      width: 65%;
     }
     :after {
     content: '';
