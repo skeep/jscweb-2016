@@ -1,3 +1,4 @@
+$orange:#ec4715;
 .center{
   text-align: center;
 }
@@ -24,8 +25,12 @@
     padding: 15px 32px;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    background-color:rgb(236, 71, 31);
+    font-size: 22px;
+    background-color:$orange;
+  }
+  &-button>a{
+    color:white;
+    text-decoration:none;
   }
   &-heading{
     font-size:50pt;
@@ -55,10 +60,10 @@
     font-size:50pt;
   }
   &-image1{
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/Gallery-1.jpg);
   }
   &-image2{
-    background-image: url(../images/Gallery-1.jpg);
+    background-image: url(../images/Gallery-2.jpg);
   }
   &-image3{
     background-image: url(../images/Gallery-3.jpg);
@@ -67,6 +72,6 @@
     background-image: url(../images/Gallery-4.jpg);
   }
   &-image5{
-    background-image: url(../images/Gallery-2.jpg);
+    background-image: url(../images/Gallery-5.jpg);
   }
 }
