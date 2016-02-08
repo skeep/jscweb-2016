@@ -44,11 +44,8 @@ gulp.task('scripts', () => {
 
 gulp.task('jade', function() {
   return gulp.src('app/index.jade')
-    .pipe(jade())
-    .pipe(gulp.dest('.tmp/'))
-    .pipe(reload({
-      stream: true
-    }));
+    .pipe(jade({pretty: true}))
+    .pipe(gulp.dest('app/'));
 });
 
 function lint(files, options) {
@@ -72,7 +69,7 @@ const testLintOptions = {
 gulp.task('lint', lint('app/scripts/**/*.js'));
 gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
 
-gulp.task('html', ['styles', 'scripts'], () => {
+gulp.task('html', ['jade','styles', 'scripts'], () => {
   return gulp.src('app/*.html')
     .pipe($.useref({
       searchPath: ['.tmp', 'app', '.']
@@ -82,7 +79,7 @@ gulp.task('html', ['styles', 'scripts'], () => {
     .pipe($.if('*.html', $.htmlmin({
       collapseWhitespace: true
     })))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('../public'));
 });
 
 gulp.task('images', () => {
@@ -100,26 +97,28 @@ gulp.task('images', () => {
         console.log(err);
         this.end();
       })))
-    .pipe(gulp.dest('dist/images'));
+    .pipe(gulp.dest('../public/images'));
 });
 
 gulp.task('fonts', () => {
   return gulp.src(require('main-bower-files')('**/*.{eot,svg,ttf,woff,woff2}', function(err) {})
       .concat('app/fonts/**/*'))
     .pipe(gulp.dest('.tmp/fonts'))
-    .pipe(gulp.dest('dist/fonts'));
+    .pipe(gulp.dest('../public/fonts'));
 });
 
 gulp.task('extras', () => {
   return gulp.src([
     'app/*.*',
-    '!app/*.html'
+    '!app/*.html',
+    '!app/**/.jade',
+    '!app/*.jade'
   ], {
     dot: true
-  }).pipe(gulp.dest('dist'));
+  }).pipe(gulp.dest('../public'));
 });
 
-gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
+gulp.task('clean', del.bind(null, ['.tmp', '../public']));
 
 
 gulp.task('serve', ['jade', 'styles', 'scripts', 'fonts'], () => {
@@ -135,7 +134,6 @@ gulp.task('serve', ['jade', 'styles', 'scripts', 'fonts'], () => {
   });
 
   gulp.watch([
-    'app/*.jade',
     'app/*.html',
     '.tmp/scripts/**/*.js',
     'app/images/**/*',
@@ -155,7 +153,7 @@ gulp.task('serve:dist', () => {
     notify: false,
     port: 9000,
     server: {
-      baseDir: ['dist']
+      baseDir: ['../public']
     }
   });
 });
