@@ -1,0 +1,73 @@
+.container-fluid.teaser-container
+	// logo to be made
+	//- 	nav.navbar.navbar-default.col-sm-12.col-md-12.navigation-bar
+	//- 		#jschannel-home.navbar-header.left-nav
+	//- 			a(href="#"): img.navbar-brand.navbar-logo(src='../images/logo.png')
+	//- 		#navItems.nav-items.collapse.navbar-collapse
+	//- 			ul#navMenu.nav-list.list-unstyled.nav.navbar-nav
+	//- 				li.nav-items__jsc(data-menuanchor='jsc'): a(href="") #JSCchannelconf2016
+	//- 				li.nav-items__tickets(data-menuanchor='tickets'): a(href="") tickets
+	//- 				li.nav-items__speakers(data-menuanchor='speakers'): a(href="") speakers
+	//- 				li.nav-items__sponsor(data-menuanchor='sponsor'): a(href="") sponsor
+	//- 				li.nav-items__about(data-menuanchor='about'): a(href="") about jschannel
+	//- 				
+	//- 	.text-center.section-center.row
+	//- 		.left-wrapper.display-inline.col-sm-8
+	//- 			img.center-logo(src='../images/logo.png')
+	//- 			.f30 CONFERENCE 2016
+	//- 		.right-wrapper.display-inline.f30.col-sm-4 
+	//- 			|	JULY 15
+	//- 			sup th
+	//- 			|  & 16
+	//- 			sup th
+	//- 			.bold bengaluru, india
+	//- 	.col-sm-12.text-center.buy-tickets
+	//- 		button.btn.btn-default.buy-tickets__button buy tickets
+	//- 	.col-sm-12.text-center.button-group
+	//- 		button.btn.btn-default.recap
+	//- 			| watch 2015 recap
+	//- 			span.play-glyphicon
+	//- 		button.btn.btn-default.submit-talk submit talk
+	//- 		button.btn.btn-default.sponsor become a sponsor
+	nav.navbar.navbar-default.menu.nav-custom
+		.container-fluid
+			.navbar-header
+				button.navbar-toggle.collapsed(type="button",data-toggle="collapse",data-target="#navbar",aria-expanded="false", aria-controls="navbar")
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a(href="#"): img.navbar-brand.navbar-logo(src='../images/logo.png')
+			#navbar.navbar-collapse.collapse.navbar-menu(aria-expanded="false")
+				ul.nav.navbar-nav.navbar-right
+					li
+						a.text-right(href='#',data-toggle="collapse",data-target="#navbar",aria-expanded="false", aria-controls="navbar") Menu
+					li
+						a(href='#', data-toggle="collapse", data-target="#navbar") #JSChannelConf2016
+					li
+						a(href='#tickets', data-toggle="collapse", data-target="#navbar") Tickets
+					li
+						a(href='#speakers', data-toggle="collapse", data-target="#navbar") Speakers
+					li
+						a(href='#gallery', data-toggle="collapse", data-target="#navbar") Gallery
+					li
+						a(href='#about', data-toggle="collapse", data-target="#navbar") About JSChannel
+	.text-center.voffset40
+		.left-wrapper.display-inline
+			.f65.bold.italics
+				span.orange JS
+				| Channel
+			.f30 CONFERENCE 2016
+		.right-wrapper.display-inline.f30
+			.f12 JULY 15th &amp; 16th
+			.bold BENGALURU, INDIA
+	.row.button-margin
+		.col-md-6.voffset40.col-md-offset-3
+			button.btn.buy-btn.col-md-8.col-md-offset-2.col-xs-10.col-xs-offset-1 BUY TICKETS
+	.row.button-margin
+		.col-md-6.col-md-offset-3.voffset40
+			button.btn.ghost-btn.col-md-3.col-md-offset-1.col-xs-8.col-xs-offset-2
+				| WATCH 2015 RECAP 
+				i.fa.fa-play-circle
+			button.btn.ghost-btn.col-md-3.col-md-offset-1.col-xs-8.col-xs-offset-2 SUBMIT A TALK
+			button.btn.ghost-btn.col-md-3.col-md-offset-1.col-xs-8.col-xs-offset-2 BECOME A SPONSOR

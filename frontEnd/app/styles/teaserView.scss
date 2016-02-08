@@ -1,0 +1,283 @@
+.body-tag {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+.teaser-container {
+  background: rgba(0,0,0,0.6);
+  background: url(../images/background.jpg) center no-repeat fixed;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  padding: 2vh 0 5vh;
+  position: relative;
+  .nav-custom {
+    background-color:transparent;
+    border-color:transparent;
+    text-transform: uppercase;
+    .navbar-logo {
+      transform: scale(2,2);
+      margin-left: 40px;
+    }
+    ul {
+      float:right;
+      li > a{
+      color:white;
+      font-weight: bold;
+      }
+      li > a:hover {
+        color:$orange;
+      }
+    }
+    .toggle-nav {
+      display: none;
+    }
+  }
+  .left-wrapper {
+    position: relative;
+    line-height: 1.2;
+    padding-right: 20px;
+    text-align: right;
+     :after {
+      content: '';
+      height: 85%;
+      width: 1px;
+      position: absolute;
+      right: 0;
+      top: 10%;
+      background-color: white;
+    }
+    .orange {
+      color:$orange;
+    }
+  }
+  .right-wrapper {
+    text-align: left;
+    padding: 15px;
+    vertical-align: top;
+  }
+  .buy-btn {
+      background-color:$orange;
+      padding:15px 0px;
+      border:1px solid white;
+      border-radius:0px;
+    }
+  .buy-btn:hover {
+    background-color:$light-orange;
+    color:white;
+  }
+  .ghost-btn {
+    background-color: rgba(0,0,0,0.7);
+    border-color:$orange;
+    border-radius:0px;
+    right: 5%;
+    padding: 10px 0;
+  }
+  .ghost-btn:hover {
+    background-color: $orange;
+    border-color: white;
+    color: white;
+  }
+}
+.button-margin {
+  margin: 0px;
+}
+@keyframes showNav {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-height: 750px) and (max-width: 950px) {
+    .voffset40 {
+      padding-top:20px;
+    }
+    .ghost-btn {
+      margin-bottom:15px;
+    }
+}
+
+// @mixin bottom-buttons {
+//   border-radius: 0;
+//   margin: 2em 3em;
+//   padding: 1em;
+//   width: 15em;
+//   background: transparentize(#000, 0.2);
+//   color: #fff;
+//   border: 1px solid #EC471F;
+// }
+//
+// @mixin font-nova($font-size) {
+//   font-size: $font-size;
+//   font-family: proxima-nova-regular, sans-serif;
+//   text-transform: uppercase;
+// }
+//
+// .body-tag {
+//   -webkit-transform-style: preserve-3d;
+//   transform-style: preserve-3d;
+//   -webkit-font-smoothing: antialiased;
+//   -webkit-tap-highlight-color: transparent;
+// }
+//
+// .navigation-bar {
+//   display: inline-block;
+//   background: transparent;
+//   border: none;
+//   .left-nav {
+//     padding: 0 0 0 10em;
+//     .navbar-logo {
+//       transform: scale(2,2);
+//     }
+//   }
+//   .nav-items {
+//     float: right;
+//     .nav-list {
+//       li {
+//         a {
+//           color: #fff;
+//           @include font-nova(12pt);
+//           font-weight: bold;
+//
+//         }
+//         // :after {
+//         //  content: '';
+//         //  height: 40%;
+//         //  width: 1px;
+//         //  position: absolute;
+//         //  right: 0;
+//         //  background-color: white;
+//         // }
+//       }
+//     }
+//   }
+// }
+//
+// .section-center {
+//   margin-top: 25vh;
+// }
+//
+// .teaser-container {
+//   background: rgba(0,0,0,0.6);
+//   background: url(../images/background.jpg) center no-repeat fixed;
+//   color: white;
+//   height: 100vh;
+//   padding: 2vh 0 5vh;
+//   position: relative;
+//   .nav-custom {
+//     background-color:transparent;
+//     border-color:transparent;
+//     text-transform: uppercase;
+//     ul {
+//       float:right;
+//       li > a{
+//       color:white;
+//       }
+//       li > a:hover {
+//         color:$orange;
+//       }
+//     }
+//   }
+//   .buy-btn {
+//       background-color:$orange;
+//       padding:10px 0px;
+//       border:1px solid white;
+//       border-radius:0px;
+//     }
+//   .buy-btn:hover {
+//     background-color:$light-orange;
+//     color:white;
+//   }
+//
+//   .notification-txt {
+//     display: none;
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+//     padding: 20px;
+//     animation: showNav 300ms ease-in-out both;
+//   }
+//   .left-wrapper {
+//     position: relative;
+//     line-height: 1.2;
+//     padding-right: 20px;
+//     text-align: right;
+//     right: 5em;
+//     font-family: proxima-nova-regular, sans-serif;
+//     text-transform: uppercase;
+//     .center-logo {
+//       width: 65%;
+//     }
+//     :after {
+//     content: '';
+//     height: 84%;
+//     width: 1px;
+//     position: absolute;
+//     right: 0;
+//     top: 10%;
+//     background-color: white;
+//     }
+//     .orange {
+//       color:$orange;
+//     }
+//   }
+//   .right-wrapper {
+//     text-align: left;
+//     padding: 1.3em 0.7em;
+//     vertical-align: top;
+//     right: 5%;
+//     font-family: proxima-nova-regular, sans-serif;
+//     text-transform: uppercase;
+//     sup {
+//       font-size: 0.5em;
+//       top: -0.7em;
+//     }
+//   }
+// }
+//
+// .buy-tickets {
+//   padding: 4em 2em 3em;
+//   .buy-tickets__button {
+//     border-radius: 0;
+//     width: 20em;
+//     padding: 1em;
+//     color: #fff;
+//     background-color: #EC471F;
+//     @include font-nova(12pt);
+//   }
+// }
+//
+// .button-group {
+//   .recap {
+//     @include bottom-buttons;
+//     @include font-nova(12pt);
+//   }
+//   .submit-talk {
+//     @include bottom-buttons;
+//     @include font-nova(12pt);
+//   }
+//   .sponsor {
+//     @include bottom-buttons;
+//     @include font-nova(12pt);
+//   }
+// }
+//
+// @keyframes showNav {
+//   from {
+//     opacity: 0;
+//   }
+//   to {
+//     opacity: 1;
+//   }
+// }
+// @media (max-height: 750px) and (max-width: 950px) {
+//     .voffset40 {
+//       padding-top:20px;
+//     }
+//     .ghost-btn {
+//       margin-bottom:15px;
+//     }
+// }
