@@ -1,0 +1,47 @@
+.speakers{
+  background-color: #D3D3D3;
+}
+
+.speaker-head{
+  font-style: normal;
+  font-size: 3em;
+  padding-top: 0.8em;
+  padding-bottom: 1.4em;
+  font-weight: 500;
+  background-color: #D3D3D3;
+}
+
+.speaker-body{
+  padding: 0;
+  margin: 0;
+}
+
+.speaker{
+  background: rgba(211,211,211,0.9);
+  padding:0vh 5vh 5vh 5vh;
+  &-image{
+    position:relative;
+    margin-bottom:4vh;
+    height:50vh;
+    //height:370px;
+    background-size:cover;
+  }
+  &-heading{
+    padding:1vh;
+    font-size:50pt;
+  }
+  &-image1{
+    background-image: url(../images/background.jpg);
+  }
+  &-image2{
+    background-image: url(../images/Gallery-1.jpg);
+  }
+  &-image3{
+    background-image: url(../images/Gallery-3.jpg);
+  }
+}
+
+.speaker-foot{
+  background-color: #D3D3D3;
+  padding-bottom: 3em;
+}

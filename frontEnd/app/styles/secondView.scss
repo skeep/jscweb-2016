@@ -1,5 +1,6 @@
-$light-grey-background:rgb(237,239,236);
 $orange:#ec4715;
+$light-orange:rgb(240,108,68);
+$light-grey-background:rgb(237,239,236);
 .sectionOne {
   background-color:$light-grey-background;
   a{
@@ -40,18 +41,43 @@ $orange:#ec4715;
   color: #ec471f;
 }
   .ticket-bottom {
-    background-color: rgb(112,112,112);
     padding: 10px;
     margin: 0%;
     color:white;
     font-size:17pt;
   }
-  .ticket-bottom:hover {
+  .ticket-bottom-inactive {
+    background-color: rgb(112,112,112);
+  }
+  .ticket-bottom-active {
     background-color:$orange;
-    color:white;
+  }
+  .ticket-bottom-active:hover {
+    background-color:$light-orange;
+  }
+  .ticket-bottom {
+    color: white;
   }
 }
 h1 {
   font-weight:400;
   padding:50px 0px;
+}
+
+@media only screen and (min-width : 320px) and (max-device-width: 480px) {
+  .heading-size {
+   font-size: 30px;
+  }
+  .subheading-size1 {
+    font-size: 25px;
+  }
+  .subheading-size2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width : 480px) and (orientation : portrait) {
+  .heading-size {
+    font-size: 40px;
+  }
 }
