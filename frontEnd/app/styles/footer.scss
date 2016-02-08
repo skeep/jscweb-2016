@@ -1,11 +1,14 @@
 .footer {
-  background-color: rgba(211,211,211,0.9);
+  background-color: rgb(255,255,255);
   padding: 20px 0px 15px 0px;
   &-social {
     display: inline-flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
+  }
+  &-right{
+    padding: 0;
   }
   &-social>li {
     padding-right: 10px;
@@ -20,7 +23,7 @@
     text-align: center;
     padding: 6px 0;
     font-size: 12px;
-    line-height: 1.428571429;
+    line-height: 1.5;
     border-radius: 15px;
     background-color: black;
     margin: 0;
