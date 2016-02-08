@@ -9,8 +9,7 @@
   left:0rem;
   position: absolute;
   background:rgba(236, 71, 31, 0.7);
-  visibility: hidden;
-  padding:0vh 0vh 1vh 1vh;
+  padding:0vh 0vh 10px 2px;
   h3{
     color: #fff
   }
@@ -35,16 +34,20 @@
     font-size:18pt;
   }
 }
-    
+
 
 .gallery{
   background: rgba(211,211,211,0.9);
   padding:0vh 5vh 5vh 5vh;
+  width: 100%;
+  &-container{
+    margin: 0px;
+    padding: 0px;
+  }
   &-image{
     position:relative;
     margin-bottom:4vh;
     height:50vh;
-    //height:370px;
     background-size:cover;
   }
   &-heading{
@@ -66,9 +69,4 @@
   &-image5{
     background-image: url(../images/Gallery-2.jpg);
   }
-  &-image:hover .caption{
-    visibility: visible;
-  }
 }
-
-
