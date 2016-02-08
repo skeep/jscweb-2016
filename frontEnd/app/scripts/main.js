@@ -1,3 +1,3 @@
-/*$(document).ready(function() {
-    $('.body-tag').fullpage();
-});*/
+$(document).ready(function() {
+    // $('.body-tag').fullpage();
+});
