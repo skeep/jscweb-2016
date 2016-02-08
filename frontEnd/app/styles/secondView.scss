@@ -54,3 +54,21 @@ h1 {
   font-weight:400;
   padding:50px 0px;
 }
+
+@media only screen and (min-width : 320px) and (max-device-width: 480px) {
+  .heading-size {
+   font-size: 30px;
+  }
+  .subheading-size1 {
+    font-size: 25px;
+  }
+  .subheading-size2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width : 480px) and (orientation : portrait) {
+  .heading-size {
+    font-size: 40px;
+  }
+}
