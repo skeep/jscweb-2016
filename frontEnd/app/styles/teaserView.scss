@@ -1,66 +1,13 @@
-@mixin bottom-buttons {
-  border-radius: 0;
-  margin: 2em 3em;
-  padding: 1em;
-  width: 15em;
-  background: transparentize(#000, 0.2);
-  color: #fff;
-  border: 1px solid #EC471F;
-}
-
-@mixin font-nova($font-size) {
-  font-size: $font-size;
-  font-family: proxima-nova-regular, sans-serif;
-  text-transform: uppercase;
-}
-
 .body-tag {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
 }
-
-.navigation-bar {
-  display: inline-block;
-  background: transparent;
-  border: none;
-  .left-nav {
-    padding: 0 0 0 10em;
-    .navbar-logo {
-      transform: scale(2,2);
-    }
-  }
-  .nav-items {
-    float: right;
-    .nav-list {
-      li {
-        a {
-          color: #fff;
-          @include font-nova(12pt);
-          font-weight: bold;
-
-        }
-        // :after {
-        //  content: '';
-        //  height: 40%;
-        //  width: 1px;
-        //  position: absolute;
-        //  right: 0;
-        //  background-color: white;
-        // }
-      }
-    }
-  }
-}
-
-.section-center {
-  margin-top: 25vh;
-}
-
 .teaser-container {
   background: rgba(0,0,0,0.6);
   background: url(../images/background.jpg) center no-repeat fixed;
+  background-size: cover;
   color: white;
   height: 100vh;
   padding: 2vh 0 5vh;
@@ -77,6 +24,9 @@
       li > a:hover {
         color:$orange;
       }
+    }
+    .toggle-nav {
+      display: none;
     }
   }
   .buy-btn {
@@ -103,20 +53,14 @@
     line-height: 1.2;
     padding-right: 20px;
     text-align: right;
-    right: 5em;
-    font-family: proxima-nova-regular, sans-serif;
-    text-transform: uppercase;
-    .center-logo {
-      width: 65%;
-    }
-    :after {
-    content: '';
-    height: 84%;
-    width: 1px;
-    position: absolute;
-    right: 0;
-    top: 10%;
-    background-color: white;
+     :after {
+      content: '';
+      height: 80%;
+      width: 1px;
+      position: absolute;
+      right: 0;
+      top: 10%;
+      background-color: white;
     }
     .orange {
       color:$orange;
@@ -124,42 +68,40 @@
   }
   .right-wrapper {
     text-align: left;
-    padding: 1.3em 0.7em;
+    padding: 15px;
     vertical-align: top;
-    right: 5%;
-    font-family: proxima-nova-regular, sans-serif;
-    text-transform: uppercase;
-    sup {
-      font-size: 0.5em;
-      top: -0.7em;
+  }
+  .email-submit:active,
+  .email-submit:hover {
+    background-color: rgba(255, 255, 255, 0.68);
+    color: #562A72;
+    transition: background 0.5s;
+  }
+  .bottom-wrapper {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 15px;
+    .previous-wrapper {
+      text-align: left;
     }
-  }
-}
-
-.buy-tickets {
-  padding: 4em 2em 3em;
-  .buy-tickets__button {
-    border-radius: 0;
-    width: 20em;
-    padding: 1em;
-    color: #fff;
-    background-color: #EC471F;
-    @include font-nova(12pt);
-  }
-}
-
-.button-group {
-  .recap {
-    @include bottom-buttons;
-    @include font-nova(12pt);
-  }
-  .submit-talk {
-    @include bottom-buttons;
-    @include font-nova(12pt);
-  }
-  .sponsor {
-    @include bottom-buttons;
-    @include font-nova(12pt);
+    .social-wrapper {
+      text-align: right;
+      .icon-style {
+        font-size: 2em;
+      }
+      .facebook:hover {
+        color: rgb(59,89,150);
+      }
+      .twitter:hover {
+        color: #08c;
+      }
+      .linkedin:hover {
+        color: rgb(11,123,182);
+      }
+      .youtube:hover {
+        color: rgb(203,50,44);
+      }
+    }
   }
 }
 
@@ -179,3 +121,185 @@
       margin-bottom:15px;
     }
 }
+
+// @mixin bottom-buttons {
+//   border-radius: 0;
+//   margin: 2em 3em;
+//   padding: 1em;
+//   width: 15em;
+//   background: transparentize(#000, 0.2);
+//   color: #fff;
+//   border: 1px solid #EC471F;
+// }
+//
+// @mixin font-nova($font-size) {
+//   font-size: $font-size;
+//   font-family: proxima-nova-regular, sans-serif;
+//   text-transform: uppercase;
+// }
+//
+// .body-tag {
+//   -webkit-transform-style: preserve-3d;
+//   transform-style: preserve-3d;
+//   -webkit-font-smoothing: antialiased;
+//   -webkit-tap-highlight-color: transparent;
+// }
+//
+// .navigation-bar {
+//   display: inline-block;
+//   background: transparent;
+//   border: none;
+//   .left-nav {
+//     padding: 0 0 0 10em;
+//     .navbar-logo {
+//       transform: scale(2,2);
+//     }
+//   }
+//   .nav-items {
+//     float: right;
+//     .nav-list {
+//       li {
+//         a {
+//           color: #fff;
+//           @include font-nova(12pt);
+//           font-weight: bold;
+//
+//         }
+//         // :after {
+//         //  content: '';
+//         //  height: 40%;
+//         //  width: 1px;
+//         //  position: absolute;
+//         //  right: 0;
+//         //  background-color: white;
+//         // }
+//       }
+//     }
+//   }
+// }
+//
+// .section-center {
+//   margin-top: 25vh;
+// }
+//
+// .teaser-container {
+//   background: rgba(0,0,0,0.6);
+//   background: url(../images/background.jpg) center no-repeat fixed;
+//   color: white;
+//   height: 100vh;
+//   padding: 2vh 0 5vh;
+//   position: relative;
+//   .nav-custom {
+//     background-color:transparent;
+//     border-color:transparent;
+//     text-transform: uppercase;
+//     ul {
+//       float:right;
+//       li > a{
+//       color:white;
+//       }
+//       li > a:hover {
+//         color:$orange;
+//       }
+//     }
+//   }
+//   .buy-btn {
+//       background-color:$orange;
+//       padding:10px 0px;
+//       border:1px solid white;
+//       border-radius:0px;
+//     }
+//   .buy-btn:hover {
+//     background-color:$light-orange;
+//     color:white;
+//   }
+//
+//   .notification-txt {
+//     display: none;
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+//     padding: 20px;
+//     animation: showNav 300ms ease-in-out both;
+//   }
+//   .left-wrapper {
+//     position: relative;
+//     line-height: 1.2;
+//     padding-right: 20px;
+//     text-align: right;
+//     right: 5em;
+//     font-family: proxima-nova-regular, sans-serif;
+//     text-transform: uppercase;
+//     .center-logo {
+//       width: 65%;
+//     }
+//     :after {
+//     content: '';
+//     height: 84%;
+//     width: 1px;
+//     position: absolute;
+//     right: 0;
+//     top: 10%;
+//     background-color: white;
+//     }
+//     .orange {
+//       color:$orange;
+//     }
+//   }
+//   .right-wrapper {
+//     text-align: left;
+//     padding: 1.3em 0.7em;
+//     vertical-align: top;
+//     right: 5%;
+//     font-family: proxima-nova-regular, sans-serif;
+//     text-transform: uppercase;
+//     sup {
+//       font-size: 0.5em;
+//       top: -0.7em;
+//     }
+//   }
+// }
+//
+// .buy-tickets {
+//   padding: 4em 2em 3em;
+//   .buy-tickets__button {
+//     border-radius: 0;
+//     width: 20em;
+//     padding: 1em;
+//     color: #fff;
+//     background-color: #EC471F;
+//     @include font-nova(12pt);
+//   }
+// }
+//
+// .button-group {
+//   .recap {
+//     @include bottom-buttons;
+//     @include font-nova(12pt);
+//   }
+//   .submit-talk {
+//     @include bottom-buttons;
+//     @include font-nova(12pt);
+//   }
+//   .sponsor {
+//     @include bottom-buttons;
+//     @include font-nova(12pt);
+//   }
+// }
+//
+// @keyframes showNav {
+//   from {
+//     opacity: 0;
+//   }
+//   to {
+//     opacity: 1;
+//   }
+// }
+// @media (max-height: 750px) and (max-width: 950px) {
+//     .voffset40 {
+//       padding-top:20px;
+//     }
+//     .ghost-btn {
+//       margin-bottom:15px;
+//     }
+// }

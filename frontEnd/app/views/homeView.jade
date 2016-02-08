@@ -31,10 +31,16 @@
 	//- 		button.btn.btn-default.submit-talk submit talk
 	//- 		button.btn.btn-default.sponsor become a sponsor
 	//- =======
-	nav.navbar.navbar-default.nav-custom
+	nav.navbar.navbar-default.menu.nav-custom
 		.container-fluid
-			.collapse.navbar-collapse
-				ul.nav.navbar-nav
+			.navbar-header
+				button.navbar-toggle.collapsed(type="button",data-toggle="collapse",data-target="#navbar",aria-expanded="false", aria-controls="navbar")
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+			#navbar.navbar-collapse.collapse(aria-expanded="false")
+				ul.nav.navbar-nav.navbar-right
 					li
 						a(href='#') #JSChannelConf2016
 					li
