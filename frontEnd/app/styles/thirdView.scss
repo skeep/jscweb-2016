@@ -28,6 +28,10 @@ $orange:#ec4715;
     font-size: 22px;
     background-color:$orange;
   }
+  &-button>a{
+    color:white;
+    text-decoration:none;
+  }
   &-heading{
     font-size:50pt;
   }
