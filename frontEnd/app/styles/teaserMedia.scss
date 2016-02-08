@@ -17,12 +17,12 @@
       }
       .left-wrapper {
         padding-bottom: 10px;
-        :after {
+         :after {
           display: none;
         }
       }
       .right-wrapper {
-        margin: 0px 55px;
+        margin: 0 55px;
         padding-top: 5px;
         border-top: 1px solid white;
       }
@@ -36,7 +36,8 @@
         .icon-style {
           display: inline-block;
         }
-        .social-wrapper, .previous-wrapper {
+        .social-wrapper,
+        .previous-wrapper {
           text-align: center;
           padding: 0;
         }
