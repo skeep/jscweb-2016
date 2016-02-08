@@ -1,5 +1,6 @@
 $orange:#ec4715;
 $light-orange:rgb(240,108,68);
+$navbar-background:#262b39;
 $light-grey-background:rgb(237,239,236);
 .browserupgrade {
   margin: 0.2em 0;
@@ -60,18 +61,10 @@ $light-grey-background:rgb(237,239,236);
   padding: 10px;
 }
 .voffset40 {
-  padding-top:60px;
+  padding-top:80px;
 }
 .white-border {
   border: 1px solid white;
-}
-.ghost-btn {
-  background-color: transparent;
-  border-color:$orange;
-  border-radius:0px;
-}
-.ghost-btn:hover {
-  color:$orange;
 }
 .white {
   color: white;
