@@ -1,1 +1,1 @@
-"use strict";
+"use strict";$(document).ready(function(){function t(){$(document).on("click",'a[href^="#"]',function(t){var e=$(this).attr("href"),n=$(e);if(0!==n.length){t.preventDefault();var c=$(e).offset().top;$("body, html").animate({scrollTop:c},1e3)}})}function e(){$(".teaser-container").backstretch("../images/background.jpg")}t(),e()});
