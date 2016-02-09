@@ -44,6 +44,29 @@
 .link:hover {
   text-decoration: none;
 }
+.icon{
+  &-1:hover{
+    color:#C3391C;
+  }
+  &-2:hover{
+    color:#00ACEE;
+  }
+  &-3:hover{
+    color:#3B5996;
+  }
+  &-4:hover{
+    color:#C3391C;
+  }
+  &-5:hover{
+    color:#0B7BB6;
+  }
+  &-6:hover{
+    color:#CB322C;
+  }
+  &-7:hover{
+    color:#E2006A;
+  }
+}
 
 
 @media only screen and (min-width : 320px) and (max-device-width: 480px) {
