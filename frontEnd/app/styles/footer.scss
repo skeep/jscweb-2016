@@ -67,7 +67,38 @@
     color:#E2006A;
   }
 }
-
+.modal {
+    background-color: #fff;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    z-index: 1050;
+    width: 40vw;
+    margin-left:-20vw;
+    background-color: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 6px;
+    outline: 0;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    background-clip: padding-box;
+    border-radius: 8px 8px 11px 11px;
+    height:65vh;
+}
+.modal-footer {
+    background-color: #efefef;
+    padding:0px;
+}
+.modal-header {
+    padding: 9px 15px;
+    border-bottom: 1px solid #eee;
+}
+.modal-body {
+    position: relative;
+    max-height: 400px;
+    padding: 15px;
+    overflow-y: auto;
+}
 
 @media only screen and (min-width : 320px) and (max-device-width: 480px) {
   .footer-copy {
