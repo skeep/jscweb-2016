@@ -1,26 +1,29 @@
 .venue-image{
   background-image: url(../images/the-ritz-carlton.jpg);
-  background-size: auto;
+  background-size: cover;
   padding: 0%;
+  padding-top: 4em;
+  padding-bottom: 5em;
   margin: 0%;
   color: #fff;
 }
 
 .venue-head{
-  font-size: 40px;
-  font-family: proxima-nova-regular,sans-serif;
-  padding-top: 0.8em;
+  font-size: 50pt;
+  font-family: proxima-nova-regualar,sans-serif;
+  padding-top: 1em;
   margin-top: 0%;
 }
 
 .venue-body{
   font-size:50pt;
-  font-family: proxima-nova-regular,sans-serif;
+  font-family: proxima-nova-bold,sans-serif;
   padding-bottom: 0px;
 }
 
 .venue-foot{
   font-weight: normal;
+  font-size: 32pt;
   font-family: proxima-nova-regular,sans-serif;
   padding-bottom: 1em;
 }
