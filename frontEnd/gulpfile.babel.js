@@ -9,8 +9,9 @@ import {
 var jade = require('gulp-jade');
 var imageop = require('gulp-image-optimization');
 var image = require('gulp-image');
+var Imagemin = require('imagemin');
 const imagemin = require('gulp-imagemin');
-const pngquant = require('imagemin-pngquant');
+const imageminJpegtran = require('imagemin-jpegtran');
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -87,11 +88,12 @@ gulp.task('html', ['jade','styles', 'scripts'], () => {
 });
 gulp.task('images', () => {
 	return gulp.src('app/images/**/*')
-    .pipe(imageop({
-        optimizationLevel: 5,
-        progressive: true,
-        interlaced: true
-    }))
+  .pipe(imagemin({
+    progressive: true,
+    interlaced:true,
+    svgoPlugins: [{removeViewBox: false}],
+    use: [imageminJpegtran({progressive: true})]
+  }))
     .pipe(image({
       pngquant: true,
       optipng: false,
@@ -103,29 +105,8 @@ gulp.task('images', () => {
       gifsicle: true,
       svgo: true
     }))
-    .pipe(imagemin({
-			progressive: true,
-      interlaced:true,
-			svgoPlugins: [{removeViewBox: false}]
-		}))
 		.pipe(gulp.dest('../public/images'));
 });
-//gulp.task('images', () => {
-  //return gulp.src('app/images/**/*')
-    //.pipe($.if($.if.isFile, $.cache($.imagemin({
-      //  progressive: true,
-        //interlaced: true,
-        // don't remove IDs from SVGs, they are often used
-        // as hooks for embedding and styling
-        //svgoPlugins: [{cleanupIDs: false}]
-      //}))
-      //.on('error', function(err) {
-        //console.log(err);
-        //this.end();
-      //})))
-    //.pipe(gulp.dest('../public/images'));
-//});*/
-
 gulp.task('fonts', () => {
   return gulp.src(require('main-bower-files')('**/*.{eot,svg,ttf,woff,woff2}', function(err) {})
       .concat('app/fonts/**/*'))
