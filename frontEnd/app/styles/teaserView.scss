@@ -14,7 +14,6 @@ $light-grey-background:rgb(237,239,236);
   background-size: cover;
   color: white;
   height: 100vh;
-  padding: 2vh 0 5vh;
   position: relative;
   .nav-custom {
     background-color:transparent;
@@ -77,8 +76,7 @@ $light-grey-background:rgb(237,239,236);
       padding:20px 0px;
       border:1px solid white;
       border-radius:0px;
-      width: 45%;
-      left: 70px;
+      width: 60%;
       font-size: 12pt;
     }
   .buy-btn:hover {
@@ -89,8 +87,12 @@ $light-grey-background:rgb(237,239,236);
     background-color: rgba(0,0,0,0.7);
     border-color:$orange;
     border-radius:0px;
-    right: 5%;
+    //right: 5%;
+    width: 100%;
     padding: 15px 10px;
+    .play-btn {
+      padding-left: 10px;
+    }
   }
   .ghost-btn:hover {
     background-color: $orange;

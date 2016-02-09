@@ -23,7 +23,7 @@ $light-grey-background:rgb(237,239,236);
     color:rgb(121,121,121)
   }
   border: 1px solid #ec471f;
-  margin: 15px;
+  margin-bottom: 20px;
   color: #3a3a3a;
   .price-size{
     font-size: 25pt;
@@ -39,6 +39,9 @@ $light-grey-background:rgb(237,239,236);
   .ticket-no {
     font-size: 15pt;
     padding: 0px 0px 20px 0px;
+    .no-text {
+      padding-left: 5px;
+    }
   }
   .text-red {
   color: #ec471f;
