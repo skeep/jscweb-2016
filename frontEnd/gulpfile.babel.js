@@ -50,7 +50,7 @@ gulp.task('scripts', () => {
 gulp.task('jade', function() {
   return gulp.src('app/index.jade')
     .pipe(jade({pretty: true}))
-    .pipe(gulp.dest('.tmp/'));
+    .pipe(gulp.dest('app/'));
 });
 
 function lint(files, options) {
@@ -133,7 +133,7 @@ gulp.task('serve', ['jade', 'styles', 'scripts', 'fonts'], () => {
     notify: false,
     port: 9000,
     server: {
-      baseDir: ['.tmp', 'app'],
+      baseDir: ['app','.tmp'],
       routes: {
         '/bower_components': 'bower_components'
       }
