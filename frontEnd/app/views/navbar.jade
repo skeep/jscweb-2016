@@ -1,0 +1,23 @@
+nav.navbar.menu.nav-custom
+	.container-fluid
+		.navbar-header
+			button.navbar-toggle.collapsed(type="button",data-toggle="collapse",data-target="#navbar",aria-expanded="false", aria-controls="navbar")
+				span.sr-only Toggle navigation
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+			a(href="#"): img.navbar-brand.navbar-logo.pull-left(src='../images/logo.png')
+		#navbar.navbar-collapse.collapse.navbar-menu(aria-expanded="false")
+			ul.nav.navbar-nav.navbar-right
+				li
+					a.hidden-md.hidden-sm.hidden-lg.text-right(href='#',data-toggle="collapse",data-target="#navbar",aria-expanded="false", aria-controls="navbar") Menu
+				li
+					a(href='#',data-anchor="home", data-toggle="collapse", data-target="#navbar") #JSChannelConf2016
+				li
+					a(href='#tickets', data-toggle="collapse",data-anchor="ticketView", data-target="#navbar") Tickets
+				//- li
+				//- 	a(href='#speakers', data-toggle="collapse",data-anchor="slide1", data-target="#navbar") Speakers
+				li
+					a(href='#gallery', data-toggle="collapse",data-anchor="galleryView", data-target="#navbar") Gallery
+				li
+					a(href='#about', data-toggle="collapse",data-anchor="aboutView", data-target="#navbar") About JSChannel
