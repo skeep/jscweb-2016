@@ -6,7 +6,8 @@
     "modernizr": "~2.8.1",
     "jquery": "~2.2.0",
     "fullpage.js": "~2.7.7",
-    "font-awesome": "~4.5.0"
+    "font-awesome": "~4.5.0",
+    "jquery-backstretch": "~2.0.4"
   },
   "overrides": {
     "bootstrap-sass": {
