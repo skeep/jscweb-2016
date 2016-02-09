@@ -50,7 +50,7 @@ gulp.task('scripts', () => {
 gulp.task('jade', function() {
   return gulp.src('app/index.jade')
     .pipe(jade({pretty: true}))
-    .pipe(gulp.dest('app/'));
+    .pipe(gulp.dest('.tmp/'));
 });
 
 function lint(files, options) {
