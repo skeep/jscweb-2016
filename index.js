@@ -8,7 +8,11 @@ var express = require('express');
 var compress = require('compression');
 
 var app = express();
-app.use(compress());
+app.use(compress({
+  filter: function (req, res) {
+    return true;
+  }})
+);
 
 app.use('/',express.static('public'));
 app.use('/admin',express.static('adminUI'));
