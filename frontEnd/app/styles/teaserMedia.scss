@@ -12,14 +12,20 @@
         margin-left: 40px;
       }
 
+      .navbar-toggle {
+        border: none;
+        .icon-bar {
+          background-color: white;
+        }
+      }
+
       .navbar-menu {
-        height: 100vh;
-        background-color: rgba(0,0,0,0.9);
+        height: 102vh;
+        background-color: rgba(0,0,0,0.95);
         margin-left: 50px;
         position: absolute;
         z-index: 1;
         right: 0;
-        margin: 0;
         width: 80vw;
         top: -15px;
         ul {
@@ -27,8 +33,14 @@
           padding: 0;
           margin: 0;
           li {
-            border-bottom: 1px solid white;
-            padding: 1em 0;
+            border-bottom: 1px solid #555;
+            padding: 1.5em 0;
+            a {
+              font-weight: 200;
+              .glyphicon-chevron-right {
+                color: #CCC;
+              }
+            }
           }
         }
       }
