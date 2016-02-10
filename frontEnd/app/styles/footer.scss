@@ -1,0 +1,127 @@
+.footer {
+  background-color: rgb(255,255,255);
+  padding: 20px 0px 15px 0px;
+  &-social {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  &-right{
+    padding: 0;
+  }
+  &-social>li {
+    padding-right: 10px;
+  }
+  &-copy {
+    text-align: center;
+    vertical-align: middle;
+  }
+  &-link {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 15px;
+    background-color: black;
+    margin: 0;
+  }
+  &-right>li {
+    padding-right: 10px;
+  }
+}
+
+
+.footer-connect>a:hover{
+  text-decoration:none;
+}
+.link {
+  color: white;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: none;
+}
+.icon{
+  &-1:hover{
+    color:#C3391C;
+  }
+  &-2:hover{
+    color:#00ACEE;
+  }
+  &-3:hover{
+    color:#3B5996;
+  }
+  &-4:hover{
+    color:#C3391C;
+  }
+  &-5:hover{
+    color:#0B7BB6;
+  }
+  &-6:hover{
+    color:#CB322C;
+  }
+  &-7:hover{
+    color:#E2006A;
+  }
+}
+.modal {
+    background-color: #fff;
+    margin: 15vh auto;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    outline: 0;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    background-clip: padding-box;
+    border-radius: 10px;
+}
+.modal-footer {
+    background-color: #efefef;
+    padding:0px;
+}
+.modal-header {
+    padding: 9px 15px;
+    border-bottom: 1px solid #eee;
+}
+.modal-body {
+    max-height: 400px;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch; //for smooth scrolling is ios touch devices
+}
+
+@media only screen and (min-width : 320px) and (max-device-width: 480px) {
+  .footer-copy {
+    padding-bottom: 10px;
+  }
+  .footer-right {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    margin-top:10px;
+  }
+  .footer-right>li {
+    padding-right: 5px;
+  }
+  .footer-social>li {
+    padding-right: 5px;
+  }
+  .modal{
+      width: 80vw;
+    }
+}
+@media only screen and (min-width : 480px){
+  .footer-right {
+    display: inline-flex;
+    list-style-type: none;
+  }
+  .modal{
+      width: 80vw;
+    }
+}
+@media only screen and (min-width : 769px) {
+  .modal{
+      width: 50vw;
+    }
+}
