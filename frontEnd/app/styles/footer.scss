@@ -73,8 +73,6 @@
     top: 10%;
     left: 50%;
     z-index: 1050;
-    width: 40vw;
-    margin-left:-20vw;
     background-color: #fff;
     border: 1px solid #999;
     border: 1px solid rgba(0,0,0,0.3);
@@ -97,7 +95,7 @@
     position: relative;
     max-height: 400px;
     padding: 15px;
-    overflow-y: auto;
+    overflow-y: visible;
 }
 
 @media only screen and (min-width : 320px) and (max-device-width: 480px) {
@@ -116,10 +114,24 @@
   .footer-social>li {
     padding-right: 5px;
   }
+  .modal{
+    width:80vw;
+    margin-left:-40vw;
+  }
 }
 @media only screen and (min-width : 480px) {
   .footer-right {
     display: inline-flex;
     list-style-type: none;
+  }
+  .modal{
+    width: 40vw;
+    margin-left:-20vw;
+  }
+}
+@media only screen and (min-width : 768px) {
+  .modal{
+    width: 70vw;
+    margin-left:-35vw;
   }
 }
