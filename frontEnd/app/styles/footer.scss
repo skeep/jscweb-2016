@@ -68,20 +68,30 @@
   }
 }
 .modal {
+    //background-color: #fff;
+    //position: fixed;
+    //top: 10%;
+    //left: 50%;
+    //z-index: 1050;
+    //background-color: #fff;
+    //border: 1px solid #999;
+    //border: 1px solid rgba(0,0,0,0.3);
+    //border-radius: 6px;
+    //outline: 0;
+    //box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    //background-clip: padding-box;
+    //border-radius: 8px 8px 11px 11px;
+    //height:65vh;
+
     background-color: #fff;
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    z-index: 1050;
-    background-color: #fff;
+    width: 80vw;
+    margin: 15vh auto;
     border: 1px solid #999;
-    border: 1px solid rgba(0,0,0,0.3);
-    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     outline: 0;
-    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
     background-clip: padding-box;
-    border-radius: 8px 8px 11px 11px;
-    height:65vh;
+    border-radius: 10px;
 }
 .modal-footer {
     background-color: #efefef;
@@ -92,10 +102,11 @@
     border-bottom: 1px solid #eee;
 }
 .modal-body {
-    position: relative;
+    //position: relative;
     max-height: 400px;
-    padding: 15px;
-    overflow-y: visible;
+    //padding: 15px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch; //for smooth scrolling is ios touch devices
 }
 
 @media only screen and (min-width : 320px) and (max-device-width: 480px) {
@@ -114,24 +125,24 @@
   .footer-social>li {
     padding-right: 5px;
   }
-  .modal{
-    width:80vw;
-    margin-left:-40vw;
-  }
+  //.modal{
+  //  width:80vw;
+  //  margin-left:-40vw;
+  //}
 }
 @media only screen and (min-width : 480px) {
   .footer-right {
     display: inline-flex;
     list-style-type: none;
   }
-  .modal{
-    width: 40vw;
-    margin-left:-20vw;
-  }
+  //.modal{
+  //  width: 40vw;
+  //  margin-left:-20vw;
+  //}
 }
 @media only screen and (min-width : 768px) {
-  .modal{
-    width: 70vw;
-    margin-left:-35vw;
-  }
+  //.modal{
+  //  width: 70vw;
+  //  margin-left:-35vw;
+  //}
 }
