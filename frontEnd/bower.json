@@ -5,14 +5,53 @@
     "bootstrap-sass": "3.3.4",
     "modernizr": "~2.8.1",
     "jquery": "~2.2.0",
-    "fullpage.js": "~2.7.7",
     "font-awesome": "~4.5.0",
     "jquery-backstretch": "~2.0.4"
   },
   "overrides": {
     "bootstrap-sass": {
       "main": [
-        "assets/stylesheets/_bootstrap.scss",
+        "assets/stylesheets/bootstrap/_variables.scss",
+
+        "assets/stylesheets/bootstrap/mixins/_clearfix.scss",
+        "assets/stylesheets/bootstrap/mixins/_grid-framework.scss",
+        "assets/stylesheets/bootstrap/mixins/_center-block.scss",
+        "assets/stylesheets/bootstrap/mixins/_nav-vertical-align.scss",
+        "assets/stylesheets/bootstrap/mixins/_grid.scss",
+        "assets/stylesheets/bootstrap/mixins/_vendor-prefixes.scss",
+        "assets/stylesheets/bootstrap/mixins/_tab-focus.scss",
+        "assets/stylesheets/bootstrap/mixins/_forms.scss",
+        "assets/stylesheets/bootstrap/mixins/_border-radius.scss",
+        "assets/stylesheets/bootstrap/mixins/_buttons.scss",
+        "assets/stylesheets/bootstrap/mixins/_image.scss",
+        "assets/stylesheets/bootstrap/mixins/_opacity.scss",
+        "assets/stylesheets/bootstrap/mixins/_nav-divider.scss",
+        "assets/stylesheets/bootstrap/mixins/_nav-vertical-align.scss",
+        "assets/stylesheets/bootstrap/mixins/_text-emphasis.scss",
+        "assets/stylesheets/bootstrap/mixins/_text-overflow.scss",
+        "assets/stylesheets/bootstrap/mixins/_hide-text.scss",
+        "assets/stylesheets/bootstrap/mixins/_background-variant.scss",
+        "assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss",
+
+
+        "assets/stylesheets/bootstrap/_forms.scss",
+        "assets/stylesheets/bootstrap/_normalize.scss",
+        "assets/stylesheets/bootstrap/_grid.scss",
+        "assets/stylesheets/bootstrap/_navbar.scss",
+        "assets/stylesheets/bootstrap/_type.scss",
+        "assets/stylesheets/bootstrap/_navs.scss",
+        "assets/stylesheets/bootstrap/_utilities.scss",
+        "assets/stylesheets/bootstrap/_grid-framework.scss",
+        "assets/stylesheets/bootstrap/_clearfix.scss",
+        "assets/stylesheets/bootstrap/_center-block.scss",
+        "assets/stylesheets/bootstrap/_scaffolding.scss",
+        "assets/stylesheets/bootstrap/_responsive-embed.scss",
+        "assets/stylesheets/bootstrap/_responsive-utilities.scss",
+        "assets/stylesheets/bootstrap/_nav-vertical-align.scss",
+        "assets/stylesheets/bootstrap/_modals.scss",
+        "assets/stylesheets/bootstrap/_buttons.scss",
+
+
         "assets/fonts/bootstrap/*",
         "assets/javascripts/bootstrap.js"
       ]
