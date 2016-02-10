@@ -71,9 +71,6 @@ h1 {
 }
 .jsinfo{
 padding:0px;
-&-image{
-  width:100%;
-}
 }
 
 @media only screen and (min-width : 320px) and (max-device-width: 480px) {
@@ -92,4 +89,13 @@ padding:0px;
   .heading-size {
     font-size: 40px;
   }
+  .jsinfo-image{
+  width:100%;
+}
+}
+
+@media only screen and (min-width : 480px) and (orientation : landscape) {
+  .jsinfo-image{
+  height:100%;
+}
 }
