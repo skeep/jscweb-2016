@@ -26,3 +26,20 @@ $(document).ready(function() {
   smoothScollerInit();
   initBackgroundImages();
 });
+
+
+
+function initMap() {
+   var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 12.9679078,lng: 77.6014855},
+    zoom: 15,
+    zoomControl: true,
+    scaleControl: false,
+    scrollwheel: false,
+    disableDoubleClickZoom: true
+  });
+  var marker = new google.maps.Marker({
+    position: {lat: 12.9679078,lng: 77.6014855},
+    map: map
+  });
+}
