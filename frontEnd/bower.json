@@ -33,7 +33,6 @@
         "assets/stylesheets/bootstrap/mixins/_background-variant.scss",
         "assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss",
 
-
         "assets/stylesheets/bootstrap/_forms.scss",
         "assets/stylesheets/bootstrap/_normalize.scss",
         "assets/stylesheets/bootstrap/_grid.scss",
@@ -50,6 +49,8 @@
         "assets/stylesheets/bootstrap/_nav-vertical-align.scss",
         "assets/stylesheets/bootstrap/_modals.scss",
         "assets/stylesheets/bootstrap/_buttons.scss",
+        "assets/stylesheets/bootstrap/_component-animations.scss",
+        "assets/stylesheets/bootstrap/_close.scss",
 
 
         "assets/fonts/bootstrap/*",
