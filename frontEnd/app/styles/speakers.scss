@@ -1,5 +1,6 @@
 .speakers{
   background-color: white;
+  padding:0px;
 }
 
 .speaker-head{
@@ -22,24 +23,22 @@
     position:relative;
     margin-bottom:4vh;
     height:50vh;
-    //height:370px;
-    background-size:cover;
+    background-size:100% 100%;
   }
   &-image:hover .caption {
     visibility: visible;
   }
   &-heading{
-    padding:1vh;
     font-size:50pt;
   }
   &-image1{
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/speaker-1.jpeg);
   }
   &-image2{
-    background-image: url(../images/Gallery-1.jpg);
+    background-image: url(../images/speaker-2.jpeg);
   }
   &-image3{
-    background-image: url(../images/Gallery-3.jpg);
+    background-image: url(../images/speaker-3.jpg);
   }
 }
 
