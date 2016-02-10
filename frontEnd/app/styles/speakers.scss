@@ -1,5 +1,5 @@
 .speakers{
-  background-color: #D3D3D3;
+  background-color: white;
 }
 
 .speaker-head{
@@ -8,7 +8,6 @@
   padding-top: 0.8em;
   padding-bottom: 1.4em;
   font-weight: 500;
-  background-color: #D3D3D3;
 }
 
 .speaker-body{
@@ -26,6 +25,9 @@
     //height:370px;
     background-size:cover;
   }
+  &-image:hover .caption {
+    visibility: visible;
+  }
   &-heading{
     padding:1vh;
     font-size:50pt;
@@ -40,6 +42,8 @@
     background-image: url(../images/Gallery-3.jpg);
   }
 }
+
+
 
 .speaker-foot{
   background-color: #D3D3D3;

@@ -13,8 +13,9 @@ $light-grey-background:rgb(237,239,236);
   background:rgba(236,71,21,0.7);
   padding:0px 0px 10px 10px;
   visibility: hidden;
-  h3{
-    color: #fff
+  color: #fff;
+  p {
+    font-size: 1.2em;
   }
 }
 
@@ -47,11 +48,11 @@ $light-grey-background:rgb(237,239,236);
 
 
 .gallery{
-  background: $light-grey-background;
   padding:0vh 5vh 5vh 5vh;
   width: 100%;
   &-container{
     margin: 0px;
+    background: $light-grey-background;
     padding: 0px;
   }
   &-image{
