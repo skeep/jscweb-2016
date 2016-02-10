@@ -17,15 +17,17 @@ head
 	// endbuild
 
 body.body-tag
-	// build:js scripts/vendor/modernizr.js
-	// endbuild
-	//if lt IE 10
-		p.browserupgrade
-			| You are using an
-			strong outdated
-			|  browser. Please
-			a(href='http://browsehappy.com/') upgrade your browser
-			|  to improve your experience.
+	.body-container
+		// build:js scripts/vendor/modernizr.js
+		// endbuild
+		//if lt IE 10
+			p.browserupgrade
+				| You are using an
+				strong outdated
+				|  browser. Please
+				a(href='http://browsehappy.com/') upgrade your browser
+				|  to improve your experience.
+
 
 	include views/navbar.jade
 	include views/homeView.jade

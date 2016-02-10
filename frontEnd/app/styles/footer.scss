@@ -69,21 +69,13 @@
 }
 .modal {
     background-color: #fff;
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    z-index: 1050;
-    width: 40vw;
-    margin-left:-20vw;
-    background-color: #fff;
+    margin: 15vh auto;
     border: 1px solid #999;
-    border: 1px solid rgba(0,0,0,0.3);
-    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     outline: 0;
-    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
     background-clip: padding-box;
-    border-radius: 8px 8px 11px 11px;
-    height:65vh;
+    border-radius: 10px;
 }
 .modal-footer {
     background-color: #efefef;
@@ -94,10 +86,9 @@
     border-bottom: 1px solid #eee;
 }
 .modal-body {
-    position: relative;
     max-height: 400px;
-    padding: 15px;
-    overflow-y: auto;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch; //for smooth scrolling is ios touch devices
 }
 
 @media only screen and (min-width : 320px) and (max-device-width: 480px) {
@@ -116,10 +107,21 @@
   .footer-social>li {
     padding-right: 5px;
   }
+  .modal{
+      width: 80vw;
+    }
 }
-@media only screen and (min-width : 480px) {
+@media only screen and (min-width : 480px){
   .footer-right {
     display: inline-flex;
     list-style-type: none;
   }
+  .modal{
+      width: 80vw;
+    }
+}
+@media only screen and (min-width : 769px) {
+  .modal{
+      width: 50vw;
+    }
 }
