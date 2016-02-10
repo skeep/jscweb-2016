@@ -7,11 +7,15 @@
   bottom: 0rem;
   left:0rem;
   position: absolute;
-  background:rgba(236,71,21,0.7);
-  padding:0px 0px 10px 10px;
+  background:rgba(236,71,21,0.8);
+  padding:5px 0px 5px 10px;
   color: #fff;
   p {
     font-size: 1em;
+    margin-bottom:0;
+  }
+  h3{
+    margin:0;
   }
 }
 

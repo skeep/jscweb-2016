@@ -25,6 +25,9 @@ $light-grey-background: rgb(237,239,236);
         transition: all 0.2s;
       }
       li > a:hover, li > a:focus  {
+        .glyphicon-chevron-right {
+          color: $orange;
+        }
         color: $orange;
         background: initial;
       }

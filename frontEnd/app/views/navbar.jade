@@ -1,4 +1,4 @@
-nav.navbar.menu.nav-custom.navbar-default
+nav.navbar.menu.nav-custom
 	.container-fluid
 		.container
 			.navbar-header
@@ -11,11 +11,10 @@ nav.navbar.menu.nav-custom.navbar-default
 			#navbar.navbar-collapse.collapse.navbar-menu(aria-expanded="false")
 				ul.nav.navbar-nav.navbar-right
 					li
-						a.hidden-md.hidden-sm.hidden-lg.text-right(href='#',data-toggle="collapse",data-target="#navbar",aria-expanded="false", aria-controls="navbar") Menu
+						a.hidden-md.hidden-sm.hidden-lg.text-right(href='#',data-toggle="collapse",data-target="#navbar",aria-expanded="false", aria-controls="navbar") Menu 
+							span.glyphicon.glyphicon-chevron-right
 					li
-						a(href='#',data-anchor="home", data-toggle="collapse", data-target="#navbar") #JSChannelConf2016
-					li
-						a(href='#about', data-toggle="collapse",data-anchor="aboutView", data-target="#navbar") About
+						a(href='#about',data-anchor="home", data-toggle="collapse", data-target="#navbar") #JSChannelConf2016
 					li
 						a(href='#tickets', data-toggle="collapse",data-anchor="ticketView", data-target="#navbar") Tickets
 					li
