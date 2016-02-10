@@ -62,12 +62,12 @@
   }
 }
 
-
-
 .speaker-foot{
   background-color: #D3D3D3;
   padding-bottom: 3em;
 }
-.speaker-link, .speaker-link:hover {
+.speaker-link>a {
     color: white;
+    text-decoration:none;
   }
+  
