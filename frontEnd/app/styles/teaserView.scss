@@ -11,18 +11,12 @@ $light-grey-background: rgb(237,239,236);
     background-color: transparent;
     border-color: transparent;
     text-transform: uppercase;
-    position: fixed;
-    z-index: 999999;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.77);
-    .navbar-logo {
-      transform: scale(2,2);
-      margin-left: 100px;
-    }
-    .icon-bar {
-      background-color: white;
-      width: 25px;
-    }
+    // position: fixed;
+    z-index: 1;
+    // width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    margin-bottom: -50px;
     ul {
       float: right;
       li > a {
