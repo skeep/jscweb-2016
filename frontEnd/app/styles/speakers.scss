@@ -39,7 +39,8 @@
     position:relative;
     margin-bottom:4vh;
     height:50vh;
-    background-size:100% 100%;
+    background-size:cover;
+    background-position:center;
   }
   &-image:hover .caption-1 {
     visibility: visible;
@@ -48,13 +49,16 @@
     font-size:50pt;
   }
   &-image1{
-    background-image: url(../images/speaker-1.jpeg);
+    background-image: url(../images/speaker-1.jpg);
   }
   &-image2{
-    background-image: url(../images/speaker-2.jpeg);
+    background-image: url(../images/speaker-2.jpg);
   }
   &-image3{
     background-image: url(../images/speaker-3.jpg);
+  }
+  &-image4{
+    background-image: url(../images/speaker-4.jpg);
   }
 }
 
