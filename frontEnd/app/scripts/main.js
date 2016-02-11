@@ -13,7 +13,7 @@ $(document).ready(function() {
 
       // top position relative to the document
       var pos = $(id).offset().top;
-
+      pos-=50;
       // animated top scrolling
       $('body, html').animate({
         scrollTop: pos

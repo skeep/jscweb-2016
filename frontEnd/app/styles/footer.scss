@@ -67,7 +67,7 @@
     color:#E2006A;
   }
 }
-.modal {
+.modal-open .modal {
     background-color: #fff;
     margin: 15vh auto;
     border: 1px solid #999;
@@ -76,6 +76,7 @@
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
     background-clip: padding-box;
     border-radius: 10px;
+    overflow-y: hidden;
 }
 .modal-footer {
     background-color: #efefef;
@@ -86,8 +87,8 @@
     border-bottom: 1px solid #eee;
 }
 .modal-body {
-    max-height: 400px;
-    overflow-y: visible;
+    max-height: 58vh;
+    overflow-y: scroll;
     -webkit-overflow-scrolling: touch; //for smooth scrolling is ios touch devices
 }
 
