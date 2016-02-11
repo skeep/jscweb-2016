@@ -4,7 +4,7 @@ $(document).ready(function() {
     $(document).on('click', 'a[href^="#"]', function(e) {
       // target element id
       var id = $(this).attr('href');
-      console.log(id);
+      
       var $id = $(id);
       if ($id.length === 0) {
         return;
