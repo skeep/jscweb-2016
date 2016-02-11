@@ -30,13 +30,19 @@ $(document).ready(function() {
 
 
 function initMap() {
-   var map = new google.maps.Map(document.getElementById('map'), {
+    var drag = true;
+    var width_screen = window.screen.width;
+    if(width_screen <= 768){
+      drag = false;
+    }
+    var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 12.9679078,lng: 77.6014855},
     zoom: 15,
     zoomControl: true,
     scaleControl: false,
     scrollwheel: false,
-    disableDoubleClickZoom: true
+    disableDoubleClickZoom: true,
+    draggable: drag
   });
   var marker = new google.maps.Marker({
     position: {lat: 12.9679078,lng: 77.6014855},
