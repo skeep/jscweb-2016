@@ -74,3 +74,14 @@
 .speaker-link, .speaker-link:hover {
     color: white;
   }
+
+  @media only screen and (min-width : 320px) and (max-device-width: 480px) {
+    .caption-1{
+      p{
+        font-size:2.5vw;
+      }
+      h3{
+        font-size:5vw;
+      }
+    }
+  }
