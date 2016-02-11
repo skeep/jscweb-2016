@@ -1,36 +1,11 @@
 section.section
-	// .container-fluid
-	//   .sponser
-	//     .row
-	//       .col-md-12.col-sm-12.col-xs-12
-	//         .sponser-heading.center SPONSERS
-	//         .sponser-subheading.center Sponsers play a major role in the success of an event.
-	//     .row
-	//       .col-xs-12.col-sm-8.col-md-4
-	//         .sponser-image-heading
-	//           h3 Gold
-	//         .sponser-logo
-	//           img(src='images.jpeg')
-	//       .col-xs-12.col-sm-8.col-md-4
-	//         .sponser-image-heading
-	//           h3 Silver
-	//         .sponser-logo
-	//           img(src='images.jpeg')
-	//       .col-xs-12.col-sm-8.col-md-4
-	//         .sponser-image-heading
-	//           h3 Bronze
-	//         .sponser-logo
-	//           img(src='images.jpeg')
-	//     .row
-	//       .col-md-12.col-xs-12.col-sm-12.center
-	//         button.sponser-button  BECOME A SPONSER
 	.container-fluid.gallery-container#gallery
-		.container.gallery-section
+		.container.gallery-section(data-toggle="collapse",data-target="#navbar")
 			.gallery
-				.row
+				.row.row-fix
 					.col-md-12.col-xs-12.col-sm-12
 						h1.text-center.f40 GALLERY
-				.row
+				.row.row-fix
 					.col-xs-12.col-md-8.col-sm-12
 						.gallery-image1.gallery-image
 							.caption
@@ -39,10 +14,7 @@ section.section
 						.gallery-image2.gallery-image
 							.caption
 								h3 JS Channel 2014
-				.row
-					.col-md-12.col-xs-12.col-sm-12
-						.space
-				.row
+				.row.row-fix
 					.col-xs-12.col-sm-12.col-md-4
 						.gallery-image3.gallery-image
 							.caption
@@ -55,7 +27,7 @@ section.section
 						.gallery-image5.gallery-image
 							.caption
 								h3 JS Channel 2015
-				.row
+				.row.row-fix
 					.col-md-12.col-xs-12.col-sm-12.center
 						span.sponser-button  
 							a(href='https://www.flickr.com/photos/100543192@N08/albums/72157656673572946', target='_blank')  Click For More
