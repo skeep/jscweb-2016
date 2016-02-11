@@ -1,0 +1,90 @@
+$orange:#ec4715;
+$light-grey-background:rgb(237,239,236);
+.center{
+  text-align: center;
+}
+
+
+.caption {
+  width:100%;
+  bottom: 0rem;
+  left:0rem;
+  position: absolute;
+  background:rgba(236,71,21,0.7);
+  padding:0px 0px 10px 10px;
+  visibility: hidden;
+  color: #fff;
+  p {
+    font-size: 1em;
+  }
+}
+
+
+
+.sponser{
+  padding:5vh;
+  &-button{
+    border: none;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    background-color:$orange;
+  }
+  &-button>a{
+    color:white;
+    text-decoration:none;
+  }
+  &-button:hover{
+    background-color:rgb(240,108,68);
+  }
+  &-heading{
+    font-size:50pt;
+  }
+  &-subheading{
+    font-size:18pt;
+  }
+}
+
+.gallery-section {
+  padding: 0;
+}
+
+.gallery{
+  width: 100%;
+  padding-bottom: 30px;
+  &-container{
+    margin: 0px;
+    background: $light-grey-background;
+    padding: 0px;
+  }
+  &-image{
+    position:relative;
+    margin-bottom:4vh;
+    height:50vh;
+    background-size:cover;
+  }
+  &-heading{
+    padding:1vh;
+    font-size:50pt;
+  }
+  &-image1{
+    background-image: url(../images/Gallery-1.jpg);
+  }
+  &-image2{
+    background-image: url(../images/Gallery-2.jpg);
+  }
+  &-image3{
+    background-image: url(../images/Gallery-3.jpg);
+  }
+  &-image4{
+    background-image: url(../images/Gallery-4.jpg);
+  }
+  &-image5{
+    background-image: url(../images/Gallery-5.jpg);
+  }
+  &-image:hover .caption{
+    visibility: visible;
+  }
+}

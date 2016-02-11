@@ -1,0 +1,80 @@
+$orange:#ec4715;
+$light-orange:rgb(240,108,68);
+$navbar-background:#262b39;
+$light-grey-background:rgb(237,239,236);
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+.body-tag {
+  font-family:proxima-nova-Regular,sans-serif;
+}
+.height {
+  height:85vh;
+}
+//reset input
+a:hover, a:focus, a:active {
+  color: inherit;
+}
+.input {
+  border: none;
+  outline: none;
+  background: white;
+  color: black;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.bold {
+  font-weight: 800;
+}
+.semibold {
+  font-weight: 500;
+}
+.f65 {
+  font-size: 65px;
+}
+.f30 {
+  font-size: 30px;
+}
+.f40 {
+  font-size:40px;
+}
+.no-float {
+  float: none;
+}
+.f14 {
+  font-size: 14px;
+}
+.display-inline {
+  display: inline-block;
+}
+.nopadding {
+  padding: 0;
+}
+.padding10 {
+  padding: 10px;
+}
+.voffset40 {
+  padding-top:80px;
+}
+.white-border {
+  border: 1px solid white;
+}
+.white {
+  color: white;
+}
+.italics {
+  font-style: italic;
+}
+.btn {
+  transition: all 0.2s;
+}

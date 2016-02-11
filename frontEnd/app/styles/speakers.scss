@@ -1,0 +1,76 @@
+.speakers{
+  background-color: white;
+  padding:0px;
+  .speaker-container {
+    padding: 0;
+  }
+}
+.caption-1 {
+  width:100%;
+  bottom: 0rem;
+  left:0rem;
+  position: absolute;
+  background:rgba(236,71,21,0.8);
+  padding:5px 0px 5px 10px;
+  color: #fff;
+  p {
+    font-size: 0.9em;
+    margin-bottom:0;
+  }
+  h3{
+    margin:0;
+  }
+}
+
+.speaker-head{
+  font-style: normal;
+  font-size: 3em;
+  padding-top: 0.8em;
+  padding-bottom: 1.4em;
+  font-weight: 500;
+}
+
+.speaker-body{
+  padding: 0;
+  margin: 0;
+}
+
+.speaker{
+  background: rgba(211,211,211,0.9);
+  padding:0vh 5vh 5vh 5vh;
+  &-image{
+    position:relative;
+    margin-bottom:4vh;
+    height:50vh;
+    background-size:cover;
+    background-position:center;
+  }
+  &-image:hover .caption-1 {
+    visibility: visible;
+  }
+  &-heading{
+    font-size:50pt;
+  }
+  &-image1{
+    background-image: url(../images/speaker-1.jpg);
+  }
+  &-image2{
+    background-image: url(../images/speaker-2.jpg);
+  }
+  &-image3{
+    background-image: url(../images/speaker-3.jpg);
+  }
+  &-image4{
+    background-image: url(../images/speaker-4.jpg);
+  }
+}
+
+
+
+.speaker-foot{
+  background-color: #D3D3D3;
+  padding-bottom: 3em;
+}
+.speaker-link, .speaker-link:hover {
+    color: white;
+  }
