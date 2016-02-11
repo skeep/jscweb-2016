@@ -4,7 +4,7 @@ $(document).ready(function() {
     $(document).on('click', 'a[href^="#"]', function(e) {
       // target element id
       var id = $(this).attr('href');
-
+      console.log(id);
       var $id = $(id);
       if ($id.length === 0) {
         return;
@@ -25,6 +25,14 @@ $(document).ready(function() {
   }
   smoothScollerInit();
   initBackgroundImages();
+
+  $('#homeView,#about,#tickets,#venue,#speakers,#gallery').click(function() {
+    $('.navbar-toggle').attr('aria-expanded', false);
+    $('.navbar-toggle').addClass('collapsed');
+    $('.navbar-collapse').attr('aria-expanded', false);
+    $('.navbar-collapse').addClass('collapse');
+    $('.navbar-collapse').removeClass('in');
+  });
 });
 
 
