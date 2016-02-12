@@ -39,14 +39,16 @@ $light-grey-background: rgb(237,239,236);
   }
 }
 .backstretch {
-  background-color: black;
+  background: black url('/images/background_mini.png') no-repeat;
+  background-size: cover;
 }
 .teaser-container {
-  background: rgb(0, 0, 0);
+  background:black url('/images/background_mini.png') no-repeat;
+  background-size: cover;
   padding-top: 70px;
   color: white;
   height: 100vh;
-
+  transition: background 0.2s;
   //position: relative;
   .left-wrapper {
     position: relative;
