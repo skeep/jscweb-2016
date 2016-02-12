@@ -1,0 +1,137 @@
+$orange: #ec4715;
+$light-orange: rgb(240,108,68);
+$light-grey-background: rgb(237,239,236);
+.body-tag {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  //padding-top: 70px;
+  .nav-custom {
+    background-color: transparent;
+    border-color: transparent;
+    text-transform: uppercase;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.85);
+    margin: 0;
+    margin-bottom: -50px;
+    border-radius: 0;
+    ul {
+      float: right;
+      li > a {
+        color: white;
+        font-weight: bold;
+        transition: all 0.2s;
+      }
+      li > a:hover, li > a:focus  {
+        .glyphicon-chevron-right {
+          color: $orange;
+        }
+        color: $orange;
+        background: initial;
+      }
+    }
+    .toggle-nav {
+      display: none;
+    }
+  }
+}
+.backstretch {
+  background: black url('/images/background_mini.png') no-repeat;
+  background-size: cover;
+}
+.teaser-container {
+  background:black url('/images/background_mini.png') no-repeat;
+  background-size: cover;
+  padding-top: 70px;
+  color: white;
+  height: 100vh;
+  transition: background 0.2s;
+  //position: relative;
+  .left-wrapper {
+    position: relative;
+    line-height: 1.2;
+    padding-right: 20px;
+    text-align: right;
+    .center-logo-div {
+      .center-logo {
+        right: -50px;
+      }
+    }
+     :after {
+      content: '';
+      height: 85%;
+      width: 1px;
+      position: absolute;
+      right: 0;
+      top: 10%;
+      background-color: white;
+    }
+    .orange {
+      color: $orange;
+    }
+  }
+  .right-wrapper {
+    text-align: left;
+    padding: 15px;
+    vertical-align: text-bottom;
+    font-family: proxima-nova-regular, sans-serif;
+    text-transform: uppercase;
+    sup {
+      font-size: 0.5em;
+      top: -0.7em;
+    }
+  }
+  .buy-btn {
+    background-color: $orange;
+    padding: 20px 0;
+    border: 1px solid white;
+    border-radius: 0;
+    width: 60%;
+    font-size: 12pt;
+    color: inherit;
+  }
+  .buy-btn:hover {
+    background-color: $light-orange;
+    color: white;
+  }
+  .ghost-btn {
+    background-color: rgba(0,0,0,0.7);
+    border-color: $orange;
+    border-radius: 0;
+    color: inherit;
+
+    //right: 5%;
+    width: 100%;
+    padding: 15px 10px;
+    .play-btn {
+      padding-left: 10px;
+    }
+  }
+  .ghost-btn:hover {
+    background-color: $orange;
+    border-color: white;
+    color: white;
+  }
+}
+.button-margin {
+  margin: 0;
+}
+@keyframes showNav {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-height: 750px) and (max-width: 950px) {
+  .voffset40 {
+    padding-top: 20px;
+  }
+  .ghost-btn {
+    margin-bottom: 15px;
+  }
+}
