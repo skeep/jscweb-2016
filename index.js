@@ -16,5 +16,6 @@ app.use(compress({
 
 app.use('/',express.static('public'));
 app.use('/admin',express.static('adminUI'));
+app.use('/emailer',express.static('emailer'));
 
 app.listen(process.env.PORT || 5000);
