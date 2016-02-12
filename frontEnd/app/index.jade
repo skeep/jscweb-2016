@@ -5,6 +5,12 @@ head
 	meta(name='keywords', content='javascript,jschannel,javascript conference, Bengaluru,community,conference,NCR,jsconference,angularJS,nodeJS,angularjs,emberjs,ecmascript,iojs,hapijs,expressjs')
 	meta(name='author', content='Amit Kumar')
 	meta(name='viewport', content='width=device-width, initial-scale=1')
+	meta(name='apple-mobile-web-app-capable', content='yes')
+	meta(name='theme-color', content='#E9482B')
+	meta(name='msapplication-navbutton-color', content='#E9482B')
+	meta(name='mobile-web-app-capable', content='yes')
+	meta(name='apple-mobile-web-app-status-bar-style', content='black')
+
 	title JSChannel 2016
 	link(rel='apple-touch-icon', href='apple-touch-icon.png')
 	// Place favicon.ico in the root directory
@@ -39,9 +45,9 @@ body.body-tag
 
 	// build:js scripts/vendor.js
 	// bower:js
-	script(async src='/bower_components/jquery/dist/jquery.js')
-	script(async src='/bower_components/modernizr/modernizr.js')
-	script(async src='/bower_components/jquery-backstretch/jquery.backstretch.min.js')
+	script(src='/bower_components/jquery/dist/jquery.js')
+	script(src='/bower_components/modernizr/modernizr.js')
+	script(src='/bower_components/jquery-backstretch/jquery.backstretch.min.js')
 	// endbower
 	// endbuild
 	// build:js scripts/plugins.js
@@ -49,16 +55,16 @@ body.body-tag
 	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js')
 	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js')
 	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js')
-	script(async src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js')
-	script(async src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js')
+	script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js')
+	script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js')
 	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js')
 	//script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js')
 	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js')
 	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js')
-	script(async src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js')
+	script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js')
 	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js')
 	// endbuild
 	// build:js scripts/main.js
-	script(async src='scripts/main.js')
+	script(defer src='scripts/main.js')
 	// endbuild
-	script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXzTLtgdEAXsv7uYZSPl3h3XSBVCwY_v8&callback=initMap")
+	script(defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXzTLtgdEAXsv7uYZSPl3h3XSBVCwY_v8&callback=initMap")
