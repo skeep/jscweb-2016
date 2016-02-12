@@ -4,7 +4,7 @@ $(document).ready(function() {
     $(document).on('click', 'a[href^="#"]', function(e) {
       // target element id
       var id = $(this).attr('href');
-
+      
       var $id = $(id);
       if ($id.length === 0) {
         return;
@@ -13,7 +13,7 @@ $(document).ready(function() {
 
       // top position relative to the document
       var pos = $(id).offset().top;
-
+      pos-=50;
       // animated top scrolling
       $('body, html').animate({
         scrollTop: pos
@@ -25,18 +25,32 @@ $(document).ready(function() {
   }
   smoothScollerInit();
   initBackgroundImages();
+
+  $('#homeView,#about,#tickets,#venue,#speakers,#gallery').click(function() {
+    $('.navbar-toggle').attr('aria-expanded', false);
+    $('.navbar-toggle').addClass('collapsed');
+    $('.navbar-collapse').attr('aria-expanded', false);
+    $('.navbar-collapse').addClass('collapse');
+    $('.navbar-collapse').removeClass('in');
+  });
 });
 
 
 
 function initMap() {
-   var map = new google.maps.Map(document.getElementById('map'), {
+    var drag = true;
+    var width_screen = window.screen.width;
+    if(width_screen <= 768){
+      drag = false;
+    }
+    var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 12.9679078,lng: 77.6014855},
     zoom: 15,
     zoomControl: true,
     scaleControl: false,
     scrollwheel: false,
-    disableDoubleClickZoom: true
+    disableDoubleClickZoom: true,
+    draggable: drag
   });
   var marker = new google.maps.Marker({
     position: {lat: 12.9679078,lng: 77.6014855},

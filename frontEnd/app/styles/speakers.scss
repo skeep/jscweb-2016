@@ -1,6 +1,9 @@
 .speakers{
   background-color: white;
   padding:0px;
+  .speaker-container {
+    padding: 0;
+  }
 }
 .caption-1 {
   width:100%;
@@ -70,4 +73,15 @@
 }
 .speaker-link, .speaker-link:hover {
     color: white;
+  }
+
+  @media only screen and (min-width : 320px) and (max-device-width: 480px) {
+    .caption-1{
+      p{
+        font-size:2.5vw;
+      }
+      h3{
+        font-size:5vw;
+      }
+    }
   }
