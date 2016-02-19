@@ -17,6 +17,16 @@ you will get the temporary app link in the last commit (something like: https://
 ###Refer to the below image:
 ![alt tag](https://raw.github.com/skeep/jscweb-2016/master/screenshots/tempUrl.png)
 
+## To deploy to production
 Once you merge your branch to `master`, your latest code in the `/public` folder will be deployed to [Production website](2016.jschannel.com) and your previous temporary link will get destroyed.
 
+## For any queries, contact:
+[Suman Paul](https://github.com/skeep)
 
+[Rahul Gaba](https://github.com/rahulgaba16)
+
+[Aditi Joshi](https://github.com/Jaditi)
+
+
+#### Deployed to heroku ()
+#### Hosted in godaddy.com
