@@ -28,5 +28,5 @@ Once you merge your branch to `master`, your latest code in the `/public` folder
 [Aditi Joshi](https://github.com/Jaditi)
 
 
-#### Deployed to heroku ()
+#### Deployed to heroku
 #### Hosted in godaddy.com
