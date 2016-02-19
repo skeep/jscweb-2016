@@ -1,0 +1,61 @@
+doctype html
+head
+	meta(charset='utf-8')
+	meta(name='description', content='JSChannel Conference brings together JavaScript Enthusiasts from across the world.This July (15-16th), join us for a 2-day conference in Bengaluru')
+	meta(name='keywords', content='javascript,jschannel,javascript conference, Bengaluru,community,conference,NCR,jsconference,angularJS,nodeJS,angularjs,emberjs,ecmascript,iojs,hapijs,expressjs')
+	meta(name='author', content='Amit Kumar')
+	meta(name='viewport', content='width=device-width, initial-scale=1')
+	title JSChannel 2016
+	link(rel='apple-touch-icon', href='apple-touch-icon.png')
+	// Place favicon.ico in the root directory
+	// build:css styles/vendor.css
+	// bower:css
+	// endbower
+	// endbuild
+	// build:css styles/main.css
+	link(rel='stylesheet', href='styles/main.css')
+	// endbuild
+
+body.body-tag
+	// build:js scripts/vendor/modernizr.js
+	// endbuild
+	//if lt IE 10
+		p.browserupgrade
+			| You are using an
+			strong outdated
+			|  browser. Please
+			a(href='http://browsehappy.com/') upgrade your browser
+			|  to improve your experience.
+
+	include views/homeView.jade
+	include views/secondView.jade
+	//- include views/speakers.jade
+	include views/thirdView.jade
+	include views/fourthView.jade
+	include views/venue.jade
+	include views/footer.jade
+
+	// build:js scripts/vendor.js
+	// bower:js
+	script(src='/bower_components/jquery/dist/jquery.js')
+	script(src='/bower_components/modernizr/modernizr.js')
+	// script(src='/bower_components/fullpage.js/jquery.fullpage.min.js')
+	// endbower
+	// endbuild
+	// build:js scripts/plugins.js
+	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js') //removed till required
+	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js')
+	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js')
+	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js')
+	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js')
+	script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js')
+	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js')
+	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js')
+	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js')
+	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js')
+	script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js')
+	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js')
+	// endbuild
+	// build:js scripts/main.js
+	script(src='scripts/main.js')
+	// endbuild

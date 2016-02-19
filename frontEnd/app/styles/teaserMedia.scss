@@ -1,0 +1,177 @@
+/* Custom, iPhone Retina */
+@mixin bottom-buttons {
+  border-radius: 0;
+  margin: 1em;
+  padding: 1em;
+  width: 15em;
+  background: transparentize(#000, 0.2);
+  color: #fff;
+  border: 1px solid #CA442C;
+  text-transform: uppercase;
+}
+
+@mixin font-nova($font-size) {
+  font-size: $font-size;
+  font-family: proxima-nova, sans-serif;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width : 320px) and (max-device-width: 600px) {
+  .body-tag {
+    .f65 {
+      @include font-nova(40px);
+    }
+    .f30 {
+      @include font-nova(20px);
+    }
+    .teaser-container {
+      .nav-custom {
+        .navbar-logo {
+          transform: scale(1.5,1.5);
+          margin-left: 40px;
+        }
+
+        .navbar-menu {
+          height: 100vh;
+          background-color: rgba(0,0,0,0.9);
+          margin-left: 50px;
+          position: absolute;
+          z-index: 1;
+          right: 0;
+          margin: 0;
+          width: 80vw;
+          top: -15px;
+          ul {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            li {
+              border-bottom: 1px solid white;
+              padding: 1em 0;
+            }
+          }
+        }
+      }
+      .left-wrapper,
+      .right-wrapper {
+        text-align: center;
+        display: block;
+        padding: 0;
+        position: static;
+      }
+      .left-wrapper {
+        padding-bottom: 10px;
+        .center-logo-div {
+          .center-logo {
+            right: 0;
+            transform: scale(0.7,0.7);
+          }
+        }
+         :after {
+          display: none;
+        }
+      }
+      .right-wrapper {
+        margin: 0 55px;
+        padding-top: 5px;
+        border-top: 1px solid white;
+      }
+      .buy-btn {
+        width: 85%;
+        left: 0;
+        padding: 15px 0;
+      }
+      .ghost-btn {
+        right: 0;
+        padding: 10px 0;
+      }
+    }
+
+    .buy-tickets {
+      padding: 1em 1em 1em;
+      .buy-tickets__button {
+        border-radius: 0;
+        width: 20em;
+        padding: 1em;
+        color: #fff;
+        background-color: #CA442C;
+      }
+    }
+
+    .button-group {
+      .recap {
+        @include bottom-buttons;
+      }
+      .submit-talk {
+        @include bottom-buttons;
+      }
+      .sponsor {
+        @include bottom-buttons;
+      }
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) and (max-device-width: 768px) {
+  .body-tag{
+    .teaser-container {
+      .nav-custom {
+        .navbar-logo {
+          transform: scale(1.5,1.5);
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (orientation : portrait) {
+  .body-tag {
+    .teaser-container {
+      .left-wrapper,
+      .right-wrapper {
+        text-align: center;
+        display: block;
+        padding: 0;
+      }
+      .left-wrapper {
+        padding-bottom: 25px;
+        .center-logo-div {
+          .center-logo {
+            right: 0;
+            transform: scale(0.7,0.7);
+            margin-bottom: -1em;
+          }
+        }
+      }
+      .right-wrapper {
+        margin: 0 235px;
+        padding-top: 20px;
+        border-top: 1px solid white;
+      }
+      .buy-btn {
+        width: 65%;
+      }
+      .ghost-btn {
+        right: 0;
+        margin-bottom: 1.5em;
+      }
+    }
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
