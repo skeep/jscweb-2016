@@ -1,12 +1,20 @@
 $orange: #ec4715;
 $light-orange: rgb(240,108,68);
 $light-grey-background: rgb(237,239,236);
+@keyframes anim {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .body-tag {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
-  //padding-top: 70px;
   .nav-custom {
     background-color: transparent;
     border-color: transparent;
@@ -41,6 +49,9 @@ $light-grey-background: rgb(237,239,236);
 .backstretch {
   background: black url('/images/background_mini.png') no-repeat;
   background-size: cover;
+  img {
+    animation: anim .2s ease-in-out;
+  }
 }
 .teaser-container {
   background:black url('/images/background_mini.png') no-repeat;
@@ -48,8 +59,7 @@ $light-grey-background: rgb(237,239,236);
   padding-top: 70px;
   color: white;
   height: 100vh;
-  transition: background 0.2s;
-  //position: relative;
+  animation: anim .1s ease-in-out;
   .left-wrapper {
     position: relative;
     line-height: 1.2;
@@ -102,8 +112,6 @@ $light-grey-background: rgb(237,239,236);
     border-color: $orange;
     border-radius: 0;
     color: inherit;
-
-    //right: 5%;
     width: 100%;
     padding: 15px 10px;
     .play-btn {
