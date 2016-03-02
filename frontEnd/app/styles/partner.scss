@@ -1,0 +1,26 @@
+.partner{
+  width: 100%;
+  padding-bottom: 30px;
+  &-container{
+    margin: 0px;
+    background: rgb(237,239,236);
+    padding: 0 0 10vh 0;
+  }
+  &-heading{
+    padding:1vh;
+    font-size:3em;
+  }
+  &-subheading{
+    font-size:1.5em;
+    margin-bottom:25px;
+  }
+  &-image{
+    height:8vh;
+    display:inline;
+    margin:0 auto;
+  }
+  &-img1{
+    margin-right:70px;
+  }
+
+}
