@@ -19,7 +19,9 @@ $light-grey-background:rgb(237,239,236);
   }
 }
 
-
+#gallery{
+  background:rgb(237,239,236);
+}
 
 .sponser{
   padding:5vh;
@@ -54,6 +56,7 @@ $light-grey-background:rgb(237,239,236);
 .gallery{
   width: 100%;
   padding-bottom: 30px;
+
   &-container{
     margin: 0px;
     background: rgb(255,255,255);

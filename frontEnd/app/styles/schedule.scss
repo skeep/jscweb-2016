@@ -2,6 +2,9 @@ $orange:#ec4715;
 $light-orange:rgb(240,108,68);
 $navbar-background:#262b39;
 $light-grey-background:rgb(237,239,236);
+#schedule{
+  padding: 50px 0 50px;
+}
 #about,
 #register,
 #speakers,
@@ -15,10 +18,9 @@ $light-grey-background:rgb(237,239,236);
 #twitter-feed,
 #contact,
 #newsletter {
-    padding: 100px 0 150px;
-    -webkit-box-shadow: 0 5px 0 rgba(30, 38, 44, .2) inset;
-    -moz-box-shadow: 0 5px 0 rgba(30, 38, 44, .2) inset;
-    box-shadow: 0 5px 0 rgba(30, 38, 44, .2) inset;
+  -webkit-box-shadow: 0 5px 0 rgba(30, 38, 44, .2) inset;
+  -moz-box-shadow: 0 5px 0 rgba(30, 38, 44, .2) inset;
+  box-shadow: 0 5px 0 rgba(30, 38, 44, .2) inset;
 }
 
 
@@ -87,13 +89,10 @@ hr.divider-short {
     text-align: center;
 }
 .module-header h4 {
-    background-color: rgba(0, 0, 0, 0);
-    color: rgba(0, 0, 0, .4);
+    padding: 1vh;
+    font-size: 3em;
+    color: rgb(0, 0, 0);
     display: inline-block;
-    font-size: 18px;
-    font-weight: 700 !important;
-    line-height: 20px !important;
-    padding: 0px;
     position: relative;
     text-align: center;
     text-transform: uppercase;
