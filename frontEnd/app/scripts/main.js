@@ -1,5 +1,7 @@
 $(document).ready(function() {
   'use strict';
+
+  var countNumber = 1;
   function smoothScollerInit() {
     $(document).on('click', 'a[href^="#"]', function(e) {
       // target element id
@@ -67,3 +69,21 @@ function initMap() {
         infoWindow.open(map, marker);
     });
 }
+
+function changeCount(count) {
+  if(count == 'one')
+  {
+    $("#lione").removeClass('active');
+    $("#litwo").addClass('active');
+    $("#dayone").removeClass('active');
+    $("#daytwo").addClass('active');
+  }else if(count == 'two')
+  {
+    $("#litwo").removeClass('active');
+    $("#lione").addClass('active');
+    $("#daytwo").removeClass('active');
+    $("#dayone").addClass('active');
+  }
+
+}
+
