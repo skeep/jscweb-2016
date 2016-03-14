@@ -1,4 +1,7 @@
-
+$orange:#ec4715;
+$light-orange:rgb(240,108,68);
+$navbar-background:#262b39;
+$light-grey-background:rgb(237,239,236);
 #about,
 #register,
 #speakers,
@@ -17,6 +20,7 @@
     -moz-box-shadow: 0 5px 0 rgba(30, 38, 44, .2) inset;
     box-shadow: 0 5px 0 rgba(30, 38, 44, .2) inset;
 }
+
 
 #schedule {
     background: white;
@@ -1536,10 +1540,10 @@ a.coming-soon:hover:after {
   overflow: hidden;
 }
 
-.embed-responsive .embed-responsive-item, 
-.embed-responsive embed, 
-.embed-responsive iframe, 
-.embed-responsive object, 
+.embed-responsive .embed-responsive-item,
+.embed-responsive embed,
+.embed-responsive iframe,
+.embed-responsive object,
 .embed-responsive video {
   position: absolute;
   top: 0;
