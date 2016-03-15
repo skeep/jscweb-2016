@@ -1,0 +1,54 @@
+.team-section {
+    background-color: #111B28;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: #ffffff;
+    h1 {
+      font-weight: 800;
+      margin-bottom: 30px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .team-items {
+        text-align: center;
+        img {
+            border-radius: 50%;
+            margin-bottom: 15px;
+            margin-top: 25px;
+        }
+        .name {
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .profile {
+            font-size: 16px;
+            font-weight: 500;
+            font-style: italic;
+        }
+    }
+    .meet-button {
+        width: 220px;
+        margin: 0 auto;
+        border: 1px solid #ffffff;
+        padding: 12px;
+        border-radius: 5px;
+        margin-top: 50px;
+        color: #ffffff;
+        font-size: 16px;
+        .back-circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #ffffff;
+            margin: 0 auto;
+            float: left;
+        }
+    }
+    .fa-chevron-circle-right {
+      margin-right: 10px;
+      font-size: 20px;
+      vertical-align: middle;
+    }
+}
