@@ -846,7 +846,7 @@ a.rss:hover {
     width: 1%;
 }
 .tab-fillspace li:after {} .tab-fillspace li.active {} .tab-fillspace li.active:after {
-    background: url("../images/tri_down_dark.png") no-repeat scroll 50% 0 transparent;
+    //background: url("../images/tri_down_dark.png") no-repeat scroll 50% 0 transparent;
     content: "";
     display: block;
     height: 7px;
@@ -896,11 +896,11 @@ a.rss:hover {
     cursor: pointer;
 }
 .toggle-item-title {
-    background: url(../images/icons/toggle.png) scroll no-repeat right 5px transparent;
+    //background: url(../images/icons/toggle.png) scroll no-repeat right 5px transparent;
     padding: 0 32px 0 0;
 }
 .toggle-item-title.event-title.ui-state-active {
-    background: url(../images/icons/toggle-close.png) scroll no-repeat right 5px transparent;
+    //background: url(../images/icons/toggle-close.png) scroll no-repeat right 5px transparent;
     padding: 0 32px 0 0;
 }
 .modal {
@@ -1042,7 +1042,7 @@ a.rss:hover {
     width: 100%;
 }
 .event-content:before {
-    background: url("../images/tri_left.png") no-repeat scroll 0 0 transparent;
+    //background: url("../images/tri_left.png") no-repeat scroll 0 0 transparent;
     content: " ";
     height: 16px;
     left: -8px;
