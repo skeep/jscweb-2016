@@ -1,0 +1,61 @@
+.partner {
+    width: 100%;
+    padding-bottom: 30px;
+    &-container {
+        margin: 0px;
+        background: #ffffff;
+        padding: 25px 0 50px 0;
+        ul {
+            padding-left: 0;
+            li {
+                list-style: none;
+                display: inline-block;
+            }
+        }
+    }
+    &-heading {
+        padding: 1vh;
+        font-size: 3em;
+    }
+    &-subheading {
+        font-size: 1.4em;
+        margin-bottom: 25px;
+    }
+    &-image {
+        height: 8vh;
+        display: inline;
+        margin: 0 auto;
+    }
+    &-img1 {
+        margin-right: 70px;
+    }
+}
+
+.partner-container {
+    .partner-button {
+        margin: 0 auto;
+        border: 1px solid #000000;
+        padding: 12px 25px;
+        border-radius: 5px;
+        margin-top: 50px;
+        color: #000000;
+        font-size: 16px;
+    }
+    .fa-chevron-circle-right {
+        margin-right: 10px;
+        font-size: 24px;
+        vertical-align: middle;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .partner {
+        &-container {
+            ul {
+                li {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

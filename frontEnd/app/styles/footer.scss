@@ -1,6 +1,6 @@
 .footer {
     background-color: #111B28;
-    padding: 15px 0px 15px 0px;
+    padding: 25px 0;
     margin-top: 1px;
     color: #ffffff;
     &-social {
@@ -139,13 +139,13 @@
         padding-bottom: 10px;
     }
     .footer-right {
-        display: block;
+        display: inline-block;
         list-style-type: none;
         padding: 0;
         margin-top: 10px;
     }
     .footer-right>li {
-        padding-right: 5px;
+        display: inline-block;
     }
     .footer-social>li {
         padding-right: 5px;

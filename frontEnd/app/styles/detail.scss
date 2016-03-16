@@ -1,0 +1,21 @@
+.detail-container {
+  background-color: #FBC22d;
+  padding: 30px 50px;
+  h4 {
+    font-weight: 600;
+  }
+  p {
+    margin-bottom: 25px;
+  }
+  .detail-items {
+    padding: 0 35px;
+  }
+}
+@media screen and (max-width: 414px) {
+    .detail-container {
+      padding: 30px;
+      h1 {
+        font-size: 28px;
+      }
+    }
+}

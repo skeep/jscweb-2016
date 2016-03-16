@@ -1,0 +1,26 @@
+.about-us-container {
+    padding: 40px 100px;
+    .sub-text {
+        margin-top: 20px;
+    }
+    .about-read-more-button {
+        margin: 0 auto;
+        border: 1px solid #000000;
+        padding: 12px 25px;
+        border-radius: 5px;
+        margin-top: 50px;
+        color: #000000;
+        font-size: 16px;
+    }
+    .fa-chevron-circle-right {
+        margin-right: 10px;
+        font-size: 24px;
+        vertical-align: middle;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .about-us-container {
+        padding: 40px;
+    }
+}
