@@ -1,9 +1,9 @@
-.partner {
+.sponser {
   width: 100%;
   &-container {
     margin: 0;
-    background: rgb(255,255,255);
-    padding: 0 0 10vh;
+    background: rgb(237,239,236);
+    padding: 0 0 5vh;
   }
   &-heading {
     padding: 1vh;
@@ -13,18 +13,13 @@
     font-size: 1.5em;
     margin-bottom: 25px;
   }
-  &-image {
-    height: 8vh;
-    display: inline;
-    margin: 0 35px;
-  }
   &-mckinsey {
     height: 3vh;
   }
 }
 @media (max-width: 1000px) {
   .partner-mckinsey {
-    margin-top: 50px;
-    height: 4vh;
+    margin-top: 20px;
+    height: 3vh;
   }
 }
