@@ -1,3 +1,4 @@
+$orange:#ec4715;
 .sponser {
   width: 100%;
   &-container {
@@ -15,6 +16,22 @@
   }
   &-mckinsey {
     height: 3vh;
+  }
+  &-button{
+    border: none;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    background-color:$orange;
+  }
+  &-button>a{
+    color:white;
+    text-decoration:none;
+  }
+  &-button:hover{
+    background-color:rgb(240,108,68);
   }
 }
 @media (max-width: 1000px) {
