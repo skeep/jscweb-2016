@@ -8,7 +8,6 @@ $light-grey-background:rgb(237,239,236);
 #about,
 #register,
 #speakers,
-#schedule,
 #workshops,
 #gallery,
 #venue,
@@ -17,6 +16,7 @@ $light-grey-background:rgb(237,239,236);
 #news,
 #twitter-feed,
 #contact,
+#partner,
 #newsletter {
   -webkit-box-shadow: 0 5px 0 rgba(30, 38, 44, .2) inset;
   -moz-box-shadow: 0 5px 0 rgba(30, 38, 44, .2) inset;
@@ -25,7 +25,7 @@ $light-grey-background:rgb(237,239,236);
 
 
 #schedule {
-    background: white;
+    background: rgb(237,239,236);
 }
 footer {
     background-color: #2C3840;
