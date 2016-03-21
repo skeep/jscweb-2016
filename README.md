@@ -1,8 +1,8 @@
 # jscweb-2016
 
-## Frameworks and Libs:
-JADE/LESS/jQuery for UI
-Gulp/Bower for building
+## Libraries:
+* JADE/LESS/jQuery for UI  
+* Gulp/Bower for building
 
 ## To Run in Local
 Go to `frontEnd` folder and do `npm install`, `bower install`
