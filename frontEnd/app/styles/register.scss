@@ -9,6 +9,7 @@ $ticket-card-bg-color: #111925;
     .sub-heading {
         padding: 10px 80px;
         margin-bottom: 25px;
+        font-size: 20px;
     }
     .ticket-container {
         // margin-left: 30px;
@@ -33,6 +34,9 @@ $ticket-card-bg-color: #111925;
             font-size: 12px;
             font-weight: 200;
             margin-bottom: 5px;
+        }
+        .ticket-info {
+            font-size: 14px;
         }
         a {
             &:hover {

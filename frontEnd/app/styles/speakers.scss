@@ -1,91 +1,191 @@
-.speakers{
-  background-color: white;
-  padding:0px;
-  .speaker-container {
-    padding: 0;
-  }
-}
-.caption-1 {
-  width:100%;
-  bottom: 0rem;
-  left:0rem;
-  position: absolute;
-  background:rgba(236,71,21,0.8);
-  padding:5px 0px 5px 10px;
-  color: #fff;
-  p {
-    font-size: 0.9em;
-    margin-bottom:0;
-  }
-  h3{
-    margin:0;
-  }
-}
-
-.speaker-head{
-  font-style: normal;
-  font-size: 3em;
-  padding-top: 0.8em;
-  padding-bottom: 1.4em;
-  font-weight: 500;
-}
-
-.speaker-body{
-  padding: 0;
-  margin: 0;
-}
-
-.speaker{
-  background: rgba(211,211,211,0.9);
-  padding:0vh 5vh 5vh 5vh;
-  &-image{
-    position:relative;
-    margin-bottom:4vh;
-    height:50vh;
-    top:0px;
-    background-size:cover;
-    background-position:center;
-  }
-  &-image:hover .caption-1 {
-    visibility: visible;
-  }
-  &-heading{
-    font-size:50pt;
-  }
-  &-image1{
-    background-image: url(../images/speaker-1.jpg);
-  }
-  &-image2{
-    background-image: url(../images/speaker-2.jpg);
-  }
-  &-image3{
-    background-image: url(../images/speaker-3.jpg);
-  }
-  &-image4{
-    background-image: url(../images/speaker-4.jpg);
-  }
-  &-image5{
-    background-image: url(../images/speaker-5.jpg);
-  }
-}
-
-
-
-.speaker-foot{
-  background-color: #D3D3D3;
-  padding-bottom: 3em;
-}
-.speaker-link, .speaker-link:hover {
-    color: white;
-  }
-
-  @media only screen and (min-width : 320px) and (max-device-width: 480px) {
-    .caption-1{
-      p{
-        font-size:2.5vw;
-      }
-      h3{
-        font-size:5vw;
-      }
+.speakers-section {
+    background-color: #EDEFEC;
+    padding: 30px 25px 45px 25px;
+    // color: #ffffff;
+    .sub-heading {
+        font-size: 18px;
+        padding: 20px 80px;
     }
-  }
+    .speakers-items {
+        // text-align: center;
+        margin-top: 30px;
+        .inner-container {
+            background-color: #ffffff;
+            box-shadow: 0 0.0625em 0.1875em 0 rgba(0, 0, 0, 0.1), 0 0.5em 0 -0.25em #ffffff, 0 0.5em 0.1875em -0.25em rgba(0, 0, 0, 0.1), 0 1em 0 -0.5em #ffffff, 0 1em 0.1875em -0.5em rgba(0, 0, 0, 0.1);
+            // position: relative;
+            .image-text-container {
+                padding: 5px;
+                img {
+                    position: relative;
+                    width: 100%;
+                    // border-radius: 50%;
+                    // margin-bottom: 15px;
+                    // margin-top: 25px;
+                }
+                .name {
+                    position: relative;
+                    bottom: 30px;
+                    font-size: 18px;
+                    font-weight: 800;
+                    text-align: center;
+                    background: rgba(0, 0, 0, 0.4);
+                    padding: 5px 0px 0px 0px;
+                    color: white;
+                }
+            }
+        }
+        .profile {
+            font-size: 15px;
+            font-weight: 500;
+            margin-top: -27px;
+            padding-bottom: 8px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+    .speaker-button {
+        margin: 0 auto;
+        border: 1px solid #000000;
+        padding: 12px 25px;
+        border-radius: 5px;
+        margin-top: 50px;
+        color: #000000;
+        font-size: 16px;
+    }
+    .fa-chevron-circle-right {
+        margin-right: 10px;
+        font-size: 24px;
+        vertical-align: middle;
+    }
+}
+
+#box {
+    width: 300px;
+    height: 200px;
+    box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, .45);
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    margin: 5% auto 0 auto;
+    background: url(http://ianfarb.com/wp-content/uploads/2013/10/nicholas-hodag.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#overlay {
+    background: rgba(0, 0, 0, .75);
+    text-align: center;
+    padding: 45px 0 66px 0;
+    opacity: 0;
+    -webkit-transition: opacity .25s ease;
+    -moz-transition: opacity .25s ease;
+}
+
+#box:hover #overlay {
+    opacity: 1;
+}
+
+#plus {
+    font-family: Helvetica;
+    font-weight: 900;
+    color: rgba(255, 255, 255, .85);
+    font-size: 96px;
+}
+
+
+/* entire container, keeps perspective */
+
+.flip-container {
+    perspective: 1000;
+}
+
+
+/* flip the pane when hovered */
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {}
+
+
+/* flip speed goes here */
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+
+/* hide back of pane during swap */
+
+.front,
+.back {
+    backface-visibility: hidden;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    background-color: #111925;
+    margin: 5px;
+    height: 97%;
+    .back-content {
+        position: relative;
+        top: 20%;
+        h3 {
+            color: #ffffff;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: 900;
+        }
+        p {
+            color: #ffffff;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        ul {
+            padding-left: 0;
+            margin-top: 30px;
+            li {
+                list-style: none;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                background: #363636;
+                border-radius: 50%;
+                margin-left: 8px;
+                margin-right: 18px;
+                i {
+                    vertical-align: -webkit-baseline-middle;
+                    font-size: 20px;
+                    margin-top: 6px;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
+
+/* front pane, placed above back */
+
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+
+/* back, initially hidden pane */
+
+.back {
+    transform: rotateY(180deg);
+}
+
+@media only screen and (min-width: 320px) and (max-device-width: 480px) {}

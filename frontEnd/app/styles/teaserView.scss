@@ -1,145 +1,160 @@
 $orange: #ec4715;
-$light-orange: rgb(240,108,68);
-$light-grey-background: rgb(237,239,236);
+$light-orange: rgb(240, 108, 68);
+$light-grey-background: rgb(237, 239, 236);
 @keyframes anim {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
+.nav-container {
+  padding: 0px 5%;
+}
+.nav > li > a {
+  padding: 10px;
+  // border-right: 1px solid white;
+  font-size: 12px;
+}
+
 .body-tag {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-font-smoothing: antialiased;
-  -webkit-tap-highlight-color: transparent;
-  .nav-custom {
-    background-color: transparent;
-    border-color: transparent;
-    text-transform: uppercase;
-    position: fixed;
-    z-index: 1;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.85);
-    margin: 0;
-    margin-bottom: -50px;
-    border-radius: 0;
-    ul {
-      float: right;
-      li > a {
-        color: white;
-        font-weight: bold;
-        transition: all 0.2s;
-      }
-      li > a:hover, li > a:focus  {
-        .glyphicon-chevron-right {
-          color: $orange;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    .nav-custom {
+        background-color: transparent;
+        border-color: transparent;
+        text-transform: uppercase;
+        position: fixed;
+        z-index: 1;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.85);
+        margin: 0;
+        margin-bottom: -50px;
+        border-radius: 0;
+        ul {
+            float: right;
+            li > a {
+                color: white;
+                font-weight: bold;
+                transition: all 0.2s;
+            }
+            li > a:hover,
+            li > a:focus {
+                .glyphicon-chevron-right {
+                    color: $orange;
+                }
+                color: $orange;
+                background: initial;
+            }
         }
-        color: $orange;
-        background: initial;
-      }
+        .toggle-nav {
+            display: none;
+        }
     }
-    .toggle-nav {
-      display: none;
-    }
-  }
 }
+
 .backstretch {
-  background: black url('/images/background_mini.png') no-repeat;
-  background-size: cover;
-  img {
-    animation: anim .2s ease-in-out;
-  }
+    background: black url('/images/background_mini.png') no-repeat;
+    background-size: cover;
+    img {
+        animation: anim .2s ease-in-out;
+    }
 }
+
 .teaser-container {
-  background:black url('/images/background_mini.png') no-repeat;
-  background-size: cover;
-  padding-top: 70px;
-  color: white;
-  height: 100vh;
-  animation: anim .1s ease-in-out;
-  .left-wrapper {
-    position: relative;
-    line-height: 1.2;
-    padding-right: 20px;
-    text-align: right;
-    .center-logo-div {
-      .center-logo {
-        right: -50px;
-      }
-    }
-     :after {
-      content: '';
-      height: 85%;
-      width: 1px;
-      position: absolute;
-      right: 0;
-      top: 10%;
-      background-color: white;
-    }
-    .orange {
-      color: $orange;
-    }
-  }
-  .right-wrapper {
-    text-align: left;
-    padding: 15px;
-    vertical-align: text-bottom;
-    font-family: proxima-nova-regular, sans-serif;
-    text-transform: uppercase;
-    sup {
-      font-size: 0.5em;
-      top: -0.7em;
-    }
-  }
-  .buy-btn {
-    background-color: $orange;
-    padding: 20px 0;
-    border: 1px solid white;
-    border-radius: 0;
-    width: 60%;
-    font-size: 12pt;
-    color: inherit;
-  }
-  .buy-btn:hover {
-    background-color: $light-orange;
+    background: black url('/images/background_mini.png') no-repeat;
+    background-size: cover;
+    padding-top: 70px;
     color: white;
-  }
-  .ghost-btn {
-    background-color: rgba(0,0,0,0.7);
-    border-color: $orange;
-    border-radius: 0;
-    color: inherit;
-    width: 100%;
-    padding: 15px 10px;
-    .play-btn {
-      padding-left: 10px;
+    height: 100vh;
+    animation: anim .1s ease-in-out;
+    .left-wrapper {
+        position: relative;
+        line-height: 1.2;
+        padding-right: 20px;
+        text-align: right;
+        .center-logo-div {
+            .center-logo {
+                right: -50px;
+            }
+        }
+        :after {
+            content: '';
+            height: 85%;
+            width: 1px;
+            position: absolute;
+            right: 0;
+            top: 10%;
+            background-color: white;
+        }
+        .orange {
+            color: $orange;
+        }
     }
-  }
-  .ghost-btn:hover {
-    background-color: $orange;
-    border-color: white;
-    color: white;
-  }
+    .right-wrapper {
+        text-align: left;
+        padding: 15px;
+        vertical-align: text-bottom;
+        font-family: proxima-nova-regular, sans-serif;
+        text-transform: uppercase;
+        sup {
+            font-size: 0.5em;
+            top: -0.7em;
+        }
+    }
+    .buy-btn {
+        background-color: $orange;
+        padding: 20px 0;
+        border: 1px solid white;
+        border-radius: 0;
+        width: 60%;
+        font-size: 12pt;
+        color: inherit;
+    }
+    .buy-btn:hover {
+        background-color: $light-orange;
+        color: white;
+    }
+    .ghost-btn {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-color: $orange;
+        border-radius: 0;
+        color: inherit;
+        width: 100%;
+        padding: 15px 10px;
+        .play-btn {
+            padding-left: 10px;
+        }
+    }
+    .ghost-btn:hover {
+        background-color: $orange;
+        border-color: white;
+        color: white;
+    }
 }
+
 .button-margin {
-  margin: 0;
+    margin: 0;
 }
+
 @keyframes showNav {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
+
 @media (max-height: 750px) and (max-width: 950px) {
-  .voffset40 {
-    padding-top: 20px;
-  }
-  .ghost-btn {
-    margin-bottom: 15px;
-  }
+    .voffset40 {
+        padding-top: 20px;
+    }
+    .ghost-btn {
+        margin-bottom: 15px;
+    }
 }

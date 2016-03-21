@@ -1,358 +1,442 @@
-section#schedule
-  .container
-        .row
-          .span12
-            .module-header.schedule-header
-              h4 Schedule
-          .span12
-            ul#schedule-tabs.nav.nav-pills.tab-fillspace
-              li#lione.active
-                a(href='#dayone', onclick="changeCount('two')", role="navigation")
-                  | July 15
-                  sup th
-              li#litwo
-                a(href='#daytwo', onclick="changeCount('one')", role="navigation")
-                  | July 16
-                  sup th
-          .tab-content
-            #dayone.tab-pane.wo-tab-pane.fade.in.active
-              .span4
-                h2 First Day
-                p
-                  //- | We kick-off the conference with registrations & keynote by Douglas Crockford. We request all the attendees to arrive a little early to beat the traffic (since it is weekday - Friday). Also, you definitely won't miss a chance to click snaps with Douglas. We have 2 wonderful live-coding/workshop sessions lined-up post lunch. The details of which is where will be announced on the day of the conference. The last session of the day is Lightning/Flash Talks. We will have a box at the registration counter for you to drop your topics. Selected submissions will get 5 mins to come on stage and share it with rest of the attendees.
-                // <div class="schedule-download"><a href="#" class="btn coming-soon">Full Schedule</a></div>
-              .span8
-                section.timeline.toggle-shortcode.toggles
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-ok
-                    .time-box
-                      time 8:30
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3 Registration
-                        .toggle-item-body(style='display: none;')
-                          //- p Registrations and get yourself comfortable.
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-ok
-                    .time-box
-                      time 9:30
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3 Pre-Conference
-                        .toggle-item-body(style='display: none;')
-                          p JSChannel Team
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-microphone
-                    .time-box
-                      time 10:00
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3 Opening Keynote
-                          //- h4 Douglas Crockford
-                          //- p
-                          //-   b Topic : Upgrading the Web
-                        .toggle-item-body(style='display: none;')
-                          //- p
-                          //-   | The web was originally imagined to be a simple distributed document retrieval system. It is now being used for applications that go far beyond the system's original capabilities and intentions. We have found ways to make it work, but they are difficult and far too fragile. Many times companies have offered to replace the web with superior proprietary systems, but we rejected them. We have been adding features to the web, but this does little to correct the deep underlying deficiencies, increasing instead of reducing its complexity.
-                          //- p
-                          //-   | This talk suggests a way forward, taking inspiration from our successful transition from NTSC to HDTV. There is a way forward to a web that is safer, easier, and as good as we desire.
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-dialogue-box
-                    .time-box
-                      time 11:00
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3 Talk Session I
-                          //- h4 Charanjit Singh
-                        .toggle-item-body(style='display: none;')
-                          //- p
-                          //-   | The world of javascript and programming in general is moving towards creating more and more declarative abstractions/techniques for doing our things. Functional programming is a great way of doing flow based programming, and fortunately javascript has good support for functional programming. Functional Reactive programming is an old paradigm which has recently started catching developer attention, which allow making most of the complex asynchronous tasks declarative and really simple.
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-dialogue-box
-                    .time-box
-                      time 11:45
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3 Talk Session II
-                          //- h4 Apoorv Saxena
-                        .toggle-item-body(style='display: none;')
-                          //- p
-                          //-   | Performance is a Feature, the janky your website displays, the lesser will be the user interaction and conversions, thereby impacting the growth and revenue of your business.
-                          //-   | Yet many people are not able to understand the performance gotchas completely, and don’t make it a part of their deployment process to measure the rendering performance of their webpages.
-                          //-   | In this workshop, participants will Performance Audit Web Applications to make them run them at 60fps.
-                          //-   | Workshop will consist of:
-                          //-   | Understand the working behind several jQuery functions and their performance impacts.
-                          //-   | Profiling with Dev Tools available in Browsers, to explore the rendering issues and their respective remedies.
-                          //-   | Discussion of case studies of already audited web applications, and discuss their performance remedies as well.
-                          //-   | Live Audit of Web applications by Workshop attendees.
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-food
-                    .time-box
-                      time 12:30
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3
-                            | Lunch Break
-                            //- span Sponsored by JSChannel
-                        .toggle-item-body(style='display: none;')
-                          //- p Enjoy the most exotic rich Indian cuisine prepared by chefs in Taj Vivanta.
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-pencil2
-                    .time-box
-                      time 14:00
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3 Workshop - Live Coding(Track I)
-                          //- h4
-                          //-   | Utilising the next generation of powerful graphics API's on the web
-                          //-   span Live-coding/Workshop session by Joe Pettersson
-                        .toggle-item-body(style='display: none;')
-                          //- p
-                          //-   | The WebGL API open's up an exciting world of possibilities for the web; allowing us to build complex applications, games and experiences that were never possible before. In this workshop we'll learn how to leverage WebGL directly, and also how to utilise it through one of it's most useful abstraction layers: ThreeJS. We'll cover the basics of rendering scenes and objects with lighting, textures and cameras; as well as interacting with them using directly and indirectly through the use of physics engines.
-                          //-   | You should come away from this talk with a thirst to learn more about this powerful technology, as well as a basic foundation of skills and knowledge to assist you in that exploration in building your own applications and games.
-                          //-   | In order to take the most from this talk, you should have a good understanding of browser JavaScript API's (the DOM API et al) as well as the heart not to be discouraged when we occasionally use phrases like 'matrix manipulation' and 'vector transforms'.
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-pencil2
-                    .time-box
-                      time 14:00
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3 Workshop - Live Coding(Track II)
-                          //- h4 Magesh K
-                        .toggle-item-body(style='display: none;')
-                          //- p
-                          //-   | This live coding session will reveal the inner secrets of how Angular.js works by attempting re-create a mini angular.js like framework from the ground up.  This will help gain better understanding on some of the guiding principles of angular.js.
-                          //-   br
-                          //-   |                         In this session, the participants will learn
-                          //-   ul(style='list-style-type: circle;')
-                          //-     li Creating a "Scope" api for two-way data-binding
-                          //-     li Creating a DI container
-                          //-     li Create the HTML Compilation process
-                          //-     li Create simple directives from the scratch
-                          //-     li Bootstrap the application
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-coffee
-                    .time-box
-                      time 16:30
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3
-                            | Tea Break
-                            //- span Sponsored by JSChannel
-                        .toggle-item-body(style='display: none;')
-                          p Tea/ Coffee/ light snacks
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-sun
-                    .time-box
-                      time 17:00
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3 Lightning/Flash Talk
-                        .toggle-item-body(style='display: none;')
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-coffee
-                    .time-box
-                      time 17:30
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3
-                            | Day 1 Summary and updates for Day 2
-                            //- span Sponsored by JSChannel
-                        .toggle-item-body(style='display: none;')
-          
-                          //- p
-                          //-   | Attendees submit their proposals on the day of the conference. Selected submissions come on stage for 5 mins to talk about the topic.
-            #daytwo.tab-pane.wo-tab-pane.fade.in
-              .span4
-                h2 Second Day
-                //- p
-                //-   | We kick-off the day with keynote by Yehuda Katz. The structure of the day remains the same, except you get one hour with the speaker panel. You can ask anything/everything related to JavaScript. Don't loose this opportunity to learn from the likes of Doug, Yehuda, Joe and Christian
-                //- //
-                //-   <div class="schedule-download"><a href="#" class="btn coming-soon"><i class="iconf-acrobat"></i><p>Full Schedule</p></a>
-                //-   </div>
-              .span8
-                section.timeline.toggle-shortcode.toggles
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-microphone
-                    .time-box
-                      time 9:00
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3 Pre-Conference for Day II
-                          //- h4 Yehuda Katz
-                        .toggle-item-body(style='display: none;')
-                          //- p
-                          //-   b Topic:
-                          //-   |  Web Frameworks in 2015 and Where Ember Fits In
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-dialogue-box
-                    .time-box
-                      time 9:30
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3 Day II keynote
-                          //- h4 Adriaan de Jonge
-                        .toggle-item-body(style='display: none;')
-                          //- p
-                          //-   | The new direction Angular 2.0 is taking created a lot of discussion in the community. Some people love it, some people hate it. Most people agree there is room for simplification, performance enhancements and native support of new language features. Not everyone likes the way Angular 2.0 is picking these up though. There is an alternative direction: Aurelia. In this talk, we'll do a side-by-side comparison and have the audience answer the question: Should you keep all your eggs in the Angular basket?
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-dialogue-box
-                    .time-box
-                      time 10:30
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3 Talk Session I
-                          //- h4 HariKrishnan and Dharampal
-                        .toggle-item-body(style='display: none;')
-                          //- p
-                          //-   | The design of Languages and Frameworks is highly influenced by the context and their history. As a developer it is important to be aware of these evolutionary aspects which have led to the current feature set of JS and its Frameworks. More over JS has a very interesting history.
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-food
-                    .time-box
-                      time 11:15
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3
-                            | Talk Session I
-                            //- span Sponsored by JSChannel
-                        .toggle-item-body(style='display: none;')
-                          //- p Enjoy the most exotic rich Indian cuisine prepared by chefs in Taj Vivanta.
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-pencil2
-                    .time-box
-                      time 12:00
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3 Lunch Break
-                          //- h4
-                          //-   | Learn When & How to Leverage the Power of Virtual DOM & Reactive Data Flows
-                          //-   span Live-coding/Workshop session by Christian Lilley
-                        .toggle-item-body(style='display: none;')
-                          //- p
-                          //-   | Whatever other tools you use and love, one thing about ReactJS is certain: the 'Virtual DOM' approach is the future of the web. It's just too fast and too sensible to ignore. In this session, we'll learn:
-                          //-   ul
-                          //-     li What 'Virtual DOM' is and why it matters
-                          //-     li How you can begin making use of it now, in your existing environments
-                          //-     li
-                          //-       | How React also thinks differently about data-binding, with its "one-way reactive data flow"
-                          //-   |                         Longer-Term, React combined with the 'Flux' pattern points the way to a very different style of front-end application development than we're used to now: very modular, 'component'-driven architectures. At the same time, one of the signal traits of React/Flux is that more and more of the application is contained exclusively in Javascript files: React's HTML elements are declared as either "JSX" templates, or just as Javascript objects. And some folks are taking this on to the next level, even programming all of their CSS in JS as well! Before this session is over, you'll see how all these pieces fit together and how you can build some very effective, very fast, and very maintainable components and apps this way. That said, we'll also discuss what's still missing from the React/Flux ecosystem, and provide you with a roadmap that allows you decide when you can - and when you can't - build your whole application around it.
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-pencil2
-                    .time-box
-                      time 13:30
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3 Workshop - Live Coding(Track I)
-                          //- h4
-                          //-   span Live coding/workshop session II by David Hoffer
-                        .toggle-item-body(style='display: none;')
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-pencil2
-                    .time-box
-                      time 13:30
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3 Workshop - Live Coding(Track II)
-                          //- h4
-                          //-   span Live coding/workshop session II by David Hoffer
-                        .toggle-item-body(style='display: none;')
-                          //- p
-                          //-   | In this workshop, David Hoffer will be present a Design Thinking lecture and hands-on exercises to help you better understand Design Thinking and it's implications for your work with a specific focus on Personas and Customer Journey Mapping. Please join us for fun and informative session.
-                          
-          
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-coffee
-                    .time-box
-                      time 16:00
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3
-                            | Tea Break
-                            //- span Sponsored by JSChannel
-                        .toggle-item-body(style='display: none;')
-                          p Tea/ Coffee/ light snacks
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-videocam
-                    .time-box
-                      time 16:30
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3
-                            | Ending Keynote
-                            //- span JSChannel Speakers
-                        .toggle-item-body(style='display: none;')
-                          p
-                            | Attendees have full 60 mins with the speakers. Its your time to ask any question to Douglas, Yehuda and other speakers.
-                  article.event
-                    .timeline-icon
-                      .timeline-icon-container
-                        i.iconf-microphone
-                    .time-box
-                      time 17:30
-                    .timeline-content
-                      .event-content
-                        .toggle-item-title.event-title(data-count='1')
-                          h3 Conference closure and thank you note
-                          //- h4 Ending Keynote Speaker
-                        .toggle-item-body(style='display: none;')
-                          p TBD
+#schedule.program-container.text-center
+  h1 PROGRAM SCHEDULE
+  p.subheading  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione voluptatem necessitatibus dignissimos ab mollitia eos. Mollitia, perspiciatis cum hic laudantium maiores ducimus voluptatibus est exercitationem soluta explicabo sapiente quos facilis.
+  #cd-timeline.cd-container
+    .cd-timeline-block
+      .cd-timeline-img.cd-bg
+        img(src='images/icon-2.png', alt='Icon')
+      // cd-timeline-img
+      .cd-timeline-content
+        .col-md-2.col-sm-2.col-xs-12.content-img
+          img(src="../images/img-1.png", alt="")
+        .col-md-10.col-sm-10.col-xs-12
+          h1.content-heading 8:30am - 9:30am WELCOME & REGISTRATION
+    .cd-timeline-block
+      .cd-timeline-img.cd-bg
+        img(src='../images/icon-2.png', alt='Icon')
+      .cd-timeline-content.content-active
+        .col-md-2.col-sm-2.col-xs-12.content-img
+          img(src="../images/img-1.png", alt="")
+        .col-md-10.col-sm-10.col-xs-12
+          h1.content-heading 9:30am - 10:00am PRE-CONFERENCE
+    .cd-timeline-block
+      .cd-timeline-img.cd-bg
+        img(src='../images/icon-2.png', alt='Icon')
+      .cd-timeline-content
+        .col-md-2.col-sm-2.col-xs-12.content-img
+          img(src="../images/img-1.png", alt="")
+        .col-md-10.col-sm-10.col-xs-12
+          h1.content-heading 10:00am - 11:00am OPENING KEYNOTE
+    .cd-timeline-block
+      .cd-timeline-img.cd-bg
+        img(src='../images/icon-2.png', alt='Icon')
+      .cd-timeline-content
+        .col-md-2.col-sm-2.col-xs-12.content-img
+          img(src="../images/img-1.png", alt="")
+        .col-md-10.col-sm-10.col-xs-12
+          h1.content-heading 11:00am - 11:45am TALK SESSION I
+    .cd-timeline-block
+      .cd-timeline-img.cd-bg
+        img(src='../images/icon-2.png', alt='Icon')
+      .cd-timeline-content
+        .col-md-2.col-sm-2.col-xs-12.content-img
+          img(src="../images/img-1.png", alt="")
+        .col-md-10.col-sm-10.col-xs-12
+          h1.content-heading 11:45am - 12:30pm TALK SESSION II
+    .cd-timeline-block
+      .cd-timeline-img.cd-bg
+        img(src='../images/icon-2.png', alt='Icon')
+      .cd-timeline-content
+        .col-md-2.col-sm-2.col-xs-12.content-img
+          img(src="../images/img-1.png", alt="")
+        .col-md-10.col-sm-10.col-xs-12
+          h1.content-heading 12:30pm - 2:00pm LUNCH BREAK
+    .cd-timeline-block
+      .cd-timeline-img.cd-bg
+        img(src='../images/icon-2.png', alt='Icon')
+      .cd-timeline-content
+        .col-md-2.col-sm-2.col-xs-12.content-img
+          img(src="../images/img-1.png", alt="")
+        .col-md-10.col-sm-10.col-xs-12
+          h1.content-heading 2:00pm - 4:30apm WORKSHOP - LIVE CODING
+    .cd-timeline-block
+      .cd-timeline-img.cd-bg
+        img(src='../images/icon-2.png', alt='Icon')
+      .cd-timeline-content
+        .col-md-2.col-sm-2.col-xs-12.content-img
+          img(src="../images/img-1.png", alt="")
+        .col-md-10.col-sm-10.col-xs-12
+          h1.content-heading 4:30pm - 5:00pm TEA BREAK
+    .cd-timeline-block
+      .cd-timeline-img.cd-bg
+        img(src='../images/icon-2.png', alt='Icon')
+      .cd-timeline-content
+        .col-md-2.col-sm-2.col-xs-12.content-img
+          img(src="../images/img-1.png", alt="")
+        .col-md-10.col-sm-10.col-xs-12
+          h1.content-heading 5:00pm - 5:30pm LIGHTNING/FLASH TALK
+    .cd-timeline-block
+      .cd-timeline-img.cd-bg
+        img(src='../images/icon-2.png', alt='Icon')
+      .cd-timeline-content
+        .col-md-2.col-sm-2.col-xs-12.content-img
+          img(src="../images/img-1.png", alt="")
+        .col-md-10.col-sm-10.col-xs-12
+          h1.content-heading 5:30pm SUMMARY AND UPADTES FOR DAY 2
+
+  //- .row
+  //-   .span12
+  //-     .module-header.schedule-header
+  //-       h4 Schedule
+  //-   .span12
+  //-     ul#schedule-tabs.nav.nav-pills.tab-fillspace
+  //-       li#lione.active
+  //-         a(href='#dayone', onclick="changeCount('two')", role="navigation")
+  //-           | July 15
+  //-           sup th
+  //-       li#litwo
+  //-         a(href='#daytwo', onclick="changeCount('one')", role="navigation")
+  //-           | July 16
+  //-           sup th
+  //-   .tab-content
+  //-     #dayone.tab-pane.wo-tab-pane.fade.in.active
+  //-       .span4
+  //-         h2 First Day
+  //-         p
+  //-           //- | We kick-off the conference with registrations & keynote by Douglas Crockford. We request all the attendees to arrive a little early to beat the traffic (since it is weekday - Friday). Also, you definitely won't miss a chance to click snaps with Douglas. We have 2 wonderful live-coding/workshop sessions lined-up post lunch. The details of which is where will be announced on the day of the conference. The last session of the day is Lightning/Flash Talks. We will have a box at the registration counter for you to drop your topics. Selected submissions will get 5 mins to come on stage and share it with rest of the attendees.
+  //-         // <div class="schedule-download"><a href="#" class="btn coming-soon">Full Schedule</a></div>
+  //-       .span8
+  //-         section.timeline.toggle-shortcode.toggles
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-ok
+  //-             .time-box
+  //-               time 8:30
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3 Registration
+  //-                 .toggle-item-body(style='display: none;')
+  //-                   //- p Registrations and get yourself comfortable.
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-ok
+  //-             .time-box
+  //-               time 9:30
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3 Pre-Conference
+  //-                 .toggle-item-body(style='display: none;')
+  //-                   p JSChannel Team
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-microphone
+  //-             .time-box
+  //-               time 10:00
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3 Opening Keynote
+  //-                   //- h4 Douglas Crockford
+  //-                   //- p
+  //-                   //-   b Topic : Upgrading the Web
+  //-                 .toggle-item-body(style='display: none;')
+  //-                   //- p
+  //-                   //-   | The web was originally imagined to be a simple distributed document retrieval system. It is now being used for applications that go far beyond the system's original capabilities and intentions. We have found ways to make it work, but they are difficult and far too fragile. Many times companies have offered to replace the web with superior proprietary systems, but we rejected them. We have been adding features to the web, but this does little to correct the deep underlying deficiencies, increasing instead of reducing its complexity.
+  //-                   //- p
+  //-                   //-   | This talk suggests a way forward, taking inspiration from our successful transition from NTSC to HDTV. There is a way forward to a web that is safer, easier, and as good as we desire.
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-dialogue-box
+  //-             .time-box
+  //-               time 11:00
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3 Talk Session I
+  //-                   //- h4 Charanjit Singh
+  //-                 .toggle-item-body(style='display: none;')
+  //-                   //- p
+  //-                   //-   | The world of javascript and programming in general is moving towards creating more and more declarative abstractions/techniques for doing our things. Functional programming is a great way of doing flow based programming, and fortunately javascript has good support for functional programming. Functional Reactive programming is an old paradigm which has recently started catching developer attention, which allow making most of the complex asynchronous tasks declarative and really simple.
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-dialogue-box
+  //-             .time-box
+  //-               time 11:45
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3 Talk Session II
+  //-                   //- h4 Apoorv Saxena
+  //-                 .toggle-item-body(style='display: none;')
+  //-                   //- p
+  //-                   //-   | Performance is a Feature, the janky your website displays, the lesser will be the user interaction and conversions, thereby impacting the growth and revenue of your business.
+  //-                   //-   | Yet many people are not able to understand the performance gotchas completely, and don’t make it a part of their deployment process to measure the rendering performance of their webpages.
+  //-                   //-   | In this workshop, participants will Performance Audit Web Applications to make them run them at 60fps.
+  //-                   //-   | Workshop will consist of:
+  //-                   //-   | Understand the working behind several jQuery functions and their performance impacts.
+  //-                   //-   | Profiling with Dev Tools available in Browsers, to explore the rendering issues and their respective remedies.
+  //-                   //-   | Discussion of case studies of already audited web applications, and discuss their performance remedies as well.
+  //-                   //-   | Live Audit of Web applications by Workshop attendees.
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-food
+  //-             .time-box
+  //-               time 12:30
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3
+  //-                     | Lunch Break
+  //-                     //- span Sponsored by JSChannel
+  //-                 .toggle-item-body(style='display: none;')
+  //-                   //- p Enjoy the most exotic rich Indian cuisine prepared by chefs in Taj Vivanta.
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-pencil2
+  //-             .time-box
+  //-               time 14:00
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3 Workshop - Live Coding(Track I)
+  //-                   //- h4
+  //-                   //-   | Utilising the next generation of powerful graphics API's on the web
+  //-                   //-   span Live-coding/Workshop session by Joe Pettersson
+  //-                 .toggle-item-body(style='display: none;')
+  //-                   //- p
+  //-                   //-   | The WebGL API open's up an exciting world of possibilities for the web; allowing us to build complex applications, games and experiences that were never possible before. In this workshop we'll learn how to leverage WebGL directly, and also how to utilise it through one of it's most useful abstraction layers: ThreeJS. We'll cover the basics of rendering scenes and objects with lighting, textures and cameras; as well as interacting with them using directly and indirectly through the use of physics engines.
+  //-                   //-   | You should come away from this talk with a thirst to learn more about this powerful technology, as well as a basic foundation of skills and knowledge to assist you in that exploration in building your own applications and games.
+  //-                   //-   | In order to take the most from this talk, you should have a good understanding of browser JavaScript API's (the DOM API et al) as well as the heart not to be discouraged when we occasionally use phrases like 'matrix manipulation' and 'vector transforms'.
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-pencil2
+  //-             .time-box
+  //-               time 14:00
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3 Workshop - Live Coding(Track II)
+  //-                   //- h4 Magesh K
+  //-                 .toggle-item-body(style='display: none;')
+  //-                   //- p
+  //-                   //-   | This live coding session will reveal the inner secrets of how Angular.js works by attempting re-create a mini angular.js like framework from the ground up.  This will help gain better understanding on some of the guiding principles of angular.js.
+  //-                   //-   br
+  //-                   //-   |                         In this session, the participants will learn
+  //-                   //-   ul(style='list-style-type: circle;')
+  //-                   //-     li Creating a "Scope" api for two-way data-binding
+  //-                   //-     li Creating a DI container
+  //-                   //-     li Create the HTML Compilation process
+  //-                   //-     li Create simple directives from the scratch
+  //-                   //-     li Bootstrap the application
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-coffee
+  //-             .time-box
+  //-               time 16:30
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3
+  //-                     | Tea Break
+  //-                     //- span Sponsored by JSChannel
+  //-                 .toggle-item-body(style='display: none;')
+  //-                   p Tea/ Coffee/ light snacks
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-sun
+  //-             .time-box
+  //-               time 17:00
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3 Lightning/Flash Talk
+  //-                 .toggle-item-body(style='display: none;')
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-coffee
+  //-             .time-box
+  //-               time 17:30
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3
+  //-                     | Day 1 Summary and updates for Day 2
+  //-                     //- span Sponsored by JSChannel
+  //-                 .toggle-item-body(style='display: none;')
+    
+  //-                   //- p
+  //-                   //-   | Attendees submit their proposals on the day of the conference. Selected submissions come on stage for 5 mins to talk about the topic.
+  //-     #daytwo.tab-pane.wo-tab-pane.fade.in
+  //-       .span4
+  //-         h2 Second Day
+  //-         //- p
+  //-         //-   | We kick-off the day with keynote by Yehuda Katz. The structure of the day remains the same, except you get one hour with the speaker panel. You can ask anything/everything related to JavaScript. Don't loose this opportunity to learn from the likes of Doug, Yehuda, Joe and Christian
+  //-         //- //
+  //-         //-   <div class="schedule-download"><a href="#" class="btn coming-soon"><i class="iconf-acrobat"></i><p>Full Schedule</p></a>
+  //-         //-   </div>
+  //-       .span8
+  //-         section.timeline.toggle-shortcode.toggles
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-microphone
+  //-             .time-box
+  //-               time 9:00
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3 Pre-Conference for Day II
+  //-                   //- h4 Yehuda Katz
+  //-                 .toggle-item-body(style='display: none;')
+  //-                   //- p
+  //-                   //-   b Topic:
+  //-                   //-   |  Web Frameworks in 2015 and Where Ember Fits In
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-dialogue-box
+  //-             .time-box
+  //-               time 9:30
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3 Day II keynote
+  //-                   //- h4 Adriaan de Jonge
+  //-                 .toggle-item-body(style='display: none;')
+  //-                   //- p
+  //-                   //-   | The new direction Angular 2.0 is taking created a lot of discussion in the community. Some people love it, some people hate it. Most people agree there is room for simplification, performance enhancements and native support of new language features. Not everyone likes the way Angular 2.0 is picking these up though. There is an alternative direction: Aurelia. In this talk, we'll do a side-by-side comparison and have the audience answer the question: Should you keep all your eggs in the Angular basket?
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-dialogue-box
+  //-             .time-box
+  //-               time 10:30
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3 Talk Session I
+  //-                   //- h4 HariKrishnan and Dharampal
+  //-                 .toggle-item-body(style='display: none;')
+  //-                   //- p
+  //-                   //-   | The design of Languages and Frameworks is highly influenced by the context and their history. As a developer it is important to be aware of these evolutionary aspects which have led to the current feature set of JS and its Frameworks. More over JS has a very interesting history.
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-food
+  //-             .time-box
+  //-               time 11:15
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3
+  //-                     | Talk Session I
+  //-                     //- span Sponsored by JSChannel
+  //-                 .toggle-item-body(style='display: none;')
+  //-                   //- p Enjoy the most exotic rich Indian cuisine prepared by chefs in Taj Vivanta.
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-pencil2
+  //-             .time-box
+  //-               time 12:00
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3 Lunch Break
+  //-                   //- h4
+  //-                   //-   | Learn When & How to Leverage the Power of Virtual DOM & Reactive Data Flows
+  //-                   //-   span Live-coding/Workshop session by Christian Lilley
+  //-                 .toggle-item-body(style='display: none;')
+  //-                   //- p
+  //-                   //-   | Whatever other tools you use and love, one thing about ReactJS is certain: the 'Virtual DOM' approach is the future of the web. It's just too fast and too sensible to ignore. In this session, we'll learn:
+  //-                   //-   ul
+  //-                   //-     li What 'Virtual DOM' is and why it matters
+  //-                   //-     li How you can begin making use of it now, in your existing environments
+  //-                   //-     li
+  //-                   //-       | How React also thinks differently about data-binding, with its "one-way reactive data flow"
+  //-                   //-   |                         Longer-Term, React combined with the 'Flux' pattern points the way to a very different style of front-end application development than we're used to now: very modular, 'component'-driven architectures. At the same time, one of the signal traits of React/Flux is that more and more of the application is contained exclusively in Javascript files: React's HTML elements are declared as either "JSX" templates, or just as Javascript objects. And some folks are taking this on to the next level, even programming all of their CSS in JS as well! Before this session is over, you'll see how all these pieces fit together and how you can build some very effective, very fast, and very maintainable components and apps this way. That said, we'll also discuss what's still missing from the React/Flux ecosystem, and provide you with a roadmap that allows you decide when you can - and when you can't - build your whole application around it.
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-pencil2
+  //-             .time-box
+  //-               time 13:30
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3 Workshop - Live Coding(Track I)
+  //-                   //- h4
+  //-                   //-   span Live coding/workshop session II by David Hoffer
+  //-                 .toggle-item-body(style='display: none;')
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-pencil2
+  //-             .time-box
+  //-               time 13:30
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3 Workshop - Live Coding(Track II)
+  //-                   //- h4
+  //-                   //-   span Live coding/workshop session II by David Hoffer
+  //-                 .toggle-item-body(style='display: none;')
+  //-                   //- p
+  //-                   //-   | In this workshop, David Hoffer will be present a Design Thinking lecture and hands-on exercises to help you better understand Design Thinking and it's implications for your work with a specific focus on Personas and Customer Journey Mapping. Please join us for fun and informative session.
+                    
+    
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-coffee
+  //-             .time-box
+  //-               time 16:00
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3
+  //-                     | Tea Break
+  //-                     //- span Sponsored by JSChannel
+  //-                 .toggle-item-body(style='display: none;')
+  //-                   p Tea/ Coffee/ light snacks
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-videocam
+  //-             .time-box
+  //-               time 16:30
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3
+  //-                     | Ending Keynote
+  //-                     //- span JSChannel Speakers
+  //-                 .toggle-item-body(style='display: none;')
+  //-                   p
+  //-                     | Attendees have full 60 mins with the speakers. Its your time to ask any question to Douglas, Yehuda and other speakers.
+  //-           article.event
+  //-             .timeline-icon
+  //-               .timeline-icon-container
+  //-                 i.iconf-microphone
+  //-             .time-box
+  //-               time 17:30
+  //-             .timeline-content
+  //-               .event-content
+  //-                 .toggle-item-title.event-title(data-count='1')
+  //-                   h3 Conference closure and thank you note
+  //-                   //- h4 Ending Keynote Speaker
+  //-                 .toggle-item-body(style='display: none;')
+  //-                   p TBD

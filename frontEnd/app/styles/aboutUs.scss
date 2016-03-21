@@ -1,8 +1,18 @@
 .about-us-container {
+    background: #D1D1D1 url(../images/logo.png);
+    background-repeat: no-repeat, repeat;
     padding: 40px 100px;
+    background-size: 95%;
+    // opacity: .2;
+    background-position-x: 45%;
+    background-position: center;
+    p {
+        font-size: 18px;
+    }
     .sub-text {
         margin-top: 20px;
     }
+
     .about-read-more-button {
         margin: 0 auto;
         border: 1px solid #000000;

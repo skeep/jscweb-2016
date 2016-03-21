@@ -6,14 +6,18 @@
   }
   p {
     margin-bottom: 25px;
+    font-size: 18px;
   }
   .detail-items {
     padding: 0 35px;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 1024px) {
     .detail-container {
       padding: 30px;
+      .detail-items {
+        padding: 15px;
+      }
       h1 {
         font-size: 28px;
       }

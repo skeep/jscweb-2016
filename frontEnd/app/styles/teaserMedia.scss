@@ -1,138 +1,144 @@
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) and (max-device-width: 600px) {
-  .body-tag {
-    .f30 {
-      font-size: 20px;
-      text-transform: uppercase;
-    }
-    .nav-custom {
-      .navbar-logo {
-        transform: scale(1.5,1.5);
-        margin-left: 40px;
-      }
-      .navbar-toggle {
-        border: none;
-        .icon-bar {
-          background-color: white;
+
+@media only screen and (min-width: 320px) and (max-device-width: 600px) {
+    .body-tag {
+        .f30 {
+            font-size: 20px;
+            text-transform: uppercase;
         }
-      }
-      .navbar-menu {
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.95);
-        position: absolute;
-        z-index: 1;
-        right: 0;
-        width: 80vw;
-        top: 0;
-        ul {
-          width: 100%;
-          padding: 0;
-          margin: 0;
-          li {
-            border-bottom: 1px solid #555;
-            padding: 1.5em 0;
-            a {
-              font-weight: 200;
-              .glyphicon-chevron-right {
-                color: #CCC;
-              }
+        .nav-custom {
+            .navbar-logo {
+                transform: scale(1.5, 1.5);
+                margin-left: 40px;
             }
-          }
+            .navbar-toggle {
+                border: none;
+                .icon-bar {
+                    background-color: white;
+                }
+            }
+            .navbar-menu {
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.95);
+                position: absolute;
+                z-index: 1;
+                right: 0;
+                width: 80vw;
+                top: 0;
+                ul {
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        border-bottom: 1px solid #555;
+                        padding: 1.5em 0;
+                        a {
+                            font-weight: 200;
+                            .glyphicon-chevron-right {
+                                color: #CCC;
+                            }
+                        }
+                    }
+                }
+            }
         }
-      }
+        .teaser-container {
+            .left-wrapper,
+            .right-wrapper {
+                text-align: center;
+                display: block;
+                padding: 0;
+                position: static;
+            }
+            .left-wrapper {
+                padding-bottom: 10px;
+                .center-logo-div {
+                    .center-logo {
+                        right: 0;
+                        transform: scale(0.85, 0.85);
+                    }
+                }
+                :after {
+                    display: none;
+                }
+            }
+            .right-wrapper {
+                margin: 0 55px;
+                padding-top: 5px;
+                border-top: 1px solid white;
+            }
+            .buy-btn {
+                width: 85%;
+                left: 0;
+                padding: 15px 0;
+            }
+            .ghost-btn {
+                right: 0;
+                padding: 10px 0;
+                font-size: 0.9em;
+            }
+        }
     }
-    .teaser-container {
-      .left-wrapper,
-      .right-wrapper {
-        text-align: center;
-        display: block;
-        padding: 0;
-        position: static;
-      }
-      .left-wrapper {
-        padding-bottom: 10px;
-        .center-logo-div {
-          .center-logo {
-            right: 0;
-            transform: scale(0.85,0.85);
-          }
-        }
-         :after {
-          display: none;
-        }
-      }
-      .right-wrapper {
-        margin: 0 55px;
-        padding-top: 5px;
-        border-top: 1px solid white;
-      }
-      .buy-btn {
-        width: 85%;
-        left: 0;
-        padding: 15px 0;
-      }
-      .ghost-btn {
-        right: 0;
-        padding: 10px 0;
-        font-size: 0.9em;
-      }
-    }
-  }
 }
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
 
-}
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) and (orientation : portrait) {
-  .body-tag {
-    .teaser-container {
-      .left-wrapper,
-      .right-wrapper {
-        text-align: center;
-        display: block;
-        padding: 0;
-      }
-      .left-wrapper {
-        padding-bottom: 25px;
-        .center-logo-div {
-          .center-logo {
-            right: 0;
-            transform: scale(0.7,0.7);
-            margin-bottom: -1em;
-          }
+
+@media only screen and (min-width: 768px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    .body-tag {
+        .teaser-container {
+            .left-wrapper,
+            .right-wrapper {
+                text-align: center;
+                display: block;
+                padding: 0;
+            }
+            .left-wrapper {
+                padding-bottom: 25px;
+                .center-logo-div {
+                    .center-logo {
+                        right: 0;
+                        transform: scale(0.7, 0.7);
+                        margin-bottom: -1em;
+                    }
+                }
+            }
+            .right-wrapper {
+                margin: 0 235px;
+                padding-top: 20px;
+                border-top: 1px solid white;
+            }
+            .buy-btn {
+                width: 65%;
+            }
+            .ghost-btn {
+                right: 0;
+                margin-bottom: 1.5em;
+            }
         }
-      }
-      .right-wrapper {
-        margin: 0 235px;
-        padding-top: 20px;
-        border-top: 1px solid white;
-      }
-      .buy-btn {
-        width: 65%;
-      }
-      .ghost-btn {
-        right: 0;
-        margin-bottom: 1.5em;
-      }
     }
-  }
 }
+
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-  .body-tag {
-    .nav-custom {
-      .navbar-logo {
-        transform: scale(2,2);
-        margin-left: 50px;
-      }
+
+@media only screen and (min-width: 992px) {
+    .body-tag {
+        .nav-custom {
+            .navbar-logo {
+                transform: scale(2, 2);
+                margin-left: 50px;
+            }
+        }
     }
-  }
 }
+
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
 
-}
+@media only screen and (min-width: 1200px) {}
