@@ -48,7 +48,7 @@ gulp.task('scripts', () => {
 });
 
 gulp.task('jade', function() {
-  return gulp.src('app/index.jade')
+  return gulp.src('app/*.jade')
     .pipe(jade({pretty: true}))
     .pipe(gulp.dest('app/'));
 });
