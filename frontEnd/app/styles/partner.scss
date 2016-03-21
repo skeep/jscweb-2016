@@ -1,0 +1,25 @@
+.partner {
+  width: 100%;
+  padding:5px;
+  &-container {
+    margin: 0;
+    background: rgb(255,255,255);
+    padding: 3vh 0 10vh;
+  }
+  &-heading {
+    padding: 1vh;
+    font-size: 3em;
+  }
+  &-subheading {
+    font-size: 1.5em;
+    margin-bottom: 25px;
+  }
+  &-image {
+    height: 8vh;
+    display: inline;
+    margin: 0 35px;
+  }
+  &-mckinsey {
+    height: 3vh;
+  }
+}
