@@ -1,16 +1,17 @@
 doctype html
 
-include views/headTag.jade
+html
+	include views/partials/headTag.jade
 
-body.body-tag
-	include views/modernizer.jade
-	include views/navbar.jade
+	body.body-tag
+		include views/partials/modernizer.jade
+		include views/partials/navbar.jade
 
-	//view
-	include views/testRoute/test.jade
+		//view
+		include views/testRoute/test.jade
 
 
-	include views/footer.jade
+		include views/partials/footer.jade
 
-	//- scripts
-	include views/scripts.jade
+		//- scripts
+		include views/partials/scripts.jade

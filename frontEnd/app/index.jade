@@ -1,25 +1,28 @@
 doctype html
 
-include views/headTag.jade
+html
+	include views/partials/headTag.jade
 
-body.body-tag
-	include views/modernizer.jade
-	include views/navbar.jade
+	body.body-tag
+		include views/partials/modernizer.jade
+		include views/partials/navbar.jade
 
-	include views/home/homeView.jade
-	include views/home/aboutUs.jade
-	include views/home/speakers.jade
-	include views/home/schedule.jade
-	//- include views/home/fourthView.jade
-	include views/home/register.jade
-	include views/home/venue.jade
-	include views/home/detail.jade
-	include views/home/partners.jade
-	include views/home/map.jade
-	include views/home/team.jade
-	include views/home/contact.jade
+		// view
 
-	include views/footer.jade
+		include views/home/homeView.jade
+		include views/home/aboutUs.jade
+		include views/home/speakers.jade
+		include views/home/schedule.jade
+		//- include views/home/fourthView.jade
+		include views/home/register.jade
+		include views/home/venue.jade
+		include views/home/detail.jade
+		include views/home/partners.jade
+		include views/home/map.jade
+		include views/home/team.jade
+		include views/home/contact.jade
 
-	//- scripts
-	include views/scripts.jade
+
+		include views/partials/footer.jade
+		//- scripts
+		include views/partials/scripts.jade
