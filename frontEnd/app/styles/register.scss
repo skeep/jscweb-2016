@@ -61,6 +61,13 @@ $ticket-card-bg-color: #111925;
     }
 }
 
+.full-register-container {
+    padding: 7% 6%;
+    .sub-heading {
+        padding: 10px 0;
+    }
+}
+
 @media screen and (max-width: 414px) {
     .register-container {
         background-color: $main-bg-color;
@@ -82,6 +89,12 @@ $ticket-card-bg-color: #111925;
                 font-size: 13px;
                 width: 80%;
             }
+        }
+    }
+    .full-register-container {
+        padding: 15% 6%;
+        .sub-heading {
+            padding: 10px 0;
         }
     }
 }
