@@ -6,6 +6,9 @@
             font-size: 20px;
             text-transform: uppercase;
         }
+        .nav-container {
+            padding: 0px;
+        }
         .nav-custom {
             .navbar-logo {
                 transform: scale(1.5, 1.5);
@@ -34,6 +37,7 @@
                         padding: 1.5em 0;
                         a {
                             font-weight: 200;
+                            border-right: none;
                             .glyphicon-chevron-right {
                                 color: #CCC;
                             }
