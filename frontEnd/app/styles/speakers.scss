@@ -184,5 +184,10 @@
 .back {
     transform: rotateY(180deg);
 }
-
-@media only screen and (min-width: 320px) and (max-device-width: 480px) {}
+@media screen and (max-width: 414px) {
+    .speakers-section{
+        .sub-heading {
+            padding: 0px;
+        }
+    } 
+}
