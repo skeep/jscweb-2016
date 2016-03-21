@@ -1,71 +1,368 @@
 doctype html
-head
-	meta(charset='utf-8')
-	meta(name='description', content='JSChannel Conference brings together JavaScript Enthusiasts from across the world.This July (15-16th), join us for a 2-day conference in Bengaluru')
-	meta(name='keywords', content='javascript,jschannel,javascript conference, Bengaluru,community,conference,NCR,jsconference,angularJS,nodeJS,angularjs,emberjs,ecmascript,iojs,hapijs,expressjs')
-	meta(name='author', content='Amit Kumar')
-	meta(name='viewport', content='width=device-width, initial-scale=1')
-	meta(name='apple-mobile-web-app-capable', content='yes')
-	meta(name='theme-color', content='#E9482B')
-	meta(name='msapplication-navbutton-color', content='#E9482B')
-	meta(name='mobile-web-app-capable', content='yes')
-	meta(name='apple-mobile-web-app-status-bar-style', content='black')
-
-	title JSChannel 2016
-	link(rel='apple-touch-icon', href='apple-touch-icon.png')
-	// Place favicon.ico in the root directory
-	// build:css styles/vendor.css
-	// bower:css
-	// endbower
-	// endbuild
-	// build:css styles/main.css
-	link(rel='stylesheet', href='styles/main.css')
-	// endbuild
-
-body.body-tag
-	.body-container
-		// build:js scripts/vendor/modernizr.js
-		// endbuild
-		//if lt IE 10
-			p.browserupgrade
-				| You are using an
-				strong outdated
-				|  browser. Please
-				a(href='http://browsehappy.com/') upgrade your browser
-				|  to improve your experience.
-
-
-	include views/navbar.jade
-	include views/homeView.jade
-	include views/secondView.jade
-	include views/speakers.jade
-	include views/partner.jade
-	include views/fourthView.jade
-	include views/venue.jade
-	include views/footer.jade
-
-	// build:js scripts/vendor.js
-	// bower:js
-	script(src='/bower_components/jquery/dist/jquery.js')
-	script(src='/bower_components/modernizr/modernizr.js')
-	script(src='/bower_components/jquery-backstretch/jquery.backstretch.min.js')
-	// endbower
-	// endbuild
-	// build:js scripts/plugins.js
-	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js') //removed till required
-	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js')
-	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js')
-	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js')
-	script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js')
-	script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js')
-	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js')
-	//script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js')
-	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js')
-	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js')
-	script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js')
-	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js')
-	// endbuild
-	// build:js scripts/main.js
-	script(defer src='scripts/main.js')
-	// endbuild
-	script(defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXzTLtgdEAXsv7uYZSPl3h3XSBVCwY_v8&callback=initMap")
+html
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='JSChannel Conference brings together JavaScript Enthusiasts from across the world.This July (15-16th), join us for a 2-day conference in Bengaluru')
+    meta(name='keywords', content='javascript,jschannel,javascript conference, Bengaluru,community,conference,NCR,jsconference,angularJS,nodeJS,angularjs,emberjs,ecmascript,iojs,hapijs,expressjs')
+    meta(name='author', content='Amit Kumar')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='theme-color', content='#E9482B')
+    meta(name='msapplication-navbutton-color', content='#E9482B')
+    meta(name='mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black')
+    title JSChannel 2016
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    // Place favicon.ico in the root directory
+    // build:css styles/vendor.css
+    // bower:css
+    // endbower
+    // endbuild
+    // build:css styles/main.css
+    link(rel='stylesheet', href='styles/main.css')
+    // endbuild
+  body.body-tag
+    .body-container
+      // build:js scripts/vendor/modernizr.js
+      // endbuild
+      //
+        if lt IE 10
+        p.browserupgrade
+        | You are using an
+        strong outdated
+        |  browser. Please
+        a(href='http://browsehappy.com/') upgrade your browser
+        |  to improve your experience.
+    nav.navbar.menu.nav-custom.clear
+      .container-fluid
+        .container
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.clearfix(href='#')
+              img.navbar-brand.navbar-logo.pull-left(src='../images/logo.png')
+          #navbar.navbar-collapse.collapse.navbar-menu(aria-expanded='false')
+            ul.nav.navbar-nav.navbar-right
+              li
+                a.hidden-md.hidden-sm.hidden-lg.text-right(data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+                  | Menu
+                  span.fa.fa-chevron-up
+              li
+                a(href='#about', data-anchor='home', data-toggle='collapse', data-target='#navbar') #JSChannelConf2016
+              li
+                a(href='#tickets', data-toggle='collapse', data-anchor='ticketView', data-target='#navbar') Tickets
+              li
+                a(href='#speakers', data-toggle='collapse', data-anchor='slide1', data-target='#navbar') Speakers
+              li
+                a(href='#gallery', data-toggle='collapse', data-anchor='galleryView', data-target='#navbar') Gallery
+              li
+                a(href='#venue', data-toggle='collapse', data-anchor='venueView', data-target='#navbar') Venue
+    #homeView.container-fluid.teaser-container.section
+      .container
+        .text-center.voffset40
+          .left-wrapper.display-inline
+            .text-center.center-logo-div
+              img.col-xs-offset-1.center-logo.col-xs-10(src='../images/logo-name.png')
+            .f30 CONFERENCE 2016
+          .right-wrapper.display-inline.f30
+            | JULY 15
+            | & 16
+            sup th
+            .bold bengaluru, india
+        .row.button-margin
+          .col-md-6.voffset40.col-md-offset-3.text-center
+            a.btn.buy-btn(href='https://www.townscript.com/e/jschannel2016', target='_blank') BUY TICKETS
+        .row.button-margin
+          .col-md-10.col-md-offset-1.voffset40
+            .row
+              .col-md-4.col-md-offset-0.col-xs-offset-1.col-xs-10
+                a.btn.ghost-btn(href='https://www.youtube.com/watch?v=PNS2bDUXcCM&list=PLE7tQUdRKcybsEAqkwDahsj05YyIcXXW4', target='_blank')
+                  | WATCH 2015 RECAP
+                  i.fa.fa-play-circle.play-btn
+              .col-md-4.col-md-offset-0.col-xs-offset-1.col-xs-10
+                a.btn.ghost-btn(href='http://goo.gl/forms/jseQIw8Y2H', target='_blank') SUBMIT A TALK
+              .col-md-4.col-md-offset-0.col-xs-offset-1.col-xs-10
+                a.btn.ghost-btn(href='../assets/sponsorship-flyer.pdf', target='_blank') BECOME A SPONSOR
+      .covervid-wrapper
+        video.covervid-video(autoplay='', loop='', poster='./images/background.jpg', muted)
+          source(src='./video/1.mp4', type='video/mp4')
+          source(src='./video/2.mp4', type='video/mp4')
+    #about.container-fluid.sectionOne
+      .container
+        h1.text-center.heading-size #JSCHANNELCONF2016
+        .row.white-background
+          .col-md-6.col-sm-12.col-xs-12.jsinfo
+            img.jsinfo-image.img-responsive(src='./images/JSChannelConf2016.jpg')
+          .col-md-6.col-sm-12.col-xs-12
+            div
+              h2.subheading-size1
+                strong Two Days of Learning!
+              h3.subheading-size2 15-16 July 2016, Bangalore
+              .container-text
+                p
+                  | Join us for an opportunity to learn and hear from the best brains in the industry.
+                p
+                  strong Talks:
+                  |  Opportunity to hear from the stalwarts of the JS Community. A platform to learn, share and connect.
+                p
+                  strong Workshops:
+                  |  Join us to learn and interact with professional JS trainers and experience live-coding sessions.
+                p
+                  strong Fabulous Food:
+                  |  Enjoy sumptuous cuisine prepared by one of the best restaurant in Bengaluru.
+                p
+                  strong Venue:
+                  |  The Ritz-Carlton, Bangalore, Karnataka
+    #tickets.container-fluid.sectionOne
+      .container.ticket-section
+        h1.text-center.heading-size BUY TICKETS
+        .row.ticket-list
+          .col-md-3.col-sm-6.col-xs-12
+            .ticket-container.text-center
+              h2.ticket-top SUPER EARLY BIRD
+              .text-red.price-size ₹ 3000
+              //
+                .ticket-no
+                p
+                | No. of tickets:
+                span.no-text.text-red 80
+                p
+                | 29
+                sup th
+                | JAN - 09
+                sup th
+                | FEB
+              h2.ticket-bottom.ticket-bottom-inactive SOLD OUT
+          .col-md-3.col-sm-6.col-xs-12
+            .ticket-container.text-center
+              h2.ticket-top EARLY BIRD
+              .text-red.price-size ₹ 4500
+              //
+                .ticket-no
+                p
+                | No. of tickets:
+                span.no-text.text-red 100
+                p
+                | 9
+                sup th
+                | FEB - 28
+                sup th
+                | FEB
+              a(href='https://www.townscript.com/e/jschannel2016', target='_blank')
+                h2.ticket-bottom.ticket-bottom-active BUY Tickets
+          .col-md-3.col-sm-6.col-xs-12
+            .ticket-container.text-center
+              h2.ticket-top JS ENTHUSIAST
+              .text-red.price-size ₹ 7000
+              //
+                .ticket-no
+                p
+                | No. of tickets:
+                span.text-red.no-text 200
+                p
+                | 28
+                sup th
+                | FEB -Consumed
+              h2.ticket-bottom.ticket-bottom-inactive BUY Tickets
+          .col-md-3.col-sm-6.col-xs-12
+            .ticket-container.text-center
+              h2.ticket-top LATE ARRIVAL
+              .text-red.price-size ₹ 8000
+              //
+                .ticket-no
+                p
+                | No. of tickets:
+                span.text-red.no-text 100
+                p
+                | TBD
+              h2.ticket-bottom.ticket-bottom-inactive BUY Tickets
+    #speakers.container-fluid.section.speakers
+      .container.speaker-container
+        .text-center.speaker-head 2016 SPEAKERS
+        .text-center.speaker-body.clearfix
+        .row.row-fix
+          .col-xs-8.col-xs-offset-2.col-sm-8.col-sm-offset-2.col-md-4.col-md-offset-0
+            .speaker-image1.speaker-image
+              .caption-1
+                h3 ERIK RASMUSSEN
+                p CREATOR OF REDUX FORM AND THE DUCKS
+          .col-xs-8.col-xs-offset-2.col-sm-8.col-sm-offset-2.col-md-4.col-md-offset-0
+            .speaker-image2.speaker-image
+              .caption-1
+                h3 JOE PETTERSSON
+                p UI ENGINEERING AT MCKINSEY & COMPANY
+          .col-xs-8.col-xs-offset-2.col-sm-8.col-sm-offset-2.col-md-4.col-md-offset-0
+            .speaker-image3.speaker-image
+              .caption-1
+                h3 SATTY BHENS
+                p DIGITAL PRINCIPAL AT MCKINSEY DIGITAL LABS
+          .col-xs-8.col-xs-offset-2.col-sm-8.col-sm-offset-2.col-md-4.col-md-offset-0
+            .speaker-image4.speaker-image
+              .caption-1
+                h3 AJAY SHRIVASTAVA
+                p VP-ENGINEERING AND CHIEF CULTURE AMBASSADOR AT OYO
+          .col-xs-8.col-xs-offset-2.col-sm-8.col-sm-offset-2.col-md-4.col-md-offset-0
+            a.speaker-link(href='http://goo.gl/forms/jseQIw8Y2H', target='_blank')
+              .speaker-image5.speaker-image
+                .caption-1
+                  h3 Want to be a Speaker?
+          .col-xs-0.col-sm-0.col-md-4
+    section.section
+      .container-fluid.partner-container
+        .container.partner-section
+          .partner
+          .row
+            .col-md-12.col-sm-12.col-xs-12
+              .partner-heading.center PARTNERS
+              .partner-subheading.center Big thanks to our partners
+          .row
+            .partner-logo.text-center
+              img.partner-image.partner-img1(src='../images/partner1.png')
+              img.partner-image(src='../images/partner2.png')
+    section.section
+      #gallery.container-fluid.gallery-container
+        .container.gallery-section
+          .gallery
+            .row.row-fix
+              .col-md-12.col-xs-12.col-sm-12
+                h1.text-center.f40 GALLERY
+            .row.row-fix
+              .col-xs-12.col-md-8.col-sm-12
+                .gallery-image1.gallery-image
+                  .caption
+                    h3 JS Channel 2014
+              .col-xs-12.col-md-4.col-sm-12
+                .gallery-image2.gallery-image
+                  .caption
+                    h3 JS Channel 2014
+            .row.row-fix
+              .col-xs-12.col-sm-12.col-md-4
+                .gallery-image3.gallery-image
+                  .caption
+                    h3 JS Channel 2015
+              .col-xs-12.col-sm-12.col-md-4
+                .gallery-image4.gallery-image
+                  .caption
+                    h3 JS Channel 2014
+              .col-xs-12.col-sm-12.col-md-4
+                .gallery-image5.gallery-image
+                  .caption
+                    h3 JS Channel 2015
+            .row.row-fix
+              .col-md-12.col-xs-12.col-sm-12.center
+                span.sponser-button
+                  a(href='https://www.flickr.com/photos/100543192@N08/albums/72157656673572946', target='_blank')  Click For More
+    .container-fluid.venue-container
+      #venue.section
+        .md-col-12
+          .venue-image.text-center
+            h2.venue-head VENUE
+            .venue-body THE RITZ-CARLTON HOTEL
+            h2.venue-foot BANGALORE, KARNATAKA
+            br
+            br
+            br
+      .section
+        #map
+    .container-fluid.section.fp-auto-height
+      .row.contact-1.text-center
+        h3.contact-header CONTACT
+      .row.contact-2
+        .col-md-3.col-md-offset-3.col-sm-4.col-sm-offset-2.col-xs-12
+          .contact-detail Amit Kumar: +91 96194 83353
+        .col-md-3.col-sm-4.col-xs-12
+          .contact-detail Suman Paul: +91 99454 58300
+      .row.contact-3
+        .col-md-3.col-md-offset-3.col-sm-4.col-sm-offset-2.col-xs-12
+          .contact-detail Rajesh Panda: +919900488400
+        .col-md-3.col-sm-4.col-xs-12
+          .contact-detail Niket Jain: +91 9025328198
+      .row.contact-4.text-center
+        .contact-detail.text-center Naresh Sharma: +91 9611641301
+      .footer.row
+        .col-md-4.col-xs-12.col.sm-12
+          .footer-copy Copyright © JSChannel 2013-2016
+        .col-md-4.col-xs-12.col.sm-12.text-center
+          ul.footer-social
+            li.footer-list-element
+              .footer-link
+                a.fa.fa-envelope.icon-1.link(href='mailto:info@jschannel.com?Subject=Hello JSChannel Team', target='_blank')
+            li.footer-list-element
+              .footer-link
+                a.fa.fa-twitter.icon-2.link(href='https://twitter.com/js_channel/', target='_blank')
+            li.footer-list-element
+              .footer-link
+                a.fa.fa-facebook.icon-3.link(href='https://www.facebook.com/javascriptchannel', target='_blank')
+            li.footer-list-element
+              .footer-link
+                a.fa.fa-google-plus.icon-4.link(href='https://plus.google.com/111069083279946389343/', target='_blank')
+            li.footer-list-element
+              .footer-link
+                a.fa.fa-linkedin.icon-5.link(href='http://www.linkedin.com/groups?home=&gid=5112841', target='_blank')
+            li.footer-list-element
+              .footer-link
+                a.fa.fa-youtube.icon-6.link(href='https://www.youtube.com/channel/UCdf_Ezv2lcB9OKE_4N23w1A/videos', target='_blank')
+            li.footer-list-element
+              .footer-link
+                a.fa.fa-flickr.icon-7.link(href='https://www.flickr.com/photos/100543192@N08/sets/72157646036037789/', target='_blank')
+        .col-md-4.col-xs-12.col.sm-12.text-center
+          ul.footer-right
+            li.footer-list-element
+              .footer-connect
+                a(href='', data-toggle='modal', data-target='#modal-cod') Code of Conduct
+    #modal-cod.modal.fade(aria-hidden='true', tabindex='-1', role='dialog')
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-hidden='true') x
+        h3 Code of Conduct
+      .modal-body
+        .code-conduct.code-conduct-info
+          h4 Be excellent with each other
+          p
+            | All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensuring a safe environment for everybody.
+        .code-conduct.code-conduct-info-shorter
+          h4 The Quick Version
+          p
+            | Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, age, sexual orientation, disability, physical appearance, body size, race, or religion (or lack thereof). We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organisers.
+        .code-conduct.code-conduct-info-longer
+          h4 The Less Quick Version
+          p
+            | Harassment includes offensive verbal comments related to gender, age, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention. Participants asked to stop any harassing behavior are expected to comply immediately. Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualised images, activities, or other material. Booth staff (including volunteers) should not use sexualised clothing/uniforms/costumes, or otherwise create a sexualised environment. If a participant engages in harassing behavior, the conference organisers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund. If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference staff can be identified as they'll be wearing branded t-shirts. Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.We expect participants to follow these rules at conference and workshop venues and conference-related social events.
+        .panel.panel-info
+          .panel-heading
+            h3.panel-title Need Help?
+          .panel-body
+            | Amit Kumar  
+            i.fa.fa-mobile-phone +91 9619483353
+            br
+            |           Rajesh Panda  
+            i.fa.fa-mobile-phone +91 9900488400
+            br
+            |           Naresh Sharma  
+            i.fa.fa-mobile-phone +91 9611641301
+            br
+            |           Suman Paul  
+            i.fa.fa-mobile-phone +91 9945458300
+            br
+            |             Niket Jain
+            i.fa.fa-mobile-phone +91 9025328198
+    // build:js scripts/vendor.js
+    // bower:js
+    script(src='/bower_components/jquery/dist/jquery.js')
+    script(src='/bower_components/modernizr/modernizr.js')
+    script(src='/bower_components/jquery-backstretch/jquery.backstretch.min.js')
+    // endbower
+    // endbuild
+    // build:js scripts/plugins.js
+    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js')
+    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js')
+    // script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js')
+    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js')
+    // endbuild
+    // build:js scripts/main.js
+    script(defer='', src='scripts/main.js')
+    script(src='scripts/covervid.min.js')
+    // endbuild
+    script(defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAXzTLtgdEAXsv7uYZSPl3h3XSBVCwY_v8&callback=initMap')
