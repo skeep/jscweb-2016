@@ -149,7 +149,7 @@ gulp.task('serve', ['jade', 'styles', 'scripts', 'fonts'], () => {
 
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/*.jade', ['jade']);
-  gulp.watch('app/views/*.jade', ['jade']);
+  gulp.watch('app/views/**/*.jade', ['jade']);
   gulp.watch('app/scripts/**/*.js', ['scripts']);
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);

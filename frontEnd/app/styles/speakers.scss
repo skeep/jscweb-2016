@@ -96,7 +96,6 @@
 /* entire container, keeps perspective */
 
 
-
 /* flip the pane when hovered */
 
 .flip-container:hover .flipper,
@@ -181,10 +180,134 @@
 .back {
     transform: rotateY(180deg);
 }
+
+.all-speakers-container {
+    padding: 7% 0;
+    background-color: #EBF0ED;
+    .sub-heading {
+        font-size: 18px;
+    }
+    .speaker-row {
+        padding: 30px 0;
+        .speakers-items {
+            // text-align: center;
+            // margin-top: 30px;
+            .inner-container {
+                background-color: #ffffff;
+                box-shadow: 0 0.0625em 0.1875em 0 rgba(0, 0, 0, 0.1), 0 0.5em 0 -0.25em #ffffff, 0 0.5em 0.1875em -0.25em rgba(0, 0, 0, 0.1), 0 1em 0 -0.5em #ffffff, 0 1em 0.1875em -0.5em rgba(0, 0, 0, 0.1);
+                // position: relative;
+                .image-text-container {
+                    padding: 5px;
+                    img {
+                        position: relative;
+                        width: 100%;
+                        // border-radius: 50%;
+                        // margin-bottom: 15px;
+                        // margin-top: 25px;
+                    }
+                    .name {
+                        position: relative;
+                        bottom: 30px;
+                        font-size: 18px;
+                        font-weight: 800;
+                        text-align: center;
+                        background: rgba(0, 0, 0, 0.4);
+                        padding: 5px 0px 0px 0px;
+                        color: white;
+                    }
+                }
+            }
+            .profile {
+                font-size: 15px;
+                font-weight: 500;
+                margin-top: -27px;
+                padding-bottom: 8px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+        .speaker-detail {
+            .people-name {
+                font-size: 20px;
+                border-bottom: 1px solid #EB9C87;
+                width: 40%;
+            }
+            .people-work {
+                padding: 10px 0;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .people-detail {
+                padding: 10px 0;
+                font-size: 16px;
+            }
+            .links {
+                margin-top: 5px;
+                ul {
+                    padding-left: 0;
+                    li {
+                        list-style: none;
+                        display: inline-block;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        &:first-child {
+                            margin-left: 0px;
+                        }
+                    }
+                    .back-circle {
+                        background-color: #353637;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        i {
+                            font-size: 18px;
+                            vertical-align: middle;
+                            text-align: center;
+                            position: relative;
+                            top: 5px;
+                            left: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        .speaker-button,.speaker-know-more-button {
+            margin: 0 auto;
+            border: 1px solid #000000;
+            padding: 12px 25px;
+            border-radius: 5px;
+            margin-top: 50px;
+            color: #000000;
+            font-size: 16px;
+        }
+        .speaker-know-more-button {
+          margin-top: 10px;
+        }
+        .fa-chevron-circle-right {
+            margin-right: 10px;
+            font-size: 24px;
+            vertical-align: middle;
+        }
+    }
+    .hr-color {
+        border-top: 1px solid #EB9C87;
+    }
+}
+
 @media screen and (max-width: 414px) {
-    .speakers-section{
+    .speakers-section {
         .sub-heading {
             padding: 0px;
         }
-    } 
+    }
+    .all-speakers-container {
+        padding: 15% 0;
+        .speaker-row {
+            .speaker-detail {
+                .people-name {
+                  margin-top: 20px;
+                }
+            }
+        }
+    }
 }
