@@ -14,11 +14,11 @@
         }
     }
     &-heading {
-        padding: 1vh;
-        font-size: 3em;
+        // padding: 1vh;
+        font-size: 36px;
     }
     &-subheading {
-        font-size: 2em;
+        font-size: 20px;
         margin-bottom: 25px;
     }
     &-image {
@@ -48,12 +48,125 @@
     }
 }
 
+.full-partner-section {
+    padding: 7% 6% 4% 6%;
+    background-color: #EDEFEC;
+    .partner-subheading {
+        // font-size: 20px;
+        margin-bottom: 55px;
+    }
+    .gold-head {
+        border-bottom: 2px solid #EA471D;
+        width: 100px;
+    }
+    .partner-block {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        .gold-items {
+            float: left;
+            width: 25%;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            // text-align: center;
+            // margin-top: 30px;
+            .inner-container {
+                background-color: #ffffff;
+                box-shadow: 0 0.0625em 0.1875em 0 rgba(0, 0, 0, 0.1), 0 0.5em 0 -0.25em #ffffff, 0 0.5em 0.1875em -0.25em rgba(0, 0, 0, 0.1), 0 1em 0 -0.5em #ffffff, 0 1em 0.1875em -0.5em rgba(0, 0, 0, 0.1);
+                // position: relative;
+                .image-container {
+                    padding: 5px;
+                    img {
+                        position: relative;
+                        width: 100%;
+                        padding: 20% 0;
+                        // border-radius: 50%;
+                        // margin-bottom: 15px;
+                        // margin-top: 25px;
+                    }
+                    .image-2 {
+                        width: 30%;
+                        text-align: center;
+                        position: relative;
+                        left: 35%;
+                    }
+                }
+            }
+        }
+        .gold-items-details {
+            // float: left;
+            margin-left: 25px;
+            .item-detail-head {
+                font-size: 22px;
+                font-weight: 600;
+                border-bottom: 1px solid #EC9B87;
+                width: 20%;
+                margin-left: 25%;
+            }
+            .item-detail-subtext {
+                font-size: 18px;
+                margin-top: 10px;
+            }
+            .links {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                ul {
+                    padding-left: 0;
+                    li {
+                        list-style: none;
+                        display: inline-block;
+                        margin-left: 15px;
+                        margin-right: 15px;
+                        &:first-child {
+                            margin-left: 0px;
+                        }
+                    }
+                    .back-circle {
+                        background-color: #353637;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        i {
+                            font-size: 18px;
+                            vertical-align: middle;
+                            text-align: center;
+                            position: relative;
+                            top: 5px;
+                            left: 8px;
+                        }
+                    }
+                }
+            }
+            .item-detail {
+                font-size: 18px;
+            }
+        }
+    }
+    .hr-color {
+        border-top: 1px solid #EB9C87;
+    }
+}
+
 @media screen and (max-width: 414px) {
     .partner {
         &-container {
             ul {
                 li {
                     margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .full-partner-section {
+      padding: 15% 6% 12% 6%;
+        .partner-block {
+            .gold-items {
+                width: 100%;
+            }
+            .gold-items-details {
+                margin-left: 0;
+                .item-detail-head {
+                  margin-left: 0;
+                  width: 50%;
                 }
             }
         }

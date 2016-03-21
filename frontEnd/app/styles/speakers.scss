@@ -182,7 +182,7 @@
 }
 
 .all-speakers-container {
-    padding: 7% 6%;
+    padding: 7% 6% 3% 6%;
     background-color: #EBF0ED;
     .sub-heading {
         font-size: 18px;
@@ -271,7 +271,8 @@
                 }
             }
         }
-        .speaker-button,.speaker-know-more-button {
+        .speaker-button,
+        .speaker-know-more-button {
             margin: 0 auto;
             border: 1px solid #000000;
             padding: 12px 25px;
@@ -281,7 +282,7 @@
             font-size: 16px;
         }
         .speaker-know-more-button {
-          margin-top: 10px;
+            margin-top: 10px;
         }
         .fa-chevron-circle-right {
             margin-right: 10px;
@@ -305,7 +306,7 @@
         .speaker-row {
             .speaker-detail {
                 .people-name {
-                  margin-top: 20px;
+                    margin-top: 20px;
                 }
             }
         }
