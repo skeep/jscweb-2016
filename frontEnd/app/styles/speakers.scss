@@ -107,10 +107,6 @@
     transform: rotateY(180deg);
 }
 
-.flip-container,
-.front,
-.back {}
-
 
 /* flip speed goes here */
 
@@ -135,6 +131,7 @@
     background-color: #111925;
     margin: 5px;
     height: 97%;
+    width: 97%;
     .back-content {
         position: relative;
         top: 20%;
