@@ -65,8 +65,10 @@
         text-align: center;
         margin-top: 30px;
         .inner-container {
+            margin-left: 35px;
+            margin-right: 35px;
             background-color: #ffffff;
-            box-shadow: 0 0.0625em 0.1875em 0 rgba(0, 0, 0, 0.1), 0 0.5em 0 -0.25em #ffffff, 0 0.5em 0.1875em -0.25em rgba(0, 0, 0, 0.1), 0 1em 0 -0.5em #ffffff, 0 1em 0.1875em -0.5em rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0.0625em 0.1875em 0 rgba(0, 0, 0, 0.1), 0 0.6em 0 -0.25em #EAEAEA, 0 0.6em 0.1875em -0.25em rgb(140, 140, 140), 0 1.2em 0 -0.5em #EAEAEA, 0 1.2em 0.1875em -0.5em rgb(140, 140, 140);
             // position: relative;
             .image-text-container {
                 padding: 5px;
@@ -111,6 +113,17 @@
         margin-right: 10px;
         font-size: 20px;
         vertical-align: middle;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .full-team-section {
+        .team-items {
+            .inner-container {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
     }
 }
 
