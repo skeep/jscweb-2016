@@ -5,14 +5,12 @@
     "bootstrap-sass": "3.3.4",
     "modernizr": "~2.8.1",
     "jquery": "~2.2.0",
-    "font-awesome": "~4.5.0",
-    "jquery-backstretch": "~2.0.4"
+    "font-awesome": "~4.5.0"
   },
   "overrides": {
     "bootstrap-sass": {
       "main": [
         "assets/stylesheets/bootstrap/_variables.scss",
-
         "assets/stylesheets/bootstrap/mixins/_clearfix.scss",
         "assets/stylesheets/bootstrap/mixins/_grid-framework.scss",
         "assets/stylesheets/bootstrap/mixins/_center-block.scss",
@@ -32,7 +30,6 @@
         "assets/stylesheets/bootstrap/mixins/_hide-text.scss",
         "assets/stylesheets/bootstrap/mixins/_background-variant.scss",
         "assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss",
-
         "assets/stylesheets/bootstrap/_forms.scss",
         "assets/stylesheets/bootstrap/_normalize.scss",
         "assets/stylesheets/bootstrap/_grid.scss",
@@ -51,8 +48,6 @@
         "assets/stylesheets/bootstrap/_buttons.scss",
         "assets/stylesheets/bootstrap/_component-animations.scss",
         "assets/stylesheets/bootstrap/_close.scss",
-
-
         "assets/fonts/bootstrap/*",
         "assets/javascripts/bootstrap.js"
       ]
