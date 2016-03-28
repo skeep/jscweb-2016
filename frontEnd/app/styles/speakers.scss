@@ -94,6 +94,49 @@
     font-size: 96px;
 }
 
+.speaker {
+    background: rgba(211, 211, 211, 0.9);
+    padding: 0vh 5vh 5vh 5vh;
+    &-image {
+        position: relative;
+        margin-bottom: 4vh;
+        height: 50vh;
+        top: 0px;
+        background-size: cover;
+        background-position: center;
+    }
+    &-image:hover .caption-1 {
+        visibility: visible;
+    }
+    &-heading {
+        font-size: 50pt;
+    }
+    &-image1 {
+        background-image: url(../images/speaker-1.jpg);
+    }
+    &-image2 {
+        background-image: url(../images/speaker-2.jpg);
+    }
+    &-image3 {
+        background-image: url(../images/speaker-3.jpg);
+    }
+    &-image4 {
+        background-image: url(../images/speaker-4.jpg);
+    }
+    &-image5 {
+        background-image: url(../images/yehuda.jpeg);
+    }
+    &-image6 {
+        background-image: url(../images/lea.jpg);
+    }
+    &-image7 {
+        background-image: url(../images/charanjit.jpeg);
+    }
+    &-image8 {
+        background-image: url(../images/speaker-5.jpg);
+    }
+}
+
 
 /* entire container, keeps perspective */
 
