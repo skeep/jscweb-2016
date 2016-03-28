@@ -4,6 +4,18 @@ Modules - reusable parts of our design
 
 -------------------------------- */
 
+.program-toggle-button {
+    .program-days {
+        width: 45% !important;
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    .program-button-active {
+        background-color: #111925;
+        color: #FFFFFF;
+    }
+}
+
 .cd-container {
     /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
     width: 90%;
