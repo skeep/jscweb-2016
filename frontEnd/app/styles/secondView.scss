@@ -10,7 +10,7 @@ $light-grey-background:rgb(237,239,236);
   }
 }
 .ticket-list {
-  padding-bottom: 70px;
+  
 }
 .white-background {
   background-color:white;
@@ -20,6 +20,7 @@ $light-grey-background:rgb(237,239,236);
 }
 .ticket-section {
   padding: 0;
+  padding-bottom: 70px;
 }
 .ticket-container {
   p{
@@ -74,6 +75,13 @@ h1 {
 }
 .jsinfo{
 padding:0px;
+}
+.ticket-footnote {
+  padding-top: 10px;
+  font-weight: 700;
+  a {
+    text-decoration: underline;
+  }
 }
 
 @media only screen and (min-width : 320px) and (max-device-width: 480px) {
