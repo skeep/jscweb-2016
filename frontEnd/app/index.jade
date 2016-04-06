@@ -1,82 +1,28 @@
 doctype html
-head
-	title JSChannel Conference - July 15-16th 2016 - Bangalore, India
-	meta(charset='utf-8')
-	meta(name='keywords', content='javascript,jschannel,javascript conference, Bengaluru,community,conference,NCR,jsconference,angularJS,nodeJS,angularjs,emberjs,ecmascript,iojs,hapijs,expressjs')
-	meta(name='author', content='Amit Kumar')
-	meta(name='viewport', content='width=device-width, initial-scale=1')
-	meta(name='apple-mobile-web-app-capable', content='yes')
-	meta(name='theme-color', content='#E9482B')
-	meta(name='msapplication-navbutton-color', content='#E9482B')
-	meta(name='mobile-web-app-capable', content='yes')
-	meta(name='apple-mobile-web-app-status-bar-style', content='black')
-	meta(name='description', content='JSChannel Conference brings together JavaScript Enthusiasts from across the world.This July (15-16th), join us for a 2-day conference in Bengaluru')
-	meta(property='og:title', content='JSChannel Conference')
-	meta(property='og:url', content='http://2016.jschannel.com')
-	meta(property='og:type', content='website')
-	meta(property='og:description', content='JSChannel Conference brings together JavaScript Enthusiasts from across the world.This July (15-16th), join us for a 2-day conference in Bengaluru')
-	meta(property='og:image', content='http://photos1.meetupstatic.com/photos/event/2/7/e/a/highres_446890218.jpeg')
-	meta(property='og:twitter', content='@js_channel')
-	meta(property='og:site', content='@js_channel')
-	meta(property='og:author', content='JSChannel')
 
-	//- title JSChannel 2016
-	link(rel='apple-touch-icon', href='apple-touch-icon.png')
-	// Place favicon.ico in the root directory
-	// build:css styles/vendor.css
-	// bower:css
-	// endbower
-	// endbuild
-	// build:css styles/main.css
-	link(rel='stylesheet', href='styles/main.css')
-	// endbuild
+html
+	include views/partials/headTag.jade
 
-body.body-tag
-	.body-container
-		// build:js scripts/vendor/modernizr.js
-		// endbuild
-		//if lt IE 10
-			p.browserupgrade
-				| You are using an
-				strong outdated
-				|  browser. Please
-				a(href='http://browsehappy.com/') upgrade your browser
-				|  to improve your experience.
+	body.body-tag
+		include views/partials/modernizer.jade
+		include views/partials/navbar.jade
+
+		// view
+
+		include views/home/homeView.jade
+		include views/home/aboutUs.jade
+		include views/home/speakers.jade
+		include views/home/schedule.jade
+		//- include views/home/fourthView.jade
+		include views/home/register.jade
+		include views/home/venue.jade
+		include views/home/detail.jade
+		include views/home/partners.jade
+		include views/home/map.jade
+		include views/home/team.jade
+		include views/home/contact.jade
 
 
-	include views/navbar.jade
-	include views/homeView.jade
-	include views/secondView.jade
-	include views/speakers.jade
-	include views/sponser.jade
-	include views/partner.jade
-	include views/schedule.jade
-	include views/fourthView.jade
-	include views/venue.jade
-	include views/footer.jade
-
-	// build:js scripts/vendor.js
-	// bower:js
-	script(src='/bower_components/jquery/dist/jquery.js')
-	script(src='/bower_components/modernizr/modernizr.js')
-	script(src='/bower_components/jquery-backstretch/jquery.backstretch.min.js')
-	// endbower
-	// endbuild
-	// build:js scripts/plugins.js
-	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js') //removed till required
-	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js')
-	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js')
-	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js')
-	script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js')
-	script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js')
-	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js')
-	//script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js')
-	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js')
-	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js')
-	script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js')
-	//- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js')
-	// endbuild
-	// build:js scripts/main.js
-	script(defer src='scripts/main.js')
-	// endbuild
-	script(defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXzTLtgdEAXsv7uYZSPl3h3XSBVCwY_v8&callback=initMap")
+		include views/partials/footer.jade
+		//- scripts
+		include views/partials/scripts.jade

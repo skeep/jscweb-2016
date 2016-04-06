@@ -1,112 +1,118 @@
 $orange:#ec4715;
-$light-orange:rgb(240,108,68);
-$light-grey-background:rgb(237,239,236);
+$light-orange:rgb(240, 108, 68);
+$light-grey-background:rgb(237, 239, 236);
 .sectionOne {
-  background-color:$light-grey-background;
-  a{
-    color:#333;
-    text-decoration: none;
-    cursor: pointer;
-  }
-}
-.ticket-list {
-  
-}
-.white-background {
-  background-color:white;
-}
-.container-text {
-  font-size: 14pt;
-}
-.ticket-section {
-  padding: 0;
-  padding-bottom: 70px;
-}
-.ticket-container {
-  p{
-    color:rgb(121,121,121)
-  }
-  border: 1px solid #ec471f;
-  margin-bottom: 20px;
-  color: #3a3a3a;
-  .price-size{
-    font-size: 25pt;
-    padding: 20px;
-  }
-  .ticket-top {
-    background-color: lightgrey;
-    padding: 10px 0px 10px 0px;
-    margin: 0%;
-    font-weight:400;
-    font-size:17pt;
-  }
-  .ticket-no {
-    font-size: 15pt;
-    padding: 0px 0px 20px 0px;
-    .no-text {
-      padding-left: 5px;
+    background-color: $light-grey-background;
+    a {
+        color: #333;
+        text-decoration: none;
+        cursor: pointer;
     }
-  }
-  .text-red {
-  color: #ec471f;
 }
-  .ticket-bottom {
-    padding: 10px;
-    margin: 0%;
-    color:white;
-    font-size:17pt;
-  }
-  .ticket-bottom-inactive {
-    background-color: rgb(112,112,112);
-  }
-  .ticket-bottom-active {
-    background-color:$orange;
-  }
-  .ticket-bottom-active:hover {
-    background-color:$light-orange;
-  }
-  .ticket-bottom {
-    color: white;
-  }
+
+.ticket-list {}
+
+.white-background {
+    background-color: white;
 }
+
+.container-text {
+    font-size: 14pt;
+}
+
+.ticket-section {
+    padding: 0;
+    padding-bottom: 70px;
+}
+
+.ticket-container {
+    p {
+        color: rgb(121, 121, 121)
+    }
+    border: 1px solid #ec471f;
+    margin-bottom: 20px;
+    color: #3a3a3a;
+    .price-size {
+        font-size: 25pt;
+        padding: 20px;
+    }
+    .ticket-top {
+        background-color: lightgrey;
+        padding: 10px 0px 10px 0px;
+        margin: 0%;
+        font-weight: 400;
+        font-size: 17pt;
+    }
+    .ticket-no {
+        font-size: 15pt;
+        padding: 0px 0px 20px 0px;
+        .no-text {
+            padding-left: 5px;
+        }
+    }
+    .text-red {
+        color: #ec471f;
+    }
+    .ticket-bottom {
+        padding: 10px;
+        margin: 0%;
+        color: white;
+        font-size: 17pt;
+    }
+    .ticket-bottom-inactive {
+        background-color: rgb(112, 112, 112);
+    }
+    .ticket-bottom-active {
+        background-color: $orange;
+    }
+    .ticket-bottom-active:hover {
+        background-color: $light-orange;
+    }
+    .ticket-bottom {
+        color: white;
+    }
+}
+
 h1 {
-  font-weight:400;
-  padding:50px 0px;
+    font-weight: 400;
+    padding: 50px 0px;
 }
-.jsinfo{
-padding:0px;
+
+.jsinfo {
+    padding: 0px;
 }
+
 .ticket-footnote {
-  padding-top: 10px;
-  font-weight: 700;
-  a {
-    text-decoration: underline;
-  }
+    padding-top: 10px;
+    font-weight: 700;
+    a {
+        text-decoration: underline;
+    }
 }
 
-@media only screen and (min-width : 320px) and (max-device-width: 480px) {
-  .heading-size {
-   font-size: 7vw;
-  }
-  .subheading-size1 {
-    font-size: 6vw;
-  }
-  .subheading-size2 {
-    font-size: 5vw;
-  }
+@media only screen and (min-width: 320px) and (max-device-width: 480px) {
+    .heading-size {
+        font-size: 7vw;
+    }
+    .subheading-size1 {
+        font-size: 6vw;
+    }
+    .subheading-size2 {
+        font-size: 5vw;
+    }
 }
 
-@media only screen and (min-width : 480px) and (orientation : portrait) {
-  .heading-size {
-    font-size: 40px;
-  }
-  .jsinfo-image{
-  width:100%;
-}
+@media only screen and (min-width: 480px) and (orientation: portrait) {
+    .heading-size {
+        font-size: 40px;
+    }
+    .jsinfo-image {
+        width: 100%;
+    }
 }
 
-@media only screen and (min-width : 480px) and (orientation : landscape) {
-  .jsinfo-image{
-  height:100%;
-}
+@media only screen and (min-width: 480px) and (orientation: landscape) {
+    .jsinfo-image {
+        height: 100%;
+    }
 }

@@ -1,0 +1,86 @@
+.team-section {
+    background-color: #111B28;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #ffffff;
+    p {
+        font-size: 18px;
+    }
+    .team-items {
+        text-align: center;
+        margin-top: 30px;
+        .inner-container {
+            background-color: #383F46;
+            box-shadow: 0 0.0625em 0.1875em 0 rgba(0, 0, 0, 0.1), 0 0.6em 0 -0.25em #43484C, 0 0.6em 0.1875em -0.25em rgba(41, 48, 58, 1), 0 1.2em 0 -0.5em #43484C, 0 1.2em 0.1875em -0.5em rgba(41, 48, 58, 1);
+            // position: relative;
+            .image-text-container {
+                padding: 5px;
+                img {
+                    position: relative;
+                    width: 100%;
+                    // border-radius: 50%;
+                    // margin-bottom: 15px;
+                    // margin-top: 25px;
+                }
+                .name {
+                    position: relative;
+                    bottom: 28px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    text-align: center;
+                    /* width: 83%; */
+                    background: white;
+                    color: black;
+                }
+            }
+        }
+        .profile {
+            font-size: 13px;
+            font-weight: 700;
+            font-style: italic;
+            margin-top: -27px;
+            padding-bottom: 8px;
+        }
+    }
+    .meet-button {
+        margin: 0 auto;
+        border: 1px solid #ffffff;
+        padding: 12px 25px;
+        border-radius: 5px;
+        margin-top: 50px;
+        color: #ffffff;
+        font-size: 16px;
+    }
+    .fa-chevron-circle-right {
+        margin-right: 10px;
+        font-size: 20px;
+        vertical-align: middle;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .team-section {
+        .team-items {
+            .profile {
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .team-section {
+        .team-items {
+            .inner-container {
+                .image-text-container {
+                    .name {
+                        font-size: 15px;
+                    }
+                }
+            }
+            .profile {
+                font-size: 9px;
+            }
+        }
+    }
+}

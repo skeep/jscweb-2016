@@ -1,0 +1,30 @@
+nav.navbar.menu.nav-custom.clear.navbar-fixed-top
+	.nav-container
+		.navbar-header
+			button.navbar-toggle.collapsed(type="button",data-toggle="collapse",data-target="#navbar",aria-expanded="false", aria-controls="navbar")
+				span.sr-only Toggle navigation
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+			a.clearfix(href="index.html"): img.navbar-brand.navbar-logo.pull-left(src='../images/logo.png')
+		#navbar.navbar-collapse.collapse.navbar-menu(aria-expanded="false")
+			ul.nav.navbar-nav.navbar-right
+				li
+					a.hidden-md.hidden-sm.hidden-lg.text-right(data-toggle="collapse",data-target="#navbar",aria-expanded="false", aria-controls="navbar") Menu
+						span.arrow-up.fa.fa-chevron-up
+				li
+					a(href='index.html',data-anchor="home", data-toggle="collapse", data-target="#navbar") HOME
+				li
+					a(href='#about', data-toggle="collapse",data-anchor="ticketView", data-target="#navbar") ABOUT US
+				li
+					a(href='#speakers', data-toggle="collapse",data-anchor="slide1", data-target="#navbar") SPEAKERS
+				li
+					a(href='#schedule', data-toggle="collapse",data-anchor="scheduleView", data-target="#navbar") PROGRAM
+				li
+					a(href='#tickets', data-toggle="collapse",data-anchor="galleryView", data-target="#navbar") REGISTER
+				li
+					a(href='#sponser', data-toggle="collapse",data-anchor="sponsorView", data-target="#navbar") PARTNERS
+				li
+					a.no-border(href='#venue', data-toggle="collapse",data-anchor="venueView", data-target="#navbar") VENUE
+				//- li
+				//- 	a.no-border(href='#contact', data-toggle="collapse",data-anchor="venueView", data-target="#navbar") CONTACT
