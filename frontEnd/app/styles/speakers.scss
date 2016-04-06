@@ -100,54 +100,50 @@
 
 /* flip the pane when hovered */
 
-.flip-container:hover .flipper,
-.flip-container.hover .flipper {
-    transform: rotateY(180deg);
-
-.speaker{
-  background: rgba(211,211,211,0.9);
-  padding:0vh 5vh 5vh 5vh;
-  &-image{
-    position:relative;
-    margin-bottom:4vh;
-    height:50vh;
-    top:0px;
-    background-size:cover;
-    background-position:center;
-  }
-  &-image:hover .caption-1 {
-    visibility: visible;
-  }
-  &-heading{
-    font-size:50pt;
-  }
-  &-image1{
-    background-image: url(../images/speaker-1.jpg);
-  }
-  &-image2{
-    background-image: url(../images/speaker-2.jpg);
-  }
-  &-image3{
-    background-image: url(../images/speaker-3.jpg);
-  }
-  &-image4{
-    background-image: url(../images/speaker-4.jpg);
-  }
-  &-image5{
-    background-image: url(../images/yehuda.jpeg);
-  }
-  &-image6{
-    background-image: url(../images/lea.jpg);
-  }
-  &-image7{
-    background-image: url(../images/charanjit.jpeg);
-  }
-  &-image8{
-    background-image: url(../images/dave.jpg);
-  }
-  &-image9{
-    background-image: url(../images/speaker-5.jpg);
-  }
+.speaker {
+    background: rgba(211, 211, 211, 0.9);
+    padding: 0vh 5vh 5vh 5vh;
+    &-image {
+        position: relative;
+        margin-bottom: 4vh;
+        height: 50vh;
+        top: 0px;
+        background-size: cover;
+        background-position: center;
+    }
+    &-image:hover .caption-1 {
+        visibility: visible;
+    }
+    &-heading {
+        font-size: 50pt;
+    }
+    &-image1 {
+        background-image: url(../images/speaker-1.jpg);
+    }
+    &-image2 {
+        background-image: url(../images/speaker-2.jpg);
+    }
+    &-image3 {
+        background-image: url(../images/speaker-3.jpg);
+    }
+    &-image4 {
+        background-image: url(../images/speaker-4.jpg);
+    }
+    &-image5 {
+        background-image: url(../images/yehuda.jpeg);
+    }
+    &-image6 {
+        background-image: url(../images/lea.jpg);
+    }
+    &-image7 {
+        background-image: url(../images/charanjit.jpeg);
+    }
+    &-image8 {
+        background-image: url(../images/dave.jpg);
+    }
+    &-image9 {
+        background-image: url(../images/speaker-5.jpg);
+    }
 }
 
 
@@ -159,7 +155,6 @@
     position: relative;
 }
 
-
 /* hide back of pane during swap */
 
 .front,
@@ -168,13 +163,13 @@
 }
 
 .back {
+    display: none;
     position: absolute;
-    top: 0;
-    text-align: center;
     background-color: #111925;
-    margin: 5px;
-    height: 97%;
-    width: 97%;
+    bottom: 0;
+    height: 100%;
+    color: #fff;
+    z-index: 2;
     .back-content {
         position: relative;
         top: 20%;
@@ -224,10 +219,9 @@
 
 /* back, initially hidden pane */
 
-.back {
-    transform: rotateY(180deg);
-}
-
+// .back {
+//     transform: rotateY(180deg);
+// }
 .all-speakers-container {
     padding: 7% 6% 3% 6%;
     background-color: #EBF0ED;

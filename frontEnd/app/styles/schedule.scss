@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Modules - reusable parts of our design
 
@@ -33,9 +33,9 @@ Modules - reusable parts of our design
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
-xnugget info 
+xnugget info
 
 -------------------------------- */
 
@@ -76,9 +76,9 @@ xnugget info
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
-xcarbonads 
+xcarbonads
 
 -------------------------------- */
 
@@ -216,9 +216,9 @@ xcarbonads
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main components 
+Main components
 
 -------------------------------- */
 
@@ -246,14 +246,32 @@ header h1 {
     }
 }
 
-#cd-timeline {
+#cd-timeline1 {
     position: relative;
     padding: 2em 0;
     margin-top: 2em;
     margin-bottom: 2em;
 }
 
-#cd-timeline::before {
+#cd-timeline1::before {
+    /* this is the vertical line */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 100%;
+    width: 1px;
+    background: #111B25;
+}
+
+#cd-timeline2 {
+    position: relative;
+    padding: 2em 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#cd-timeline2::before {
     /* this is the vertical line */
     content: '';
     position: absolute;
@@ -265,11 +283,19 @@ header h1 {
 }
 
 @media only screen and (min-width: 1170px) {
-    #cd-timeline {
+    #cd-timeline1 {
         margin-top: 3em;
         margin-bottom: 3em;
     }
-    #cd-timeline::before {
+    #cd-timeline1::before {
+        left: 50%;
+        margin-left: 0;
+    }
+    #cd-timeline2 {
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    #cd-timeline2::before {
         left: 50%;
         margin-left: 0;
     }

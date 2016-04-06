@@ -3,9 +3,9 @@
   p.subheading  2 days of inspiration, learning and skills development for the JavaScript enthusiast community
   .program-toggle-button
     .btn-group(role='group', aria-label='...')
-      button.btn.btn-default.program-days.program-button-active(type='button') July 15th, 2016
-      button.btn.btn-default.program-days(type='button') July 16th, 2016
-  #cd-timeline.cd-container
+      button.btn.btn-default.program-days.program-button-active#procedure1(type='button', onclick="toggleProcedure()") July 15th, 2016
+      button.btn.btn-default.program-days#procedure2(type='button', onclick="toggleProcedure()") July 16th, 2016
+  #cd-timeline1.cd-container
     .cd-timeline-block
       .cd-timeline-img.cd-bg
         img(src='images/icon-2.png', alt='Icon')
@@ -87,6 +87,88 @@
           img(src="../images/img-1.png", alt="")
         .col-md-10.col-sm-10.col-xs-12
           .content-heading 5:30pm SUMMARY AND UPADTES FOR DAY 2
+  #cd-timeline2.cd-container
+    .cd-timeline-block
+      .cd-timeline-img.cd-bg
+        img(src='images/icon-2.png', alt='Icon')
+      // cd-timeline-img
+      .cd-timeline-content
+        .col-md-2.col-sm-2.col-xs-12.content-img
+          img(src="../images/img-1.png", alt="")
+        .col-md-10.col-sm-10.col-xs-12
+          .content-heading 8:30am - 9:30am WELCOME & REGISTRATION
+    .cd-timeline-block
+      .cd-timeline-img.cd-bg
+        img(src='../images/icon-2.png', alt='Icon')
+      .cd-timeline-content.content-active
+        .col-md-2.col-sm-2.col-xs-12.content-img
+          img(src="../images/img-1.png", alt="")
+        .col-md-10.col-sm-10.col-xs-12
+          .content-heading 9:30am - 10:00am PRE-CONFERENCE
+    .cd-timeline-block
+      .cd-timeline-img.cd-bg
+        img(src='../images/icon-2.png', alt='Icon')
+      .cd-timeline-content
+        .col-md-2.col-sm-2.col-xs-12.content-img
+          img(src="../images/img-1.png", alt="")
+        .col-md-10.col-sm-10.col-xs-12
+          .content-heading 10:00am - 11:00am OPENING KEYNOTE
+    .cd-timeline-block
+      .cd-timeline-img.cd-bg
+        img(src='../images/icon-2.png', alt='Icon')
+      .cd-timeline-content
+        .col-md-2.col-sm-2.col-xs-12.content-img
+          img(src="../images/img-1.png", alt="")
+        .col-md-10.col-sm-10.col-xs-12
+          .content-heading 11:00am - 11:45am TALK SESSION I
+    .cd-timeline-block
+      .cd-timeline-img.cd-bg
+        img(src='../images/icon-2.png', alt='Icon')
+      .cd-timeline-content
+        .col-md-2.col-sm-2.col-xs-12.content-img
+          img(src="../images/img-1.png", alt="")
+        .col-md-10.col-sm-10.col-xs-12
+          .content-heading 11:45am - 12:30pm TALK SESSION II
+    .cd-timeline-block
+      .cd-timeline-img.cd-bg
+        img(src='../images/icon-2.png', alt='Icon')
+      .cd-timeline-content
+        .col-md-2.col-sm-2.col-xs-12.content-img
+          img(src="../images/img-1.png", alt="")
+        .col-md-10.col-sm-10.col-xs-12
+          .content-heading 12:30pm - 2:00pm LUNCH BREAK
+    .cd-timeline-block
+      .cd-timeline-img.cd-bg
+        img(src='../images/icon-2.png', alt='Icon')
+      .cd-timeline-content
+        .col-md-2.col-sm-2.col-xs-12.content-img
+          img(src="../images/img-1.png", alt="")
+        .col-md-10.col-sm-10.col-xs-12
+          .content-heading 2:00pm - 4:30apm WORKSHOP - LIVE CODING
+    .cd-timeline-block
+      .cd-timeline-img.cd-bg
+        img(src='../images/icon-2.png', alt='Icon')
+      .cd-timeline-content
+        .col-md-2.col-sm-2.col-xs-12.content-img
+          img(src="../images/img-1.png", alt="")
+        .col-md-10.col-sm-10.col-xs-12
+          .content-heading 4:30pm - 5:00pm TEA BREAK
+    .cd-timeline-block
+      .cd-timeline-img.cd-bg
+        img(src='../images/icon-2.png', alt='Icon')
+      .cd-timeline-content
+        .col-md-2.col-sm-2.col-xs-12.content-img
+          img(src="../images/img-1.png", alt="")
+        .col-md-10.col-sm-10.col-xs-12
+          .content-heading 5:00pm - 5:30pm LIGHTNING/FLASH TALK
+    .cd-timeline-block
+      .cd-timeline-img.cd-bg
+        img(src='../images/icon-2.png', alt='Icon')
+      .cd-timeline-content
+        .col-md-2.col-sm-2.col-xs-12.content-img
+          img(src="../images/img-1.png", alt="")
+        .col-md-10.col-sm-10.col-xs-12
+          .content-heading 5:30pm SUMMARY
   a.btn.more-button(href="full-program.html")
       i.fa.fa-chevron-circle-right
       | READ MORE
@@ -283,7 +365,7 @@
   //-                     | Day 1 Summary and updates for Day 2
   //-                     //- span Sponsored by JSChannel
   //-                 .toggle-item-body(style='display: none;')
-    
+
   //-                   //- p
   //-                   //-   | Attendees submit their proposals on the day of the conference. Selected submissions come on stage for 5 mins to talk about the topic.
   //-     #daytwo.tab-pane.wo-tab-pane.fade.in
@@ -403,8 +485,8 @@
   //-                 .toggle-item-body(style='display: none;')
   //-                   //- p
   //-                   //-   | In this workshop, David Hoffer will be present a Design Thinking lecture and hands-on exercises to help you better understand Design Thinking and it's implications for your work with a specific focus on Personas and Customer Journey Mapping. Please join us for fun and informative session.
-                    
-    
+
+
   //-           article.event
   //-             .timeline-icon
   //-               .timeline-icon-container
