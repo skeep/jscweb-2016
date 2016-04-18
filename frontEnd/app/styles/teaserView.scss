@@ -83,8 +83,8 @@ $light-grey-background: rgb(237, 239, 236);
 //     }
 // }
 .teaser-container {
-    background: black url('/images/background_mini.png') no-repeat;
-    background-size: cover;
+    // background: black url('/images/background_mini.png') no-repeat;
+    // background-size: cover;
     padding-top: 70px;
     color: white;
     height: 100vh;
@@ -173,5 +173,18 @@ $light-grey-background: rgb(237, 239, 236);
     }
     .ghost-btn {
         margin-bottom: 15px;
+    }
+}
+
+.covervid-wrapper {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    .covervid-video {
+        width: 100vw;
+        height: 100vh;
     }
 }

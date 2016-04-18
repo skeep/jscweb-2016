@@ -9,15 +9,19 @@ $(document).ready(function() {
     );
     var countNumber = 1;
 
+
     function smoothScollerInit() {
         $(document).on('click', 'a[href^="#"]', function(e) {
             // target element id
             var id = $(this).attr('href');
+
             var $id = $(id);
             if ($id.length === 0) {
                 return;
             }
             e.preventDefault();
+
+
             // top position relative to the document
             var pos = $(id).offset().top;
             pos -= 50;
@@ -27,11 +31,13 @@ $(document).ready(function() {
             }, 1000);
         });
     }
-    // function initBackgroundImages() {
-    //   $('.teaser-container').backstretch('../images/background.jpg');
-    // }
-    // initBackgroundImages(); // removed for adding video
+
+    function initBackgroundImages() {
+        //$('.teaser-container').backstretch('../images/background.jpg');
+        $('.covervid-video').coverVid();
+    }
     smoothScollerInit();
+    initBackgroundImages();
 
     $('#homeView,#about,#tickets,#venue,#speakers,#gallery').click(function() {
         $('.navbar-toggle').attr('aria-expanded', false);
@@ -55,6 +61,7 @@ function initMap() {
             lat: 12.9679078,
             lng: 77.6014855
         },
+
         zoom: 15,
         zoomControl: true,
         scaleControl: false,
@@ -67,6 +74,7 @@ function initMap() {
             lat: 12.9679078,
             lng: 77.6014855
         },
+
         map: map,
         icon: '../favicon.ico',
         title: 'JSChannel Conference'
