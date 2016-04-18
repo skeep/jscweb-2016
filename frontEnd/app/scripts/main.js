@@ -34,7 +34,7 @@ $(document).ready(function() {
 
     function initBackgroundImages() {
         //$('.teaser-container').backstretch('../images/background.jpg');
-        $('.covervid-video').coverVid();
+        $('.covervid-video').coverVid(100, 100);
     }
     smoothScollerInit();
     initBackgroundImages();

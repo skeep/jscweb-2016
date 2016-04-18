@@ -84,7 +84,7 @@ $light-grey-background: rgb(237, 239, 236);
 // }
 .teaser-container {
     // background: black url('/images/background_mini.png') no-repeat;
-    // background-size: cover;
+    background-size: cover;
     padding-top: 70px;
     color: white;
     height: 100vh;
@@ -183,8 +183,10 @@ $light-grey-background: rgb(237, 239, 236);
     left: 0;
     width: 100vw;
     height: 100vh;
+    background-color: black;
     .covervid-video {
         width: 100vw;
         height: 100vh;
+        opacity: 0.5;
     }
 }
