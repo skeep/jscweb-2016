@@ -1,28 +1,27 @@
 doctype html
 
 html
-	include views/partials/headTag.jade
-
-	body.body-tag
-		include views/partials/modernizer.jade
-		include views/partials/navbar.jade
-
-		// view
-
-		include views/home/homeView.jade
-		include views/home/aboutUs.jade
-		include views/home/speakers.jade
-		include views/home/schedule.jade
-		//- include views/home/fourthView.jade
-		include views/home/register.jade
-		include views/home/venue.jade
-		include views/home/detail.jade
-		include views/home/partners.jade
-		include views/home/map.jade
-		include views/home/team.jade
-		include views/home/contact.jade
-
-
-		include views/partials/footer.jade
-		//- scripts
-		include views/partials/scripts.jade
+  include views/partials/headTag.jade
+  body.body-tag
+    #display-content
+      include views/partials/modernizer.jade
+      include views/partials/navbar.jade
+      // view
+      include views/home/homeView.jade
+      include views/home/aboutUs.jade
+      include views/home/speakers.jade
+      include views/home/schedule.jade
+      //- include views/home/fourthView.jade
+      include views/home/register.jade
+      include views/home/venue.jade
+      include views/home/detail.jade
+      include views/home/partners.jade
+      include views/home/map.jade
+      include views/home/team.jade
+      include views/home/contact.jade
+      include views/partials/footer.jade
+      //- scripts
+      include views/partials/scripts.jade
+    #warning-message.row
+      .col-xs-12.text-center
+        p  This website is only viewable in potrait mode. Please rotate your device.
