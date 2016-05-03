@@ -1,0 +1,16 @@
+doctype html
+
+html
+  include views/partials/headTag.jade
+  body.body-tag
+    #display-content
+      include views/partials/modernizer.jade
+      include views/partials/inside-navbar.jade
+      //view
+      include views/navRoute/all-speakers.jade
+      include views/partials/footer.jade
+      //- scripts
+      include views/partials/scripts.jade
+    #warning-message.row
+      .col-xs-12.text-center
+        p  This website is only viewable in potrait mode. Please rotate your device.

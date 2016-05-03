@@ -1,65 +1,81 @@
 @font-face {
-  font-family: proxima-nova-regular;
-  src: url("../fonts/ProximaNova-Regular.ttf");
+    font-family: proxima-nova-regular;
+    src: url("../fonts/ProximaNova-Regular.ttf");
 }
 
 .venue-container {
-  background: #fff;
-  padding: 0;
+    background: #fff;
+    padding: 0;
 }
 
-@font-face{
-  font-family: proxima-nova-bold;
-  src: url("../fonts/ProximaNova-Bold.ttf");
-}
-.venue-image{
-  background-image: url(../images/the-ritz-carlton.jpg);
-  background-size: cover;
-  padding: 0%;
-  padding-top: 7em;
-  padding-bottom: 7em;
-  margin: 0%;
-  color: #fff;
+@font-face {
+    font-family: proxima-nova-bold;
+    src: url("../fonts/ProximaNova-Bold.ttf");
 }
 
-.venue-head{
-  padding-top: 1em;
-  font-size: 3.5em;
-  padding-bottom: 0px;
-  font-family: proxima-nova-regular;
+.venue-image {
+    background-image: url(../images/the-ritz-carlton.jpg);
+    background-size: cover;
+    padding-top: 18em;
+    padding-bottom: 18em;
+    color: #fff;
 }
 
-.venue-body{
-  font-size: 4em;
-  font-family: proxima-nova-bold;
-  padding-bottom: 0px;
-  margin: 0px;
+.venue-head {
+    padding-top: 1.5em;
+    // font-size: 3.5em;
+    // padding-bottom: 0px;
+    font-family: proxima-nova-regular;
 }
 
-.venue-foot{
-  padding-top: 0px;
-  margin-top: 0px;
-  font-weight: normal;
-  font-size: 2.5em;
-  font-family: proxima-nova-regular,sans-serif;
+.venue-body {
+    font-size: 4em;
+    font-family: proxima-nova-bold;
+    // padding-bottom: 0px;
+    // margin: 0px;
 }
 
-#map{
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-  width: 100%;
-  height:400px;
+.venue-foot {
+    // padding-top: 0px;
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 2em;
+    font-family: proxima-nova-regular, sans-serif;
 }
 
-@media only screen and (min-width : 320px) and (max-device-width: 480px) {
-  .venue-head {
-   font-size: 30px;
-  }
-  .venue-body {
-    font-size: 25px;
-  }
-  .venue-foot {
-    font-size: 20px;
-  }
+#map {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    width: 100%;
+    height: 400px;
+}
+.full-address {
+    background-color: #EDEFEC;
+    padding: 5% 4%;
+    .heading {
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: 15px;
+    }
+    .hotel-name {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    .address {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-device-width: 480px) {
+    .venue-head {
+        font-size: 30px;
+    }
+    .venue-body {
+        font-size: 25px;
+    }
+    .venue-foot {
+        font-size: 20px;
+    }
 }

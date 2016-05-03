@@ -1,7 +1,11 @@
 # jscweb-2016
 
+## Libraries:
+* JADE/LESS/jQuery for UI  
+* Gulp/Bower for building
+
 ## To Run in Local
-Go to frontEnd folder and do `npm install`, `bower install`
+Go to `frontEnd` folder and do `npm install`, `bower install`
 `gulp serve` and start coding :)
 
 ## To build
@@ -18,7 +22,7 @@ you will get the temporary app link in the last commit (something like: https://
 ![alt tag](https://raw.github.com/skeep/jscweb-2016/master/screenshots/tempUrl.png)
 
 ## To deploy to production
-Once you merge your branch `develop`, merge `develop` to `master` and then your latest code in the `/public` folder will be deployed to [Production website](2016.jschannel.com) and your previous temporary link will get destroyed.
+Once you merge your branch `develop`, merge `develop` to `master` and then your latest code in the `/public` folder will be deployed to [Production website](http://2016.jschannel.com) and your previous temporary link will get destroyed.
 
 ## For any queries, contact:
 [Suman Paul](https://github.com/skeep)

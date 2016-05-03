@@ -1,0 +1,31 @@
+.detail-container {
+    background-color: #FBC22d;
+    padding: 30px 50px;
+    .detail-items {
+        padding: 0 35px;
+        .detail-items-head {
+            font-size: 22px;
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 25px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .detail-container {
+        padding: 30px;
+        .detail-items {
+            padding: 15px;
+            .detail-items-head {
+                font-size: 22px;
+                font-weight: 600;
+            }
+        }
+        h1 {
+            font-size: 28px;
+        }
+    }
+}

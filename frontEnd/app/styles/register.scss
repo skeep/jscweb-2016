@@ -1,0 +1,126 @@
+$active-button-bg:#ED471F;
+$light-orange:rgb(240, 108, 68);
+$text-color: #FFFFFF;
+$main-bg-color:#EDEFEC;
+$ticket-card-bg-color: #111925;
+.register-container {
+    background-color: $main-bg-color;
+    padding: 30px 25px;
+    .sub-heading {
+        padding: 10px 80px;
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+    .ticket-container {
+        margin-left: 35px;
+        margin-right: 35px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: $ticket-card-bg-color;
+        color: $text-color;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        .ticket-head {
+            font-size: 18px;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+        .ticket-price {
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 5px;
+        }
+        .ticket-person {
+            font-size: 14px;
+            font-weight: 200;
+            margin-bottom: 5px;
+        }
+        .ticket-info {
+            font-size: 16px;
+        }
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .ticket-button {
+            padding: 10px;
+            margin: 0%;
+            color: white;
+            font-size: 16px;
+            width: 55%;
+            margin: 0 auto;
+            border-radius: 3px;
+            margin-top: 15px;
+        }
+        .ticket-button-inactive {
+            background-color: #49515A;
+        }
+        .ticket-button-active {
+            background-color: $active-button-bg;
+        }
+    }
+}
+
+
+.full-register-container {
+    padding: 7% 6% 4% 6%;
+    .sub-heading {
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width: 1170px) {
+    .register-container {
+        background-color: $main-bg-color;
+        padding: 30px 25px;
+        .sub-heading {
+            padding: 0;
+        }
+        .ticket-container {
+            .ticket-head {
+                font-size: 14px;
+            }
+            .ticket-price {
+                font-size: 24px;
+            }
+            .ticket-info {
+                font-size: 11px;
+            }
+            .ticket-button {
+                font-size: 13px;
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .register-container {
+        background-color: $main-bg-color;
+        padding: 30px 25px;
+        .sub-heading {
+            padding: 0;
+        }
+        .ticket-container {
+            .ticket-head {
+                font-size: 14px;
+            }
+            .ticket-price {
+                font-size: 24px;
+            }
+            .ticket-info {
+                font-size: 11px;
+            }
+            .ticket-button {
+                font-size: 13px;
+                width: 80%;
+            }
+        }
+    }
+    .full-register-container {
+        padding: 15% 6% 12% 6%;
+        .sub-heading {
+            padding: 10px 0;
+        }
+    }
+}
