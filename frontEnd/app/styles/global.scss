@@ -1,90 +1,133 @@
 $orange:#ec4715;
-$light-orange:rgb(240,108,68);
+$light-orange:rgb(240, 108, 68);
 $navbar-background:#262b39;
-$light-grey-background:rgb(237,239,236);
+$light-grey-background:rgb(237, 239, 236);
 .browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
 }
+
 .body-tag {
-  font-family:proxima-nova-Regular,sans-serif;
+    font-family: proxima-nova-Regular, sans-serif;
 }
+
 .height {
-  height:85vh;
+    height: 85vh;
 }
+
 //reset input
-a:hover, a:focus, a:active {
-  color: inherit;
+a:hover,
+a:focus,
+a:active {
+    color: inherit;
 }
+
 .input {
-  border: none;
-  outline: none;
-  background: white;
-  color: black;
+    border: none;
+    outline: none;
+    background: white;
+    color: black;
 }
+
 .text-center {
-  text-align: center;
+    text-align: center;
 }
+
 .text-right {
-  text-align: right;
+    text-align: right;
 }
+
 .text-left {
-  text-align: left;
+    text-align: left;
 }
+
 .bold {
-  font-weight: 800;
+    font-weight: 800;
 }
+
 .map-bold {
-  font-weight:500;
+    font-weight: 500;
 }
+
 .semibold {
-  font-weight: 500;
+    font-weight: 500;
 }
+
 .f65 {
-  font-size: 65px;
+    font-size: 65px;
 }
+
 .f30 {
-  font-size: 30px;
+    font-size: 30px;
 }
+
 .f40 {
-  font-size:40px;
+    font-size: 40px;
 }
+
 .no-float {
-  float: none;
+    float: none;
 }
+
 .f14 {
-  font-size: 14px;
+    font-size: 14px;
 }
+
 .display-inline {
-  display: inline-block;
+    display: inline-block;
 }
+
 .nopadding {
-  padding: 0;
+    padding: 0;
 }
+
 .padding10 {
-  padding: 10px;
+    padding: 10px;
 }
+
 .row-fix {
-  margin-left: 0;
-  margin-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
+
 .voffset40 {
-  padding-top:80px;
+    padding-top: 80px;
 }
+
 .white-border {
-  border: 1px solid white;
+    border: 1px solid white;
 }
+
 .white {
-  color: white;
+    color: white;
 }
+
 .italics {
-  font-style: italic;
+    font-style: italic;
 }
+
 .btn {
-  transition: all 0.2s;
+    transition: all 0.2s;
 }
+
 .button-disabled {
-  cursor: disabled;
+    cursor: disabled;
+}
+
+.toggle-item-title.event-title.ui-state-active {
+    background: url(../images/icons/toggle-close.png) scroll no-repeat right 5px transparent;
+    padding: 0 32px 0 0;
+}
+.toggle-item-body {
+    .p1 {
+        font-size: 14px;
+        font-weight: bold;
+
+    }
+    .p2 {
+      margin-left: 10px;
+      font-weight: normal;
+    }
 }
