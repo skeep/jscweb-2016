@@ -6,7 +6,7 @@ $(document).ready(function() {
     $(document).on('click', 'a[href^="#"]', function(e) {
       // target element id
       var id = $(this).attr('href');
-      
+
       var $id = $(id);
       if ($id.length === 0) {
         return;
@@ -83,6 +83,17 @@ function changeCount(count) {
     $("#lione").addClass('active');
     $("#daytwo").removeClass('active');
     $("#dayone").addClass('active');
+  }
+
+}
+
+function showDetails(number){
+  var element = document.getElementById('toggle-item-body'+number);
+  if(element.style.display === 'block'){
+    element.style.display = 'none';
+  }
+  else{
+    element.style.display = 'block';
   }
 
 }
