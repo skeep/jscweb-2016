@@ -30,10 +30,11 @@ section#schedule
                     .time-box
                       time 8:30 AM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(1)')
                         .toggle-item-title.event-title(data-count='1')
-                          h3 Registration - JSChannel Team
-                        .toggle-item-body(style='display: none;')
+                          h3 Registration
+                          h4 JSChannel Team
+                        .toggle-item-body#toggle-item-body1(style='display: none;')
                           //- p Registrations and get yourself comfortable.
                   article.event
                     .timeline-icon
@@ -42,11 +43,11 @@ section#schedule
                     .time-box
                       time 9:30 AM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(2)')
                         .toggle-item-title.event-title(data-count='1')
-                          h3 Pre-Conference - JSChannel Team
-                        .toggle-item-body(style='display: none;')
-                          p JSChannel Team
+                          h3 Pre-Conference
+                          h4 JSChannel Team
+                        .toggle-item-body#toggle-item-body2(style='display: none;')
                   article.event
                     .timeline-icon
                       .timeline-icon-container
@@ -54,17 +55,13 @@ section#schedule
                     .time-box
                       time 10:00 AM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(3)')
                         .toggle-item-title.event-title(data-count='1')
-                          h3 Opening Keynote - Yehuda Katz
-                          //- h4 Douglas Crockford
+                          h3 Opening Keynote
+                          h4 Yehuda Katz
                           //- p
                           //-   b Topic : Upgrading the Web
-                        .toggle-item-body(style='display: none;')
-                          //- p
-                          //-   | The web was originally imagined to be a simple distributed document retrieval system. It is now being used for applications that go far beyond the system's original capabilities and intentions. We have found ways to make it work, but they are difficult and far too fragile. Many times companies have offered to replace the web with superior proprietary systems, but we rejected them. We have been adding features to the web, but this does little to correct the deep underlying deficiencies, increasing instead of reducing its complexity.
-                          //- p
-                          //-   | This talk suggests a way forward, taking inspiration from our successful transition from NTSC to HDTV. There is a way forward to a web that is safer, easier, and as good as we desire.
+                        .toggle-item-body#toggle-item-body3(style='display: none;')
                   article.event
                     .timeline-icon
                       .timeline-icon-container
@@ -72,13 +69,14 @@ section#schedule
                     .time-box
                       time 11:00 AM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(4)')
                         .toggle-item-title.event-title(data-count='1')
-                          h3 Effective NodeJS Debugging - Dave Kerr
+                          h3 Effective NodeJS Debugging
+                          h4 Dave Kerr
                           //- h4 Charanjit Singh
-                        .toggle-item-body(style='display: none;')
-                          //- p
-                          //-   | The world of javascript and programming in general is moving towards creating more and more declarative abstractions/techniques for doing our things. Functional programming is a great way of doing flow based programming, and fortunately javascript has good support for functional programming. Functional Reactive programming is an old paradigm which has recently started catching developer attention, which allow making most of the complex asynchronous tasks declarative and really simple.
+                        .toggle-item-body#toggle-item-body4(style='display: none;')
+                          p In this talk I will demonstrate techniques for debugging NodeJS applications. With a set of examples, I'll show you how to quickly and easily debug applications and test suites, accelerating your development and making troubleshooting more effective.
+
                   article.event
                     .timeline-icon
                       .timeline-icon-container
@@ -86,20 +84,13 @@ section#schedule
                     .time-box
                       time 11:45 AM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(5)')
                         .toggle-item-title.event-title(data-count='1')
-                          h3 UI as a pure function of your state - Vagmi Mudumbai
+                          h3 UI as a pure function of your state
+                          h4 Vagmi Mudumbai
                           //- h4 Apoorv Saxena
-                        .toggle-item-body(style='display: none;')
-                          //- p
-                          //-   | Performance is a Feature, the janky your website displays, the lesser will be the user interaction and conversions, thereby impacting the growth and revenue of your business.
-                          //-   | Yet many people are not able to understand the performance gotchas completely, and don’t make it a part of their deployment process to measure the rendering performance of their webpages.
-                          //-   | In this workshop, participants will Performance Audit Web Applications to make them run them at 60fps.
-                          //-   | Workshop will consist of:
-                          //-   | Understand the working behind several jQuery functions and their performance impacts.
-                          //-   | Profiling with Dev Tools available in Browsers, to explore the rendering issues and their respective remedies.
-                          //-   | Discussion of case studies of already audited web applications, and discuss their performance remedies as well.
-                          //-   | Live Audit of Web applications by Workshop attendees.
+                        .toggle-item-body#toggle-item-body5(style='display: none;')
+                          p We just implemented a sizeable ReactJS app and have taken a lot of learnings from Om the ClojureScript framework. We have ported a lot its techniques to React and ES2015. In this talk we'll see how we built a framework similar to Redux.
                   article.event
                     .timeline-icon
                       .timeline-icon-container
@@ -107,12 +98,12 @@ section#schedule
                     .time-box
                       time 12:30 PM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(6)')
                         .toggle-item-title.event-title(data-count='1')
                           h3
                             | Lunch Break
                             //- span Sponsored by JSChannel
-                        .toggle-item-body(style='display: none;')
+                        .toggle-item-body#toggle-item-body6(style='display: none;')
                           //- p Enjoy the most exotic rich Indian cuisine prepared by chefs in Taj Vivanta.
                   article.event
                     .timeline-icon
@@ -121,13 +112,14 @@ section#schedule
                     .time-box
                       time 2:00 PM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(7)')
                         .toggle-item-title.event-title(data-count='1')
-                          h3 Workshop 1 - Joe Petterssen
+                          h3 Workshop 1
+                          h4 Joe Petterssen
                           //- h4
                           //-   | Utilising the next generation of powerful graphics API's on the web
                           //-   span Live-coding/Workshop session by Joe Pettersson
-                        .toggle-item-body(style='display: none;')
+                        .toggle-item-body#toggle-item-body7(style='display: none;')
                           //- p
                           //-   | The WebGL API open's up an exciting world of possibilities for the web; allowing us to build complex applications, games and experiences that were never possible before. In this workshop we'll learn how to leverage WebGL directly, and also how to utilise it through one of it's most useful abstraction layers: ThreeJS. We'll cover the basics of rendering scenes and objects with lighting, textures and cameras; as well as interacting with them using directly and indirectly through the use of physics engines.
                           //-   | You should come away from this talk with a thirst to learn more about this powerful technology, as well as a basic foundation of skills and knowledge to assist you in that exploration in building your own applications and games.
@@ -139,11 +131,12 @@ section#schedule
                     .time-box
                       time 2:00 PM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(8)')
                         .toggle-item-title.event-title(data-count='1')
-                          h3 Workshop 2 - Kapil Manchanda
+                          h3 Workshop 2
+                          h4 Kapil Manchanda
                           //- h4 Magesh K
-                        .toggle-item-body(style='display: none;')
+                        .toggle-item-body#toggle-item-body8(style='display: none;')
                           //- p
                           //-   | This live coding session will reveal the inner secrets of how Angular.js works by attempting re-create a mini angular.js like framework from the ground up.  This will help gain better understanding on some of the guiding principles of angular.js.
                           //-   br
@@ -154,7 +147,7 @@ section#schedule
                           //-     li Create the HTML Compilation process
                           //-     li Create simple directives from the scratch
                           //-     li Bootstrap the application
-                  
+
                   article.event
                     .timeline-icon
                       .timeline-icon-container
@@ -162,12 +155,12 @@ section#schedule
                     .time-box
                       time 4:30 PM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(9)')
                         .toggle-item-title.event-title(data-count='1')
                           h3
                             | Tea Break
                             //- span Sponsored by JSChannel
-                        .toggle-item-body(style='display: none;')
+                        .toggle-item-body#toggle-item-body9(style='display: none;')
                           p Tea/ Coffee/ light snacks
                   article.event
                     .timeline-icon
@@ -176,11 +169,12 @@ section#schedule
                     .time-box
                       time 5:00 PM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(10)')
                         .toggle-item-title.event-title(data-count='1')
-                          h3 Keynote - Ajay Shrivastava
+                          h3 Keynote
+                          h4 Ajay Shrivastava
                           //- h4 Magesh K
-                        .toggle-item-body(style='display: none;')
+                        .toggle-item-body#toggle-item-body10(style='display: none;')
                   article.event
                     .timeline-icon
                       .timeline-icon-container
@@ -188,10 +182,11 @@ section#schedule
                     .time-box
                       time 6:00 PM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(11)')
                         .toggle-item-title.event-title(data-count='1')
-                          h3 Lightning/Flash Talk - JSChannel Team
-                        .toggle-item-body(style='display: none;')
+                          h3 Lightning/Flash Talk
+                          h4 JSChannel Team
+                        .toggle-item-body#toggle-item-body11(style='display: none;')
                   //- article.event
                   //-   .timeline-icon
                   //-     .timeline-icon-container
@@ -224,11 +219,11 @@ section#schedule
                     .time-box
                       time 9:00 AM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(12)')
                         .toggle-item-title.event-title(data-count='1')
-                          h3 Pre-Conference for Day II - JSChannel Team 
-                          //- h4 Yehuda Katz
-                        .toggle-item-body(style='display: none;')
+                          h3 Pre-Conference for Day II
+                          h4 JSChannel Team
+                        .toggle-item-body#toggle-item-body12(style='display: none;')
                           //- p
                           //-   b Topic:
                           //-   |  Web Frameworks in 2015 and Where Ember Fits In
@@ -239,11 +234,12 @@ section#schedule
                     .time-box
                       time 9:30 AM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(13)')
                         .toggle-item-title.event-title(data-count='1')
-                          h3 Opening Keynote - Lea Verou
+                          h3 Opening Keynote
+                          h4 Lea Verou
                           //- h4 Adriaan de Jonge
-                        .toggle-item-body(style='display: none;')
+                        .toggle-item-body#toggle-item-body13(style='display: none;')
                           //- p
                           //-   | The new direction Angular 2.0 is taking created a lot of discussion in the community. Some people love it, some people hate it. Most people agree there is room for simplification, performance enhancements and native support of new language features. Not everyone likes the way Angular 2.0 is picking these up though. There is an alternative direction: Aurelia. In this talk, we'll do a side-by-side comparison and have the audience answer the question: Should you keep all your eggs in the Angular basket?
                   article.event
@@ -253,13 +249,13 @@ section#schedule
                     .time-box
                       time 10:30 AM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(14)')
                         .toggle-item-title.event-title(data-count='1')
-                          h3 Webpack unpacked - Pavithra Kodmad
+                          h3 Webpack unpacked
+                          h4 Pavithra Kodmad
                           //- h4 HariKrishnan and Dharampal
-                        .toggle-item-body(style='display: none;')
-                          //- p
-                          //-   | The design of Languages and Frameworks is highly influenced by the context and their history. As a developer it is important to be aware of these evolutionary aspects which have led to the current feature set of JS and its Frameworks. More over JS has a very interesting history.
+                        .toggle-item-body#toggle-item-body14(style='display: none;')
+                          p Webpack is the next generation tooling for the front end. It is a complex but highly effective bundler. In fact, the best I have seen up until now. This talk will be about explaining webpack philosophy, and deconstructing simple to complex bundling configurations. I will also touch upon webpack 2 and the new features it brings.
                   article.event
                     .timeline-icon
                       .timeline-icon-container
@@ -267,12 +263,12 @@ section#schedule
                     .time-box
                       time 11:15 AM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(15)')
                         .toggle-item-title.event-title(data-count='1')
                           h3
                             | Session 2
                             //- span Sponsored by JSChannel
-                        .toggle-item-body(style='display: none;')
+                        .toggle-item-body#toggle-item-body15(style='display: none;')
                           //- p Enjoy the most exotic rich Indian cuisine prepared by chefs in Taj Vivanta.
                   article.event
                     .timeline-icon
@@ -281,13 +277,13 @@ section#schedule
                     .time-box
                       time 12:00 AM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(16)')
                         .toggle-item-title.event-title(data-count='1')
                           h3 Lunch Break
                           //- h4
                           //-   | Learn When & How to Leverage the Power of Virtual DOM & Reactive Data Flows
                           //-   span Live-coding/Workshop session by Christian Lilley
-                        .toggle-item-body(style='display: none;')
+                        .toggle-item-body#toggle-item-body16(style='display: none;')
                           //- p
                           //-   | Whatever other tools you use and love, one thing about ReactJS is certain: the 'Virtual DOM' approach is the future of the web. It's just too fast and too sensible to ignore. In this session, we'll learn:
                           //-   ul
@@ -303,12 +299,13 @@ section#schedule
                     .time-box
                       time 1:30 PM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(17)')
                         .toggle-item-title.event-title(data-count='1')
-                          h3 Design Consciousness: How People and Companies Become More Aware of Design - Dave Hoffer
+                          h3 Design Consciousness: How People and Companies Become More Aware of Design
+                          h4 Dave Hoffer
                           //- h4
                           //-   span Live coding/workshop session II by David Hoffer
-                        .toggle-item-body(style='display: none;')
+                        .toggle-item-body#toggle-item-body17(style='display: none;')
                   article.event
                     .timeline-icon
                       .timeline-icon-container
@@ -316,16 +313,16 @@ section#schedule
                     .time-box
                       time 1:30 PM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(18)')
                         .toggle-item-title.event-title(data-count='1')
-                          h3 Alternative control flow for React/Redux with ES7 Observable - Charanjit Singh
+                          h3 Alternative control flow for React/Redux with ES7 Observable
+                          h4 Charanjit Singh
                           //- h4
                           //-   span Live coding/workshop session II by David Hoffer
-                        .toggle-item-body(style='display: none;')
-                          //- p
-                          //-   | In this workshop, David Hoffer will be present a Design Thinking lecture and hands-on exercises to help you better understand Design Thinking and it's implications for your work with a specific focus on Personas and Customer Journey Mapping. Please join us for fun and informative session.
-                          
-          
+                        .toggle-item-body#toggle-item-body18(style='display: none;')
+                          p In this workshop we'll build a React app using Redux architecture. For a twist, we'll use ES7 Observable (via RxJS@5) for an arguably better, but definitely different flow of control in our app. React is the boat, redux is the oar, and we will sail in the waters of reactive programming with ES7 Observable. We'll see where React falls short in its "reactive" approach, we'll fill up the holes in Redux architectuer, and we'll tangentially touch an overall alternate approach to architect our apps without frameworks ('tangentially' being the keyword here.)
+
+
                   article.event
                     .timeline-icon
                       .timeline-icon-container
@@ -333,12 +330,12 @@ section#schedule
                     .time-box
                       time 4:00 PM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(19)')
                         .toggle-item-title.event-title(data-count='1')
                           h3
                             | Tea Break
                             //- span Sponsored by JSChannel
-                        .toggle-item-body(style='display: none;')
+                        .toggle-item-body#toggle-item-body19(style='display: none;')
                           p Tea/ Coffee/ light snacks
                   article.event
                     .timeline-icon
@@ -347,12 +344,12 @@ section#schedule
                     .time-box
                       time 5:00 PM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(20)')
                         .toggle-item-title.event-title(data-count='1')
                           h3
                             | Ending Keynote: The History and Future of Web Forms - Erik Rasmussen
                             //- span JSChannel Speakers
-                        .toggle-item-body(style='display: none;')
+                        .toggle-item-body#toggle-item-body20(style='display: none;')
                           p
                             | Attendees have full 60 mins with the speakers. Its your time to ask any question to speakers.
                   article.event
@@ -362,9 +359,9 @@ section#schedule
                     .time-box
                       time 6:00 PM
                     .timeline-content
-                      .event-content
+                      .event-content(onclick='showDetails(21)')
                         .toggle-item-title.event-title(data-count='1')
                           h3 Conference closure and thank you note - JSChannel Team
                           //- h4 Ending Keynote Speaker
-                        .toggle-item-body(style='display: none;')
+                        .toggle-item-body#toggle-item-body21(style='display: none;')
                           p TBD
