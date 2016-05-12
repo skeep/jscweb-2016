@@ -33,4 +33,14 @@ $orange:#ec4715;
   &-button:hover{
     background-color:rgb(240,108,68);
   }
+  &-logo {
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 20px;
+      .partner-tarka {
+        height: 5vh;
+      }
+    }
+  }
 }
